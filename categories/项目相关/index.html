@@ -435,8 +435,8 @@
           </li>
         
           <li>
-            <a href="/tags/AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">
-              <span class="sidebar-name">AI项目，架构说明</span>
+            <a href="/tags/AI%E9%A1%B9%E7%9B%AE/">
+              <span class="sidebar-name">AI项目</span>
               <span class="sidebar-count">1</span>
             </a>
           </li>
@@ -862,6 +862,13 @@
           </li>
         
           <li>
+            <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">
+              <span class="sidebar-name">架构说明</span>
+              <span class="sidebar-count">1</span>
+            </a>
+          </li>
+        
+          <li>
             <a href="/tags/%E6%A0%87%E5%87%86%E5%8C%96/">
               <span class="sidebar-name">标准化</span>
               <span class="sidebar-count">1</span>
@@ -1119,6 +1126,84 @@
     <!-- 判断当前分类下是否有文章 -->
     <!-- page.posts → 当前页面文章数组 -->
     <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
+
+      
+      <!-- 遍历当前分类下每篇文章 post -->
+      <!-- post 对象包含文章标题、路径、日期、分类、标签、摘要等信息 -->
+
+        <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/05/19/1773807301191/">AI Agent指定任务</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-05-19
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/">项目相关</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/AI%E9%A1%B9%E7%9B%AE/">AI项目</a>
+        ,
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+        <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">架构说明</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    比如我自己做个AI Agent来完成我布置的指定任务，1，在每天的指定时间，开始自动执行2，会根据我提前写好的文件内容，去完成相应文章做成，做成后会再次检查修正三遍完善内容3，然后打开我的个人博客，将...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/05/19/1773807301191/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1773807301191.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
+        <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
+        <!-- 将当前文章对象 post 传入模板 -->
+        <!--  输出 HTML，不转义，保证标签正常显示 -->
 
       
       <!-- 遍历当前分类下每篇文章 post -->
@@ -1778,79 +1863,6 @@ body {
     <a href="/2026/04/15/1776313946087/" class="read-more">阅读全文 →</a>
     <!-- 编辑按钮 -->
     <button onclick="openEditor('_posts/1776313946087.md')" class="read-more">✏️ 编辑</button>
-  </div>
-  <!-- 链接到文章详情页 -->
-  <!-- CSS class "read-more" 用于样式化按钮 -->
-
-</article>
-<!-- 单篇文章卡片结束 -->
-
-        <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
-        <!-- 将当前文章对象 post 传入模板 -->
-        <!--  输出 HTML，不转义，保证标签正常显示 -->
-
-      
-      <!-- 遍历当前分类下每篇文章 post -->
-      <!-- post 对象包含文章标题、路径、日期、分类、标签、摘要等信息 -->
-
-        <!--
-  _partial/post-card.ejs
-  功能：
-    - 渲染单篇文章的卡片
-    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
-    - 可在分类页、标签页、归档页复用
--->
-
-<article class="post-card">
-  <!-- 单篇文章卡片容器，用于布局和样式 -->
-
-  <!-- 文章标题 -->
-  <h3 class="post-title">
-    <a href="/2026/03/18/1773807301191/">AI Agent指定任务</a>
-    <!-- 链接到文章详情页 -->
-    <!-- url_for(post.path) → 生成文章路径 -->
-    <!-- post.title → 当前文章标题 -->
-  </h3>
-
-  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
-  <p class="post-meta">
-    发布于 2026-03-19
-    <!-- 显示文章发布日期 -->
-
-     |
-      分类：
-      
-        <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/">项目相关</a>
-        
-        <!-- 遍历文章分类 -->
-        <!-- 多个分类用逗号分隔 -->
-      
-    
-
-     |
-      标签：
-      
-        <a href="/tags/AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">AI项目，架构说明</a>
-        
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
-    
-  </p>
-  <!-- 文章元信息结束 -->
-
-  <!-- 文章摘要 -->
-  <p class="post-excerpt">
-    
-    比如我自己做个AI Agent来完成我布置的指定任务，1，在每天的指定时间，开始自动执行2，会根据我提前写好的文件内容，去完成相应文章做成，做成后会再次检查修正三遍完善内容3，然后打开我的个人博客，将...
-  </p>
-
-  <!-- 操作按钮容器 -->
-  <div class="post-actions">
-    <!-- 阅读全文按钮 -->
-    <a href="/2026/03/18/1773807301191/" class="read-more">阅读全文 →</a>
-    <!-- 编辑按钮 -->
-    <button onclick="openEditor('_posts/1773807301191.md')" class="read-more">✏️ 编辑</button>
   </div>
   <!-- 链接到文章详情页 -->
   <!-- CSS class "read-more" 用于样式化按钮 -->

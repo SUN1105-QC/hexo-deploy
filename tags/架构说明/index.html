@@ -11,7 +11,7 @@
   <!-- 如果当前页面有标题，则显示 "页面标题 | 网站标题" -->
   <!-- 否则只显示网站标题 config.title -->
   <title>
-    AI Agent指定任务 | Sun Blog
+    Sun Blog
   </title>
 
   <!-- 页面描述，用于 SEO -->
@@ -435,8 +435,8 @@
           </li>
         
           <li>
-            <a href="/tags/AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">
-              <span class="sidebar-name">AI项目，架构说明</span>
+            <a href="/tags/AI%E9%A1%B9%E7%9B%AE/">
+              <span class="sidebar-name">AI项目</span>
               <span class="sidebar-count">1</span>
             </a>
           </li>
@@ -862,6 +862,13 @@
           </li>
         
           <li>
+            <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">
+              <span class="sidebar-name">架构说明</span>
+              <span class="sidebar-count">1</span>
+            </a>
+          </li>
+        
+          <li>
             <a href="/tags/%E6%A0%87%E5%87%86%E5%8C%96/">
               <span class="sidebar-name">标准化</span>
               <span class="sidebar-count">1</span>
@@ -1094,80 +1101,116 @@
   <!-- ===== 主体内容区 ===== -->
   <main id="main-content">
     <!--
-  post.ejs
-  文章详情页模板
+  tag.ejs
+  标签页面模板
   功能：
-    - 显示文章标题
-    - 显示文章发布日期和标签
-    - 渲染文章正文内容
+    - 显示当前标签名称
+    - 遍历该标签下的所有文章
+    - 渲染为文章卡片列表
 -->
 
-<article class="post">
-  <!-- 单篇文章容器，用于文章详情页布局和样式 -->
+<section class="main-section">
+  <!-- 页面主容器，用于布局和样式控制 -->
+
+  <!-- 标签标题 -->
+  <h2 class="section-title">🏷️ 架构说明 标签</h2>
+  <!-- emoji 🏷️ 用于视觉增强 -->
+  <!-- 架构说明 动态输出当前页面所属标签名称 -->
+  <!-- 最终显示效果示例：🏷️ Java 标签 -->
+
+  <div class="post-list">
+    <!-- 文章列表容器，用于存放该标签下的所有文章卡片 -->
+
+    
+    <!-- 判断当前标签下是否有文章 -->
+    <!-- page.posts → 当前页面文章数组 -->
+    <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
+
+      
+      <!-- 遍历每篇文章 post -->
+      
+        <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
 
   <!-- 文章标题 -->
-  <h1 class="post-title">AI Agent指定任务</h1>
-  <!-- page.title → 当前文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/05/19/1773807301191/">AI Agent指定任务</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
 
-  <!-- 文章元信息：发布日期 + 标签 -->
-  <div class="post-meta">
-    <span>发表于 2026-03-19</span>
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-05-19
     <!-- 显示文章发布日期 -->
 
-    
-      <!-- 判断文章是否有标签 -->
-
-      <span>标签：
+     |
+      分类：
+      
+        <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/">项目相关</a>
         
-          <a href="/tags/AI%E9%A1%B9%E7%9B%AE%EF%BC%8C%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">AI项目，架构说明</a>
-          
-          <!-- 遍历文章标签，生成标签链接 -->
-          <!-- 多个标签用逗号分隔 -->
-        
-      </span>
-
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
     
-    <!-- 标签判断结束 -->
-  </div>
+
+     |
+      标签：
+      
+        <a href="/tags/AI%E9%A1%B9%E7%9B%AE/">AI项目</a>
+        ,
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+        <a href="/tags/%E6%9E%B6%E6%9E%84%E8%AF%B4%E6%98%8E/">架构说明</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
   <!-- 文章元信息结束 -->
 
-  <!-- 文章正文内容 -->
-  <div class="post-content">
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
     
+    比如我自己做个AI Agent来完成我布置的指定任务，1，在每天的指定时间，开始自动执行2，会根据我提前写好的文件内容，去完成相应文章做成，做成后会再次检查修正三遍完善内容3，然后打开我的个人博客，将...
+  </p>
 
-    
-      <p>比如我自己做个AI Agent来完成我布置的指定任务，<br>1，在每天的指定时间，开始自动执行<br>2，会根据我提前写好的文件内容，去完成相应文章做成，做成后会再次检查修正三遍完善内容<br>3，然后打开我的个人博客，将完成的文章自动输入和发布到我的个人博客中<br>4，然后获取博客中的用户浏览量，评论等来自用户的数据做成相应的总结报告进行保存</p>
-<h1 id="AI-Agent-架构说明"><a href="#AI-Agent-架构说明" class="headerlink" title="AI Agent 架构说明"></a>AI Agent 架构说明</h1><h2 id="前端界面"><a href="#前端界面" class="headerlink" title="前端界面"></a>前端界面</h2><ul>
-<li>可监控任务状态</li>
-<li>能手动触发Agent执行任务</li>
-</ul>
-<h2 id="后端服务（Spring-Boot）"><a href="#后端服务（Spring-Boot）" class="headerlink" title="后端服务（Spring Boot）"></a>后端服务（Spring Boot）</h2><ul>
-<li><strong>Controller</strong> → 接收前端请求</li>
-<li><strong>Scheduler</strong> → 每天定时触发任务</li>
-</ul>
-<h2 id="Agent核心模块"><a href="#Agent核心模块" class="headerlink" title="Agent核心模块"></a>Agent核心模块</h2><ul>
-<li><strong>TaskPlanner</strong> → 拆解任务目标（生成文章 → 修正 → 发布 → 数据分析）</li>
-<li><strong>TaskExecutor</strong> → 循环执行每个步骤，调用工具和AI模型</li>
-</ul>
-<h2 id="工具-外部接口"><a href="#工具-外部接口" class="headerlink" title="工具&#x2F;外部接口"></a>工具&#x2F;外部接口</h2><ul>
-<li><strong>GPT&#x2F;LLM</strong> → 生成文章和报告</li>
-<li><strong>博客API&#x2F;WebDriver</strong> → 自动发布</li>
-<li><strong>数据API&#x2F;数据库</strong> → 获取浏览量、评论等</li>
-</ul>
-<h2 id="存储-日志"><a href="#存储-日志" class="headerlink" title="存储 &amp; 日志"></a>存储 &amp; 日志</h2><ul>
-<li>保存草稿、最终文章、总结报告</li>
-<li>记录任务执行日志，方便调试和追踪</li>
-</ul>
-<p>AI Agent 工程化结构图<br>┌───────────────────────────────┐<br>│         前端界面              │  ← 可选（监控、日志查看）<br>│  - 查看任务状态               │<br>│  - 手动触发任务（调试用）     │<br>└──────────────┬────────────────┘<br>               │<br>               ▼<br>┌───────────────────────────────┐<br>│       后端服务 (Spring Boot)   │<br>│  - Controller 层              │ ← 接收前端请求 &#x2F; 定时触发<br>│  - Scheduler &#x2F; TaskRunner      │ ← 定时触发每天任务<br>└──────────────┬────────────────┘<br>               │<br>               ▼<br>┌───────────────────────────────┐<br>│          Agent 核心模块        │  ← 核心逻辑<br>│ ┌───────────────────────────┐ │<br>│ │ 1️⃣ Task Planner           │ │ ← 拆解任务（生成文章 → 修正 → 发布 → 数据收集）<br>│ └──────────────┬────────────┘ │<br>│                │<br>│ ┌──────────────▼────────────┐ │<br>│ │ 2️⃣ Task Executor           │ │ ← 循环执行每个步骤<br>│ │  - Article Generator        │ │    • 调用模型生成文章<br>│ │  - Revision &#x2F; Proofreader   │ │    • 修正三遍<br>│ │  - Blog Publisher           │ │    • 自动登录博客、发布文章<br>│ │  - Data Collector           │ │    • 抓取浏览量、评论、点赞<br>│ │  - Report Generator         │ │    • AI生成总结报告并保存<br>│ └──────────────┬────────────┘ │<br>└───────────────▼───────────────┘<br>                │<br>                ▼<br>┌───────────────────────────────┐<br>│        AI模型&#x2F;工具接口         │<br>│  - GPT &#x2F; LLM API              │ ← 文章生成、修正、报告总结<br>│  - 博客API &#x2F; WebDriver        │ ← 自动发布文章<br>│  - 数据API &#x2F; DB               │ ← 获取浏览量、评论<br>└───────────────────────────────┘<br>                │<br>                ▼<br>┌───────────────────────────────┐<br>│        存储 &amp; 日志系统        │<br>│  - 保存文章草稿、最终稿       │<br>│  - 保存用户数据总结报告       │<br>│  - 记录任务执行日志           │<br>└───────────────────────────────┘</p>
-
-      <!-- 渲染文章正文 HTML -->
-      <!-- 使用  不转义 HTML，保证内容中的标签生效 -->
-    
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/05/19/1773807301191/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1773807301191.md')" class="read-more">✏️ 编辑</button>
   </div>
-  <!-- 文章正文结束 -->
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
 
 </article>
-<!-- 单篇文章容器结束 -->
+<!-- 单篇文章卡片结束 -->
+
+
+      
+      <!-- 遍历文章结束 -->
+
+    
+    <!-- 条件判断结束 -->
+
+  </div>
+  <!-- 文章列表容器结束 -->
+
+</section>
+<!-- 页面主容器结束 -->
 
     <!-- 渲染当前页面内容 -->
     <!--  保证 HTML 正常渲染，不转义 -->
