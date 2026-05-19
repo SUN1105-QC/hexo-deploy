@@ -631,8 +631,8 @@
           </li>
         
           <li>
-            <a href="/tags/%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91%EF%BC%8C%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0%EF%BC%8C%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/">
-              <span class="sidebar-name">业务逻辑，技术实现，项目分析</span>
+            <a href="/tags/%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91/">
+              <span class="sidebar-name">业务逻辑</span>
               <span class="sidebar-count">1</span>
             </a>
           </li>
@@ -787,6 +787,13 @@
           <li>
             <a href="/tags/%E6%8A%80%E6%9C%AF%E5%85%B3%E7%B3%BB%E8%AF%B4%E6%98%8E/">
               <span class="sidebar-name">技术关系说明</span>
+              <span class="sidebar-count">1</span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="/tags/%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0/">
+              <span class="sidebar-name">技术实现</span>
               <span class="sidebar-count">1</span>
             </a>
           </li>
@@ -1002,6 +1009,13 @@
           </li>
         
           <li>
+            <a href="/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/">
+              <span class="sidebar-name">项目分析</span>
+              <span class="sidebar-count">1</span>
+            </a>
+          </li>
+        
+          <li>
             <a href="/tags/%E9%A1%B9%E7%9B%AE%E7%9F%A5%E8%AF%86%E5%BA%93/">
               <span class="sidebar-name">项目知识库</span>
               <span class="sidebar-count">1</span>
@@ -1114,6 +1128,96 @@
 
   <!-- 博文列表容器 -->
   <div class="post-list">
+    
+    <!-- 遍历当前页面的所有文章对象（post） -->
+
+      <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/05/19/1777023094523/">业务逻辑 vs 技术实现 对照图</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-05-19
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/">项目相关</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91/">业务逻辑</a>
+        ,
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+        <a href="/tags/%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0/">技术实现</a>
+        ,
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+        <a href="/tags/%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/">项目分析</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    
+
+
+  
+  
+  业务逻辑 vs 技术实现 对照图
+  
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --line:...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/05/19/1777023094523/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1777023094523.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
+      <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
+
     
     <!-- 遍历当前页面的所有文章对象（post） -->
 
@@ -1659,86 +1763,6 @@ body {
     <a href="/2026/05/06/1777161338237/" class="read-more">阅读全文 →</a>
     <!-- 编辑按钮 -->
     <button onclick="openEditor('_posts/1777161338237.md')" class="read-more">✏️ 编辑</button>
-  </div>
-  <!-- 链接到文章详情页 -->
-  <!-- CSS class "read-more" 用于样式化按钮 -->
-
-</article>
-<!-- 单篇文章卡片结束 -->
-
-      <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
-
-    
-    <!-- 遍历当前页面的所有文章对象（post） -->
-
-      <!--
-  _partial/post-card.ejs
-  功能：
-    - 渲染单篇文章的卡片
-    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
-    - 可在分类页、标签页、归档页复用
--->
-
-<article class="post-card">
-  <!-- 单篇文章卡片容器，用于布局和样式 -->
-
-  <!-- 文章标题 -->
-  <h3 class="post-title">
-    <a href="/2026/04/24/1777023094523/">业务逻辑 vs 技术实现 对照图</a>
-    <!-- 链接到文章详情页 -->
-    <!-- url_for(post.path) → 生成文章路径 -->
-    <!-- post.title → 当前文章标题 -->
-  </h3>
-
-  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
-  <p class="post-meta">
-    发布于 2026-04-24
-    <!-- 显示文章发布日期 -->
-
-     |
-      分类：
-      
-        <a href="/categories/%E9%A1%B9%E7%9B%AE%E7%9B%B8%E5%85%B3/">项目相关</a>
-        
-        <!-- 遍历文章分类 -->
-        <!-- 多个分类用逗号分隔 -->
-      
-    
-
-     |
-      标签：
-      
-        <a href="/tags/%E4%B8%9A%E5%8A%A1%E9%80%BB%E8%BE%91%EF%BC%8C%E6%8A%80%E6%9C%AF%E5%AE%9E%E7%8E%B0%EF%BC%8C%E9%A1%B9%E7%9B%AE%E5%88%86%E6%9E%90/">业务逻辑，技术实现，项目分析</a>
-        
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
-    
-  </p>
-  <!-- 文章元信息结束 -->
-
-  <!-- 文章摘要 -->
-  <p class="post-excerpt">
-    
-    
-
-
-  
-  
-  业务逻辑 vs 技术实现 对照图
-  
-    :root {
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --line:...
-  </p>
-
-  <!-- 操作按钮容器 -->
-  <div class="post-actions">
-    <!-- 阅读全文按钮 -->
-    <a href="/2026/04/24/1777023094523/" class="read-more">阅读全文 →</a>
-    <!-- 编辑按钮 -->
-    <button onclick="openEditor('_posts/1777023094523.md')" class="read-more">✏️ 编辑</button>
   </div>
   <!-- 链接到文章详情页 -->
   <!-- CSS class "read-more" 用于样式化按钮 -->
@@ -3422,17 +3446,17 @@ import java....
      |
       标签：
       
+        <a href="/tags/IF%E9%A0%85%E7%9B%AE/">IF項目</a>
+        ,
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
         <a href="/tags/JSON/">JSON</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
       
         <a href="/tags/VBA/">VBA</a>
-        ,
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
-        <a href="/tags/IF%E9%A0%85%E7%9B%AE/">IF項目</a>
         
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
