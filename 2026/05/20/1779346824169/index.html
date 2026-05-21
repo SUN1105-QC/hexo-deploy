@@ -11,7 +11,7 @@
   <!-- 如果当前页面有标题，则显示 "页面标题 | 网站标题" -->
   <!-- 否则只显示网站标题 config.title -->
   <title>
-    Sun Blog
+    AI自动单体测试代码生成工具（整体方案设计） | Sun Blog
   </title>
 
   <!-- 页面描述，用于 SEO -->
@@ -1122,118 +1122,489 @@
   <!-- ===== 主体内容区 ===== -->
   <main id="main-content">
     <!--
-  tag.ejs
-  标签页面模板
+  post.ejs
+  文章详情页模板
   功能：
-    - 显示当前标签名称
-    - 遍历该标签下的所有文章
-    - 渲染为文章卡片列表
+    - 显示文章标题
+    - 显示文章发布日期和标签
+    - 渲染文章正文内容
 -->
 
-<section class="main-section">
-  <!-- 页面主容器，用于布局和样式控制 -->
-
-  <!-- 标签标题 -->
-  <h2 class="section-title">🏷️ Git命令 标签</h2>
-  <!-- emoji 🏷️ 用于视觉增强 -->
-  <!-- Git命令 动态输出当前页面所属标签名称 -->
-  <!-- 最终显示效果示例：🏷️ Java 标签 -->
-
-  <div class="post-list">
-    <!-- 文章列表容器，用于存放该标签下的所有文章卡片 -->
-
-    
-    <!-- 判断当前标签下是否有文章 -->
-    <!-- page.posts → 当前页面文章数组 -->
-    <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
-
-      
-      <!-- 遍历每篇文章 post -->
-      
-        <!--
-  _partial/post-card.ejs
-  功能：
-    - 渲染单篇文章的卡片
-    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
-    - 可在分类页、标签页、归档页复用
--->
-
-<article class="post-card">
-  <!-- 单篇文章卡片容器，用于布局和样式 -->
+<article class="post">
+  <!-- 单篇文章容器，用于文章详情页布局和样式 -->
 
   <!-- 文章标题 -->
-  <h3 class="post-title">
-    <a href="/2026/02/19/1771555228705/">Git分支管理</a>
-    <!-- 链接到文章详情页 -->
-    <!-- url_for(post.path) → 生成文章路径 -->
-    <!-- post.title → 当前文章标题 -->
-  </h3>
+  <h1 class="post-title">AI自动单体测试代码生成工具（整体方案设计）</h1>
+  <!-- page.title → 当前文章标题 -->
 
-  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
-  <p class="post-meta">
-    发布于 2026-02-20
+  <!-- 文章元信息：发布日期 + 标签 -->
+  <div class="post-meta">
+    <span>发表于 2026-05-21</span>
     <!-- 显示文章发布日期 -->
 
-     |
-      分类：
-      
-        <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%9B%B8%E5%85%B3/">经验相关</a>
-        
-        <!-- 遍历文章分类 -->
-        <!-- 多个分类用逗号分隔 -->
-      
     
+      <!-- 判断文章是否有标签 -->
 
-     |
-      标签：
-      
-        <a href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a>
-        ,
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
-        <a href="/tags/Git%E5%91%BD%E4%BB%A4/">Git命令</a>
+      <span>标签：
         
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
+          <a href="/tags/%E3%83%A1%E3%83%A2/">メモ</a>
+          
+          <!-- 遍历文章标签，生成标签链接 -->
+          <!-- 多个标签用逗号分隔 -->
+        
+      </span>
+
     
-  </p>
+    <!-- 标签判断结束 -->
+  </div>
   <!-- 文章元信息结束 -->
 
-  <!-- 文章摘要 -->
-  <p class="post-excerpt">
+  <!-- 文章正文内容 -->
+  <div class="post-content">
     
-    1. 切换到 develop 分支git checkout develop
-2. 创建新分支git checkout -b feature&amp;#x2F;AABBBBC0001_新規作成
-3. 推送新分支...
-  </p>
 
-  <!-- 操作按钮容器 -->
-  <div class="post-actions">
-    <!-- 阅读全文按钮 -->
-    <a href="/2026/02/19/1771555228705/" class="read-more">阅读全文 →</a>
-    <!-- 编辑按钮 -->
-    <button onclick="openEditor('_posts/1771555228705.md')" class="read-more">✏️ 编辑</button>
+    
+      <h1 id="AI自动单体测试代码生成工具（整体方案设计）"><a href="#AI自动单体测试代码生成工具（整体方案设计）" class="headerlink" title="AI自动单体测试代码生成工具（整体方案设计）"></a>AI自动单体测试代码生成工具（整体方案设计）</h1><h1 id="1-项目目标"><a href="#1-项目目标" class="headerlink" title="1. 项目目标"></a>1. 项目目标</h1><p>构建一个：</p>
+<blockquote>
+<p>「从单体测试式样书 → YAML中间层 → 自动生成多语言测试代码」的 AI 自动化测试平台</p>
+</blockquote>
+<p>实现：</p>
+<ul>
+<li>自动生成测试Case</li>
+<li>自动生成Mock代码</li>
+<li>自动生成Assert</li>
+<li>自动生成测试数据</li>
+<li>自动生成异常测试</li>
+<li>自动生成边界值测试</li>
+<li>自动生成多语言测试代码</li>
+</ul>
+<p>最终达到：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">测试式样书</span><br><span class="line">   ↓</span><br><span class="line">结构化转换</span><br><span class="line">   ↓</span><br><span class="line">YAML</span><br><span class="line">   ↓</span><br><span class="line">代码生成器</span><br><span class="line">   ↓</span><br><span class="line">JUnit / pytest / Jest / NUnit ...</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="2-推荐的整体架构（核心建议）"><a href="#2-推荐的整体架构（核心建议）" class="headerlink" title="2. 推荐的整体架构（核心建议）"></a>2. 推荐的整体架构（核心建议）</h1><p>建议你不要：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">式样书 → 直接生成代码</span><br></pre></td></tr></table></figure>
+
+<p>而是：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">式样书</span><br><span class="line"> ↓</span><br><span class="line">AI解析器</span><br><span class="line"> ↓</span><br><span class="line">统一中间模型（YAML）</span><br><span class="line"> ↓</span><br><span class="line">语言无关测试模型</span><br><span class="line"> ↓</span><br><span class="line">模板引擎</span><br><span class="line"> ↓</span><br><span class="line">多语言测试代码</span><br></pre></td></tr></table></figure>
+
+<p>这是非常关键的设计思想。</p>
+<hr>
+<h1 id="3-为什么必须加入-YAML-中间层"><a href="#3-为什么必须加入-YAML-中间层" class="headerlink" title="3. 为什么必须加入 YAML 中间层"></a>3. 为什么必须加入 YAML 中间层</h1><p>这是整个系统最核心的设计。</p>
+<p>因为：</p>
+<h2 id="直接生成代码的问题"><a href="#直接生成代码的问题" class="headerlink" title="直接生成代码的问题"></a>直接生成代码的问题</h2><p>如果：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">式样书 → JUnit</span><br><span class="line">式样书 → pytest</span><br><span class="line">式样书 → Jest</span><br></pre></td></tr></table></figure>
+
+<p>你会发现：</p>
+<ul>
+<li>每种语言都需要重新解析</li>
+<li>无法复用</li>
+<li>AI提示词无法统一</li>
+<li>后期维护爆炸</li>
+</ul>
+<hr>
+<h2 id="YAML中间层的优势"><a href="#YAML中间层的优势" class="headerlink" title="YAML中间层的优势"></a>YAML中间层的优势</h2><p>YAML 本质上是：</p>
+<blockquote>
+<p>“统一测试语义模型”</p>
+</blockquote>
+<p>例如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">testCaseId:</span> <span class="string">TC001</span></span><br><span class="line"></span><br><span class="line"><span class="attr">title:</span> <span class="string">正常登录</span></span><br><span class="line"></span><br><span class="line"><span class="attr">input:</span></span><br><span class="line">  <span class="attr">userId:</span> <span class="string">admin</span></span><br><span class="line">  <span class="attr">password:</span> <span class="number">123456</span></span><br><span class="line"></span><br><span class="line"><span class="attr">mock:</span></span><br><span class="line">  <span class="attr">userRepository.find:</span></span><br><span class="line">    <span class="attr">return:</span></span><br><span class="line">      <span class="attr">id:</span> <span class="number">1</span></span><br><span class="line">      <span class="attr">name:</span> <span class="string">admin</span></span><br><span class="line"></span><br><span class="line"><span class="attr">expected:</span></span><br><span class="line">  <span class="attr">result:</span> <span class="string">SUCCESS</span></span><br><span class="line"></span><br><span class="line"><span class="attr">assert:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">result</span> <span class="string">==</span> <span class="string">SUCCESS</span></span><br></pre></td></tr></table></figure>
+
+<p>之后：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">YAML → JUnit</span><br><span class="line">YAML → pytest</span><br><span class="line">YAML → Jest</span><br><span class="line">YAML → Go test</span><br></pre></td></tr></table></figure>
+
+<p>全部都能生成。</p>
+<p>这才是真正的平台化。</p>
+<hr>
+<h1 id="4-推荐你增加的“统一测试领域模型”"><a href="#4-推荐你增加的“统一测试领域模型”" class="headerlink" title="4. 推荐你增加的“统一测试领域模型”"></a>4. 推荐你增加的“统一测试领域模型”</h1><p>建议不要直接使用自由YAML。</p>
+<p>应该定义：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UTDSL（Unit Test DSL）</span><br></pre></td></tr></table></figure>
+
+<p>即：</p>
+<blockquote>
+<p>测试领域专用语言</p>
+</blockquote>
+<p>例如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">meta:</span></span><br><span class="line">  <span class="attr">id:</span> <span class="string">TC001</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">正常登录</span></span><br><span class="line"></span><br><span class="line"><span class="attr">target:</span></span><br><span class="line">  <span class="attr">class:</span> <span class="string">LoginService</span></span><br><span class="line">  <span class="attr">method:</span> <span class="string">login</span></span><br><span class="line"></span><br><span class="line"><span class="attr">given:</span></span><br><span class="line">  <span class="attr">userId:</span> <span class="string">admin</span></span><br><span class="line">  <span class="attr">password:</span> <span class="number">123456</span></span><br><span class="line"></span><br><span class="line"><span class="attr">mock:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">target:</span> <span class="string">userRepository.find</span></span><br><span class="line">    <span class="attr">return:</span></span><br><span class="line">      <span class="attr">id:</span> <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="attr">when:</span></span><br><span class="line">  <span class="attr">execute:</span> <span class="string">login()</span></span><br><span class="line"></span><br><span class="line"><span class="attr">then:</span></span><br><span class="line">  <span class="attr">assert:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">result</span> <span class="string">==</span> <span class="string">SUCCESS</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="5-系统推荐分层（非常重要）"><a href="#5-系统推荐分层（非常重要）" class="headerlink" title="5. 系统推荐分层（非常重要）"></a>5. 系统推荐分层（非常重要）</h1><p>推荐采用：</p>
+<h1 id="第一层：式样书解析层"><a href="#第一层：式样书解析层" class="headerlink" title="第一层：式样书解析层"></a>第一层：式样书解析层</h1><p>负责：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Excel</span><br><span class="line">Word</span><br><span class="line">Markdown</span><br><span class="line">HTML</span><br><span class="line">PDF</span><br></pre></td></tr></table></figure>
+
+<p>解析。</p>
+<p>输出：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">结构化JSON</span><br></pre></td></tr></table></figure>
+
+<p>建议：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Apache POI</span><br><span class="line">pdfbox</span><br><span class="line">jsoup</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="第二层：AI语义分析层"><a href="#第二层：AI语义分析层" class="headerlink" title="第二层：AI语义分析层"></a>第二层：AI语义分析层</h1><p>负责：</p>
+<ul>
+<li>理解业务语义</li>
+<li>理解测试意图</li>
+<li>自动补全Case</li>
+<li>自动推断边界值</li>
+<li>自动识别异常路径</li>
+</ul>
+<p>例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">密码为空</span><br><span class="line">密码超长</span><br><span class="line">账号不存在</span><br><span class="line">DB异常</span><br></pre></td></tr></table></figure>
+
+<p>这里才是 AI 的核心价值。</p>
+<hr>
+<h1 id="第三层：YAML生成层"><a href="#第三层：YAML生成层" class="headerlink" title="第三层：YAML生成层"></a>第三层：YAML生成层</h1><p>统一生成：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">UTDSL</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="第四层：测试模型层（最关键）"><a href="#第四层：测试模型层（最关键）" class="headerlink" title="第四层：测试模型层（最关键）"></a>第四层：测试模型层（最关键）</h1><p>内部不要直接使用 YAML。</p>
+<p>应该：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">YAML → Java对象模型</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">TestCase</span><br><span class="line">MockDefinition</span><br><span class="line">AssertDefinition</span><br><span class="line">InputDefinition</span><br></pre></td></tr></table></figure>
+
+<p>这样后面扩展会非常容易。</p>
+<hr>
+<h1 id="第五层：代码生成层"><a href="#第五层：代码生成层" class="headerlink" title="第五层：代码生成层"></a>第五层：代码生成层</h1><p>推荐：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Freemarker</span><br><span class="line">Velocity</span><br><span class="line">Mustache</span><br><span class="line">Handlebars</span><br></pre></td></tr></table></figure>
+
+<p>使用模板引擎。</p>
+<p>例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">junit5.ftl</span><br><span class="line">pytest.ftl</span><br><span class="line">jest.ftl</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="第六层：格式化层"><a href="#第六层：格式化层" class="headerlink" title="第六层：格式化层"></a>第六层：格式化层</h1><p>自动：</p>
+<ul>
+<li>import整理</li>
+<li>lint</li>
+<li>formatter</li>
+<li>prettier</li>
+<li>black</li>
+<li>google-java-format</li>
+</ul>
+<hr>
+<h1 id="6-推荐支持的语言"><a href="#6-推荐支持的语言" class="headerlink" title="6. 推荐支持的语言"></a>6. 推荐支持的语言</h1><p>建议按优先级：</p>
+<table>
+<thead>
+<tr>
+<th>优先级</th>
+<th>语言</th>
+<th>测试框架</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>S</td>
+<td>Java</td>
+<td>JUnit5 + Mockito</td>
+</tr>
+<tr>
+<td>S</td>
+<td>Python</td>
+<td>pytest</td>
+</tr>
+<tr>
+<td>S</td>
+<td>JavaScript</td>
+<td>Jest</td>
+</tr>
+<tr>
+<td>A</td>
+<td>TypeScript</td>
+<td>Vitest</td>
+</tr>
+<tr>
+<td>A</td>
+<td>C#</td>
+<td>NUnit</td>
+</tr>
+<tr>
+<td>A</td>
+<td>Go</td>
+<td>testing</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Kotlin</td>
+<td>Kotest</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Rust</td>
+<td>cargo test</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="7-推荐支持的测试类型"><a href="#7-推荐支持的测试类型" class="headerlink" title="7. 推荐支持的测试类型"></a>7. 推荐支持的测试类型</h1><p>不要只支持：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">正常系</span><br></pre></td></tr></table></figure>
+
+<p>应该支持：</p>
+<hr>
+<h2 id="正常系"><a href="#正常系" class="headerlink" title="正常系"></a>正常系</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">正常输入</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="异常系"><a href="#异常系" class="headerlink" title="异常系"></a>异常系</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">参数为空</span><br><span class="line">DB异常</span><br><span class="line">超时</span><br><span class="line">NullPointer</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="边界值"><a href="#边界值" class="headerlink" title="边界值"></a>边界值</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">0</span><br><span class="line">1</span><br><span class="line">最大值</span><br><span class="line">最小值</span><br><span class="line">长度边界</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Mock测试"><a href="#Mock测试" class="headerlink" title="Mock测试"></a>Mock测试</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Repository</span><br><span class="line">API</span><br><span class="line">Redis</span><br><span class="line">MQ</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="参数化测试"><a href="#参数化测试" class="headerlink" title="参数化测试"></a>参数化测试</h2><p>例如：</p>
+<p>JUnit：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ParameterizedTest</span></span><br></pre></td></tr></table></figure>
+
+<p>pytest：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@pytest.mark.parametrize</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="8-AI真正应该做的事情（非常重要）"><a href="#8-AI真正应该做的事情（非常重要）" class="headerlink" title="8. AI真正应该做的事情（非常重要）"></a>8. AI真正应该做的事情（非常重要）</h1><p>很多人误区：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AI = 生成代码</span><br></pre></td></tr></table></figure>
+
+<p>其实不是。</p>
+<p>真正有价值的是：</p>
+<h1 id="AI自动补全测试场景"><a href="#AI自动补全测试场景" class="headerlink" title="AI自动补全测试场景"></a>AI自动补全测试场景</h1><p>例如：</p>
+<p>输入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户登录</span><br></pre></td></tr></table></figure>
+
+<p>AI自动推断：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">正常登录</span><br><span class="line">密码错误</span><br><span class="line">账号锁定</span><br><span class="line">空密码</span><br><span class="line">SQL异常</span><br><span class="line">Redis异常</span><br><span class="line">Token生成失败</span><br></pre></td></tr></table></figure>
+
+<p>这才是真正的“智能”。</p>
+<hr>
+<h1 id="9-推荐增加的高级功能（重点）"><a href="#9-推荐增加的高级功能（重点）" class="headerlink" title="9. 推荐增加的高级功能（重点）"></a>9. 推荐增加的高级功能（重点）</h1><h1 id="9-1-自动生成Mock"><a href="#9-1-自动生成Mock" class="headerlink" title="9.1 自动生成Mock"></a>9.1 自动生成Mock</h1><p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">when</span>(userRepository.findById(any()))</span><br><span class="line">.thenReturn(user)</span><br></pre></td></tr></table></figure>
+
+<p>AI自动推断：</p>
+<ul>
+<li>Repository</li>
+<li>Service</li>
+<li>API</li>
+</ul>
+<p>哪些需要mock。</p>
+<hr>
+<h1 id="9-2-自动推断Assert"><a href="#9-2-自动推断Assert" class="headerlink" title="9.2 自动推断Assert"></a>9.2 自动推断Assert</h1><p>例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">HTTP 200</span><br><span class="line">Result.SUCCESS</span><br><span class="line">List.size == 3</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="9-3-自动生成测试数据工厂"><a href="#9-3-自动生成测试数据工厂" class="headerlink" title="9.3 自动生成测试数据工厂"></a>9.3 自动生成测试数据工厂</h1><p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">TestDataFactory.createUser()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="9-4-自动生成Builder"><a href="#9-4-自动生成Builder" class="headerlink" title="9.4 自动生成Builder"></a>9.4 自动生成Builder</h1><p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">User.builder()</span><br><span class="line">.name(<span class="string">&quot;admin&quot;</span>)</span><br><span class="line">.build()</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="9-5-自动生成覆盖率报告"><a href="#9-5-自动生成覆盖率报告" class="headerlink" title="9.5 自动生成覆盖率报告"></a>9.5 自动生成覆盖率报告</h1><p>整合：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">JaCoCo</span><br><span class="line">Coverage.py</span><br><span class="line">Istanbul</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="9-6-自动分析未覆盖分支"><a href="#9-6-自动分析未覆盖分支" class="headerlink" title="9.6 自动分析未覆盖分支"></a>9.6 自动分析未覆盖分支</h1><p>例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if</span><br><span class="line">switch</span><br><span class="line">catch</span><br></pre></td></tr></table></figure>
+
+<p>自动发现：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">还有哪些路径未测试</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="10-推荐的YAML设计（重点）"><a href="#10-推荐的YAML设计（重点）" class="headerlink" title="10. 推荐的YAML设计（重点）"></a>10. 推荐的YAML设计（重点）</h1><p>推荐拆分：</p>
+<h1 id="meta"><a href="#meta" class="headerlink" title="meta"></a>meta</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">meta:</span></span><br><span class="line">  <span class="attr">id:</span> <span class="string">TC001</span></span><br><span class="line">  <span class="attr">name:</span> <span class="string">登录成功</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="target"><a href="#target" class="headerlink" title="target"></a>target</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">target:</span></span><br><span class="line">  <span class="attr">class:</span> <span class="string">LoginService</span></span><br><span class="line">  <span class="attr">method:</span> <span class="string">login</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="given"><a href="#given" class="headerlink" title="given"></a>given</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">given:</span></span><br><span class="line">  <span class="attr">userId:</span> <span class="string">admin</span></span><br><span class="line">  <span class="attr">password:</span> <span class="number">123456</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="mock"><a href="#mock" class="headerlink" title="mock"></a>mock</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mock:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">target:</span> <span class="string">userRepository.find</span></span><br><span class="line">    <span class="attr">return:</span></span><br><span class="line">      <span class="attr">id:</span> <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="when"><a href="#when" class="headerlink" title="when"></a>when</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">when:</span></span><br><span class="line">  <span class="attr">execute:</span> <span class="string">login()</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="then"><a href="#then" class="headerlink" title="then"></a>then</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">then:</span></span><br><span class="line">  <span class="attr">assert:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">result</span> <span class="string">==</span> <span class="string">SUCCESS</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="11-推荐增加“插件化架构”"><a href="#11-推荐增加“插件化架构”" class="headerlink" title="11. 推荐增加“插件化架构”"></a>11. 推荐增加“插件化架构”</h1><p>不要写死。</p>
+<p>建议：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">LanguageGenerator SPI</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">generators/</span><br><span class="line">  junit/</span><br><span class="line">  pytest/</span><br><span class="line">  jest/</span><br></pre></td></tr></table></figure>
+
+<p>每个语言：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">实现统一接口</span><br></pre></td></tr></table></figure>
+
+<p>例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">TestCodeGenerator</span> &#123;</span><br><span class="line">    String <span class="title function_">generate</span><span class="params">(TestCase testCase)</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样：</p>
+<p>以后新增：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Go</span><br><span class="line">Rust</span><br><span class="line">Kotlin</span><br></pre></td></tr></table></figure>
+
+<p>几乎零成本。</p>
+<hr>
+<h1 id="12-推荐增加-Web-UI"><a href="#12-推荐增加-Web-UI" class="headerlink" title="12. 推荐增加 Web UI"></a>12. 推荐增加 Web UI</h1><p>建议：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">左侧：</span><br><span class="line">  YAML</span><br><span class="line">  式样书</span><br><span class="line"></span><br><span class="line">右侧：</span><br><span class="line">  生成代码</span><br></pre></td></tr></table></figure>
+
+<p>支持：</p>
+<ul>
+<li>在线编辑</li>
+<li>实时生成</li>
+<li>Diff比较</li>
+<li>AI优化建议</li>
+<li>下载zip</li>
+</ul>
+<hr>
+<h1 id="13-推荐技术栈"><a href="#13-推荐技术栈" class="headerlink" title="13. 推荐技术栈"></a>13. 推荐技术栈</h1><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>推荐技术</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Backend</td>
+<td>Spring Boot</td>
+</tr>
+<tr>
+<td>YAML</td>
+<td>SnakeYAML</td>
+</tr>
+<tr>
+<td>AI</td>
+<td>OpenAI API</td>
+</tr>
+<tr>
+<td>模板</td>
+<td>Freemarker</td>
+</tr>
+<tr>
+<td>前端</td>
+<td>React</td>
+</tr>
+<tr>
+<td>编辑器</td>
+<td>Monaco Editor</td>
+</tr>
+<tr>
+<td>Diff</td>
+<td>diff2html</td>
+</tr>
+<tr>
+<td>UML</td>
+<td>Mermaid</td>
+</tr>
+</tbody></table>
+<hr>
+<h1 id="14-推荐加入“规则引擎”"><a href="#14-推荐加入“规则引擎”" class="headerlink" title="14. 推荐加入“规则引擎”"></a>14. 推荐加入“规则引擎”</h1><p>因为很多测试规则是固定的。</p>
+<p>例如：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">金额不能为空</span><br><span class="line">密码长度限制</span><br><span class="line">年龄范围</span><br></pre></td></tr></table></figure>
+
+<p>建议：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Drools</span><br><span class="line">规则DSL</span><br></pre></td></tr></table></figure>
+
+<p>AI + 规则引擎结合。</p>
+<hr>
+<h1 id="15-推荐增加“项目源码分析”"><a href="#15-推荐增加“项目源码分析”" class="headerlink" title="15. 推荐增加“项目源码分析”"></a>15. 推荐增加“项目源码分析”</h1><p>这是高级功能。</p>
+<p>让AI：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">读取Controller</span><br><span class="line">读取Service</span><br><span class="line">读取Repository</span><br></pre></td></tr></table></figure>
+
+<p>自动推断：</p>
+<ul>
+<li>输入参数</li>
+<li>返回值</li>
+<li>异常</li>
+<li>Mock对象</li>
+</ul>
+<p>这会让生成质量暴涨。</p>
+<hr>
+<h1 id="16-推荐增加“AST代码分析”"><a href="#16-推荐增加“AST代码分析”" class="headerlink" title="16. 推荐增加“AST代码分析”"></a>16. 推荐增加“AST代码分析”</h1><p>不要只靠字符串。</p>
+<p>建议：</p>
+<table>
+<thead>
+<tr>
+<th>语言</th>
+<th>AST工具</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Java</td>
+<td>JavaParser</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>ast</td>
+</tr>
+<tr>
+<td>TS</td>
+<td>ts-morph</td>
+</tr>
+</tbody></table>
+<p>这样：</p>
+<p>AI生成会更精准。</p>
+<hr>
+<h1 id="17-推荐最终产品形态"><a href="#17-推荐最终产品形态" class="headerlink" title="17. 推荐最终产品形态"></a>17. 推荐最终产品形态</h1><p>你这个项目最终可以发展成：</p>
+<h1 id="AI-Test-Platform"><a href="#AI-Test-Platform" class="headerlink" title="AI Test Platform"></a>AI Test Platform</h1><p>类似：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Postman</span><br><span class="line">Swagger</span><br><span class="line">SonarQube</span><br></pre></td></tr></table></figure>
+
+<p>的测试开发平台。</p>
+<p>甚至可以：</p>
+<ul>
+<li>SaaS化</li>
+<li>企业内部平台化</li>
+<li>CI&#x2F;CD整合</li>
+<li>GitHub Action</li>
+<li>Jenkins插件</li>
+</ul>
+<hr>
+<h1 id="18-推荐的最终目录结构"><a href="#18-推荐的最终目录结构" class="headerlink" title="18. 推荐的最终目录结构"></a>18. 推荐的最终目录结构</h1><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">ai-ut-platform/</span><br><span class="line"></span><br><span class="line"> ├─ parser/</span><br><span class="line"> ├─ ai-engine/</span><br><span class="line"> ├─ yaml-engine/</span><br><span class="line"> ├─ domain-model/</span><br><span class="line"> ├─ generators/</span><br><span class="line"> │   ├─ junit/</span><br><span class="line"> │   ├─ pytest/</span><br><span class="line"> │   ├─ jest/</span><br><span class="line"> │   └─ nunit/</span><br><span class="line"> │</span><br><span class="line"> ├─ templates/</span><br><span class="line"> │   ├─ junit5/</span><br><span class="line"> │   ├─ pytest/</span><br><span class="line"> │   └─ jest/</span><br><span class="line"> │</span><br><span class="line"> ├─ web-ui/</span><br><span class="line"> ├─ coverage/</span><br><span class="line"> ├─ plugins/</span><br><span class="line"> └─ docs/</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="19-最推荐的发展路线（非常关键）"><a href="#19-最推荐的发展路线（非常关键）" class="headerlink" title="19. 最推荐的发展路线（非常关键）"></a>19. 最推荐的发展路线（非常关键）</h1><p>建议：</p>
+<h1 id="Phase-1"><a href="#Phase-1" class="headerlink" title="Phase 1"></a>Phase 1</h1><p>先做：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">YAML → JUnit</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Phase-2"><a href="#Phase-2" class="headerlink" title="Phase 2"></a>Phase 2</h1><p>再做：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Excel → YAML</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Phase-3"><a href="#Phase-3" class="headerlink" title="Phase 3"></a>Phase 3</h1><p>加入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">AI自动补全Case</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Phase-4"><a href="#Phase-4" class="headerlink" title="Phase 4"></a>Phase 4</h1><p>加入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">多语言支持</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Phase-5"><a href="#Phase-5" class="headerlink" title="Phase 5"></a>Phase 5</h1><p>加入：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">源码自动分析</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="20-你这个项目最大的价值"><a href="#20-你这个项目最大的价值" class="headerlink" title="20. 你这个项目最大的价值"></a>20. 你这个项目最大的价值</h1><p>真正的价值不是：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">自动生成测试代码</span><br></pre></td></tr></table></figure>
+
+<p>而是：</p>
+<h1 id="“测试知识平台化”"><a href="#“测试知识平台化”" class="headerlink" title="“测试知识平台化”"></a>“测试知识平台化”</h1><p>即：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">测试逻辑</span><br><span class="line">测试规则</span><br><span class="line">测试经验</span><br></pre></td></tr></table></figure>
+
+<p>全部：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">结构化</span><br><span class="line">标准化</span><br><span class="line">自动化</span><br></pre></td></tr></table></figure>
+
+<p>这才是企业级价值。</p>
+<hr>
+
+      <!-- 渲染文章正文 HTML -->
+      <!-- 使用  不转义 HTML，保证内容中的标签生效 -->
+    
   </div>
-  <!-- 链接到文章详情页 -->
-  <!-- CSS class "read-more" 用于样式化按钮 -->
+  <!-- 文章正文结束 -->
 
 </article>
-<!-- 单篇文章卡片结束 -->
-
-
-      
-      <!-- 遍历文章结束 -->
-
-    
-    <!-- 条件判断结束 -->
-
-  </div>
-  <!-- 文章列表容器结束 -->
-
-</section>
-<!-- 页面主容器结束 -->
+<!-- 单篇文章容器结束 -->
 
     <!-- 渲染当前页面内容 -->
     <!--  保证 HTML 正常渲染，不转义 -->
