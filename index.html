@@ -1151,7 +1151,7 @@
 
   <!-- 文章标题 -->
   <h3 class="post-title">
-    <a href="/2026/06/08/1780993580298/">AI项目分析助手实现方案</a>
+    <a href="/2026/06/09/1780993580298/">AI项目分析助手实现方案</a>
     <!-- 链接到文章详情页 -->
     <!-- url_for(post.path) → 生成文章路径 -->
     <!-- post.title → 当前文章标题 -->
@@ -1187,14 +1187,14 @@
   <!-- 文章摘要 -->
   <p class="post-excerpt">
     
-    AI项目分析助手实现方案问题AI项目分析助手中的功能：
-12345678910111213上传Spring项目↓Controller分析↓Service分析↓SQL分析↓ER图生成↓PlantUML生...
+    AI项目分析助手实现方案2问题AI项目分析助手中的功能：
+12345678910111213上传Spring项目↓Controller分析↓Service分析↓SQL分析↓ER图生成↓PlantUML...
   </p>
 
   <!-- 操作按钮容器 -->
   <div class="post-actions">
     <!-- 阅读全文按钮 -->
-    <a href="/2026/06/08/1780993580298/" class="read-more">阅读全文 →</a>
+    <a href="/2026/06/09/1780993580298/" class="read-more">阅读全文 →</a>
     <!-- 编辑按钮 -->
     <button onclick="openEditor('_posts/1780993580298.md')" class="read-more">✏️ 编辑</button>
   </div>
@@ -11595,6 +11595,7 @@ Vて + からで...
   const repo = "hexo-source";           // 仓库名
   const postsDir = "source/_posts";     // 文章目录
   let editingNote = null;               // 当前正在编辑的文章对象
+  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
   const editorModal = document.getElementById('editorModal');
   const noteTitle = document.getElementById('noteTitle');
@@ -11669,7 +11670,11 @@ Vて + からで...
 
         try {
             console.log(`正在获取文件信息: ${encodedPath}`);
-            const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${encodedPath}`);
+            const fetchUrl = isLocal 
+                ? `/api/get-content?path=${encodedPath}` 
+                : `https://api.github.com/repos/${owner}/${repo}/contents/${encodedPath}`;
+            
+            const res = await fetch(fetchUrl);
             if (!res.ok) {
                 const errText = await res.text();
                 throw new Error(`无法获取文件信息 (Status: ${res.status}): ${errText}`);
