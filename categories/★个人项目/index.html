@@ -329,9 +329,15 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">★个人项目</span>
-                <span class="sidebar-count">10</span>
+                <span class="sidebar-count">11</span>
               </summary>
               <ul class="category-post-list">
+                
+                  <li>
+                    <a href="/2026/06/09/1781079665131/" class="category-post-link" title="AI Pet World 项目推进路线分析">
+                      AI Pet World 项目推进路线分析
+                    </a>
+                  </li>
                 
                   <li>
                     <a href="/2026/06/09/1781076330324/" class="category-post-link" title="AI Pet World（AI宠物世界）项目构想">
@@ -1521,6 +1527,13 @@
           </li>
         
           <li>
+            <a href="/tags/%E3%83%A1%E3%83%A2/">
+              <span class="sidebar-name">メモ</span>
+              <span class="sidebar-count">1</span>
+            </a>
+          </li>
+        
+          <li>
             <a href="/tags/%E4%B8%9A%E5%8A%A1%E6%9E%B6%E6%9E%84AI/">
               <span class="sidebar-name">业务架构AI</span>
               <span class="sidebar-count">1</span>
@@ -2128,6 +2141,81 @@
     <!-- 判断当前分类下是否有文章 -->
     <!-- page.posts → 当前页面文章数组 -->
     <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
+
+      
+      <!-- 遍历当前分类下每篇文章 post -->
+      <!-- post 对象包含文章标题、路径、日期、分类、标签、摘要等信息 -->
+
+        <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/06/09/1781079665131/">AI Pet World 项目推进路线分析</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-06-10
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E2%98%85%E4%B8%AA%E4%BA%BA%E9%A1%B9%E7%9B%AE/">★个人项目</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/%E3%83%A1%E3%83%A2/">メモ</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    AI Pet World 项目推进路线分析
+当前面临的问题已经有了 AI Pet World 的整体构想：
+123456789101112131415161718192021AI电子宠物+独立人格+探...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/06/09/1781079665131/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1781079665131.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
+        <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
+        <!-- 将当前文章对象 post 传入模板 -->
+        <!--  输出 HTML，不转义，保证标签正常显示 -->
 
       
       <!-- 遍历当前分类下每篇文章 post -->
