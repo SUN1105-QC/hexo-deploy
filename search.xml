@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>笔记项目概要2</title>
+      <link href="/2026/06/09/1781008146235/"/>
+      <url>/2026/06/09/1781008146235/</url>
+      
+        <content type="html"><![CDATA[<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Developer Knowledge Hub 项目概要</title><style>*{    margin:0;    padding:0;    box-sizing:border-box;}body{    font-family:"Microsoft YaHei",sans-serif;    background:#f5f7fa;    color:#333;    padding:30px;}.container{    max-width:1200px;    margin:auto;}.header{    background:linear-gradient(135deg,#2563eb,#1e3a8a);    color:white;    padding:35px;    border-radius:15px;    text-align:center;    margin-bottom:20px;}.header h1{    font-size:36px;    margin-bottom:10px;}.header p{    font-size:18px;    opacity:0.95;}.card{    background:white;    padding:25px;    border-radius:12px;    margin-bottom:20px;    box-shadow:0 3px 10px rgba(0,0,0,0.08);}h2{    color:#2563eb;    margin-bottom:15px;    border-left:5px solid #2563eb;    padding-left:10px;}.grid{    display:grid;    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));    gap:15px;}.item{    background:#f8fafc;    padding:18px;    border-radius:10px;    border:1px solid #e2e8f0;}.item h3{    color:#1e40af;    margin-bottom:10px;}.flow{    background:#0f172a;    color:#22c55e;    padding:20px;    border-radius:10px;    font-family:Consolas,monospace;    text-align:center;    line-height:2;    overflow:auto;}.highlight{    background:#ecfeff;    border-left:5px solid #06b6d4;    padding:15px;    border-radius:8px;}.footer{    text-align:center;    margin-top:20px;    color:#666;}</style></head><body><div class="container"><pre><code>&lt;div class=&quot;header&quot;&gt;    &lt;h1&gt;🚀 Developer Knowledge Hub&lt;/h1&gt;    &lt;p&gt;开发者知识库 + 项目分析工具 + AI开发助手&lt;/p&gt;&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;    &lt;h2&gt;项目定位&lt;/h2&gt;    &lt;div class=&quot;highlight&quot;&gt;        打造一个面向开发者的知识管理与项目分析平台，        帮助开发者沉淀知识、分析项目、理解代码、        自动生成文档，并逐步发展为开发者社区与团队协作平台。    &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;    &lt;h2&gt;核心价值&lt;/h2&gt;    &lt;div class=&quot;grid&quot;&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;📚 知识库&lt;/h3&gt;            &lt;p&gt;                个人笔记管理&lt;br&gt;                Markdown知识沉淀&lt;br&gt;                技术文章发布            &lt;/p&gt;        &lt;/div&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;🔍 项目分析&lt;/h3&gt;            &lt;p&gt;                Spring源码解析&lt;br&gt;                SQL分析&lt;br&gt;                ER图生成&lt;br&gt;                PlantUML生成            &lt;/p&gt;        &lt;/div&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;🤖 AI助手&lt;/h3&gt;            &lt;p&gt;                代码解释&lt;br&gt;                业务分析&lt;br&gt;                测试建议&lt;br&gt;                文档生成            &lt;/p&gt;        &lt;/div&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;👥 开发者社区&lt;/h3&gt;            &lt;p&gt;                技术分享&lt;br&gt;                点赞收藏&lt;br&gt;                内容沉淀&lt;br&gt;                团队协作            &lt;/p&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;    &lt;h2&gt;产品成长路线&lt;/h2&gt;    &lt;div class=&quot;flow&quot;&gt;</code></pre><p>V1 知识库系统<br>↓<br>V2 Spring项目分析工具<br>↓<br>V3 AI开发助手<br>↓<br>V4 支付与会员体系<br>↓<br>V5 团队协作平台<br>↓<br>V6 企业版 &#x2F; 私有化部署<br>        </div></p><pre><code>&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;    &lt;h2&gt;目标用户&lt;/h2&gt;    &lt;div class=&quot;grid&quot;&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;个人开发者&lt;/h3&gt;            &lt;p&gt;知识管理、项目分析、学习记录&lt;/p&gt;        &lt;/div&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;Java工程师&lt;/h3&gt;            &lt;p&gt;Spring项目结构分析与代码理解&lt;/p&gt;        &lt;/div&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;测试工程师&lt;/h3&gt;            &lt;p&gt;快速理解系统结构与业务流程&lt;/p&gt;        &lt;/div&gt;        &lt;div class=&quot;item&quot;&gt;            &lt;h3&gt;开发团队&lt;/h3&gt;            &lt;p&gt;团队知识共享与协同管理&lt;/p&gt;        &lt;/div&gt;    &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;    &lt;h2&gt;核心竞争力&lt;/h2&gt;    &lt;div class=&quot;flow&quot;&gt;</code></pre><p>知识库平台<br>+<br>Spring项目分析工具<br>+<br>AI代码理解能力</p><p>&#x3D; 差异化竞争优势<br>        </div></p><pre><code>    &lt;br&gt;    &lt;div class=&quot;highlight&quot;&gt;        与传统知识库（Notion、Obsidian、语雀）不同，        平台不仅管理知识，还能直接理解和分析项目代码，        自动生成架构图、ER图、接口文档和业务说明。    &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;card&quot;&gt;    &lt;h2&gt;最终目标&lt;/h2&gt;    &lt;div class=&quot;flow&quot;&gt;</code></pre><p>内容沉淀<br>+<br>项目分析<br>+<br>AI能力<br>+<br>开发者社区<br>+<br>团队协作</p><p>↓</p><p>Developer Knowledge Ecosystem<br>        </div><br>    </div></p><pre><code>&lt;div class=&quot;footer&quot;&gt;    Developer Knowledge Hub · 让知识、代码与AI连接起来&lt;/div&gt;</code></pre></div></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> ★个人项目 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 项目概要2 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>笔记项目概要</title>
       <link href="/2026/06/09/1781065986825/"/>
       <url>/2026/06/09/1781065986825/</url>
@@ -21,31 +46,6 @@
         <tags>
             
             <tag> 项目概要 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>新建笔记</title>
-      <link href="/2026/06/09/1781008146235/"/>
-      <url>/2026/06/09/1781008146235/</url>
-      
-        <content type="html"><![CDATA[<p>test</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> メモ </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> メモ </tag>
             
         </tags>
       
