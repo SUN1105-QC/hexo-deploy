@@ -450,9 +450,15 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">メモ</span>
-                <span class="sidebar-count">3</span>
+                <span class="sidebar-count">4</span>
               </summary>
               <ul class="category-post-list">
+                
+                  <li>
+                    <a href="/2026/06/10/1781158316087/" class="category-post-link" title="メモ">
+                      メモ
+                    </a>
+                  </li>
                 
                   <li>
                     <a href="/2026/06/09/1781076380553/" class="category-post-link" title="个人问题集">
@@ -1567,6 +1573,13 @@
           </li>
         
           <li>
+            <a href="/tags/%E3%83%A1%E3%83%A2/">
+              <span class="sidebar-name">メモ</span>
+              <span class="sidebar-count">1</span>
+            </a>
+          </li>
+        
+          <li>
             <a href="/tags/%E4%B8%87%E7%81%B5%E7%BA%AA%E5%85%83%E5%8F%91%E5%B1%95%E6%96%B9%E5%90%91/">
               <span class="sidebar-name">万灵纪元发展方向</span>
               <span class="sidebar-count">1</span>
@@ -2176,6 +2189,76 @@
 
   <!-- 博文列表容器 -->
   <div class="post-list">
+    
+    <!-- 遍历当前页面的所有文章对象（post） -->
+
+      <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/06/10/1781158316087/">メモ</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-06-11
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E3%83%A1%E3%83%A2/">メモ</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/%E3%83%A1%E3%83%A2/">メモ</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    问题：我想设计一个属于自己的工作流，设立必要的固定岗位，然后在每个岗位上放上适合的AI员工，从想法产生，到想法成熟，到可实施计划生成，到项目细节设计，到项目开始搭建基本开发框架，到着手生成代码，到项目...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/06/10/1781158316087/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1781158316087.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
+      <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
+
     
     <!-- 遍历当前页面的所有文章对象（post） -->
 
