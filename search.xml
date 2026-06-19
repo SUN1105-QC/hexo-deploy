@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>日本上门服务平台方案</title>
+      <link href="/2026/06/19/1781885628069/"/>
+      <url>/2026/06/19/1781885628069/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>目标市场：日本东京首都圈，第一阶段聚焦在日华人用户与生活应急服务  </p></blockquote><hr><h2 id="0-一句话总结"><a href="#0-一句话总结" class="headerlink" title="0. 一句话总结"></a>0. 一句话总结</h2><p>一个面向日本本地生活场景的即时上门服务平台，帮助用户在生病、加班、出差、宠物照顾、临时家务、代办跑腿等场景下，快速找到经过认证、可追踪、可评价、可管理的服务人员上门解决问题。</p><p>项目第一阶段不追求“万能平台”，而是先以东京华人市场为切入口，围绕“生活应急代办 + 宠物基础照顾 + 临时家务整理”三类低许可风险、高频刚需服务，完成市场验证。</p><hr><h2 id="1-项目背景"><a href="#1-项目背景" class="headerlink" title="1. 项目背景"></a>1. 项目背景</h2><h3 id="1-1-灵感来源"><a href="#1-1-灵感来源" class="headerlink" title="1.1 灵感来源"></a>1.1 灵感来源</h3><p>最初场景来自一个非常真实的生活问题：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">对象生病了，想立刻给她买粥、买药、送到家里。</span><br><span class="line">但是临时发现：</span><br><span class="line">- 外卖平台没有卖粥的；</span><br><span class="line">- 想不到买了药谁能给送；</span><br><span class="line">- 朋友不一定方便；</span><br><span class="line">- 想了一圈之后，发现这个问题并没有任何可靠的解决办法。</span><br></pre></td></tr></table></figure><p>最终发现，这个问题背后并不是“买粥”本身，而是：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">人在某个生活瞬间，突然需要另一个可信赖的人，帮自己完成一件具体的小事。</span><br></pre></td></tr></table></figure><p>由此可以扩展出更多场景：</p><table><thead><tr><th>场景</th><th>用户问题</th><th>可提供服务</th></tr></thead><tbody><tr><td>生病</td><td>不方便出门</td><td>买粥、买药、买生活用品</td></tr><tr><td>加班</td><td>没时间处理生活事务</td><td>代取快递、代购物、送文件</td></tr><tr><td>出差&#x2F;回国</td><td>家里无人照看</td><td>浇花、喂猫、铲屎、代收邮件</td></tr><tr><td>宠物</td><td>工作忙无法照顾</td><td>遛狗、喂食、清洁宠物用品</td></tr><tr><td>搬家&#x2F;整理</td><td>临时缺人手</td><td>简单搬运、收纳整理、垃圾处理</td></tr><tr><td>独居&#x2F;高龄</td><td>行动不便</td><td>买菜、代办、陪同前往公共窗口</td></tr><tr><td>留学生&#x2F;旅游的人</td><td>初到日本</td><td>接机、带路、陪同前往公共窗口</td></tr></tbody></table><hr><h2 id="2-项目定位"><a href="#2-项目定位" class="headerlink" title="2. 项目定位"></a>2. 项目定位</h2><h3 id="2-1-不做什么"><a href="#2-1-不做什么" class="headerlink" title="2.1 不做什么"></a>2.1 不做什么</h3><p>第一阶段不要把项目定位成以下几类：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">不是单纯家政公司；</span><br><span class="line">不是外卖平台；</span><br><span class="line">不是搬家公司；</span><br><span class="line">不是介护公司；</span><br><span class="line">不是出租车/接送服务；</span><br><span class="line">不是医疗服务平台。</span><br></pre></td></tr></table></figure><p>这些方向要么竞争激烈，要么许可证复杂，要么安全责任极高。</p><h3 id="2-2-要做什么"><a href="#2-2-要做什么" class="headerlink" title="2.2 要做什么"></a>2.2 要做什么</h3><p>第一阶段定位为：</p><blockquote><p>面向日本生活场景的“即时生活协助平台”。</p></blockquote><p>核心价值：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">用户端：有事时，能找到可信赖的人帮忙。</span><br><span class="line">服务端：有空时，能通过合规方式获得收入。</span><br><span class="line">平台端：用流程、认证、评价、保险、录像授权与客服介入，降低陌生人上门服务的信任风险。</span><br></pre></td></tr></table></figure><h3 id="2-3-项目愿景"><a href="#2-3-项目愿景" class="headerlink" title="2.3 项目愿景"></a>2.3 项目愿景</h3><p>短期：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">在东京华人圈完成服务需求验证，建立第一批可信服务人员与取得信任的用户。</span><br></pre></td></tr></table></figure><p>中期：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">从东京华人市场扩展到东京本地多语言用户，形成标准化服务平台。</span><br></pre></td></tr></table></figure><p>长期：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">沉淀生活服务流程、服务数据、质量标准和家庭场景数据，未来连接AI管家、远程服务、家庭机器人等生态。</span><br></pre></td></tr></table></figure><hr><h2 id="3-目标用户分析"><a href="#3-目标用户分析" class="headerlink" title="3. 目标用户分析"></a>3. 目标用户分析</h2><h3 id="3-1-需求方用户"><a href="#3-1-需求方用户" class="headerlink" title="3.1 需求方用户"></a>3.1 需求方用户</h3><h4 id="3-1-1-在日华人工作者"><a href="#3-1-1-在日华人工作者" class="headerlink" title="3.1.1 在日华人工作者"></a>3.1.1 在日华人工作者</h4><p>特点：</p><ul><li>工作时间长；</li><li>日语沟通成本高；</li><li>生活圈相对集中；</li><li>愿意为节省时间和降低麻烦付费；</li><li>对中文服务有天然信任和便利需求。</li></ul><p>典型需求：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">买药、买饭、代取快递、搬家帮手、宠物照顾、手续代办、临时家务。</span><br></pre></td></tr></table></figure><h4 id="3-1-2-留学生与刚来日本的人"><a href="#3-1-2-留学生与刚来日本的人" class="headerlink" title="3.1.2 留学生与刚来日本的人"></a>3.1.2 留学生与刚来日本的人</h4><p>特点：</p><ul><li>熟悉日本生活流程需要时间；</li><li>遇到突发问题时缺少资源；</li><li>对价格敏感，但更需要便利和中文帮助。</li></ul><p>典型需求：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">搬家、家具组装、代办手续、陪同咨询、生活用品采购。</span><br></pre></td></tr></table></figure><h4 id="3-1-3-独居人群"><a href="#3-1-3-独居人群" class="headerlink" title="3.1.3 独居人群"></a>3.1.3 独居人群</h4><p>特点：</p><ul><li>生病时没人照顾；</li><li>出差时宠物和家中事务无人处理；</li><li>临时需要帮助时缺少稳定支持网络。</li></ul><p>典型需求：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">临时买饭买药、宠物照顾、代收快递、紧急跑腿。</span><br></pre></td></tr></table></figure><h4 id="3-1-4-家庭用户"><a href="#3-1-4-家庭用户" class="headerlink" title="3.1.4 家庭用户"></a>3.1.4 家庭用户</h4><p>特点：</p><ul><li>家务负担重；</li><li>孩子、宠物、老人事务多；</li><li>对服务人员安全性要求极高。</li></ul><p>典型需求：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">简单家务、整理收纳、代购物、宠物服务。</span><br></pre></td></tr></table></figure><blockquote><p>注意：儿童看护、老人介护、医疗护理第一阶段不开放，只作为未来持证业务方向研究。</p></blockquote><hr><h2 id="4-市场切入策略"><a href="#4-市场切入策略" class="headerlink" title="4. 市场切入策略"></a>4. 市场切入策略</h2><h3 id="4-1-为什么先做东京华人市场"><a href="#4-1-为什么先做东京华人市场" class="headerlink" title="4.1 为什么先做东京华人市场"></a>4.1 为什么先做东京华人市场</h3><p>理由：</p><ol><li>用户痛点明确：语言、时间、生活支持不足；</li><li>获客路径明确：微信群、小红书、LINE群、朋友介绍；</li><li>服务人员供给存在：留学生、自由职业者、主妇、兼职者、周末副业者；</li><li>创始人资源匹配：熟悉日本IT、东京生活、华人工作圈。</li></ol><h3 id="4-2-初始区域建议"><a href="#4-2-初始区域建议" class="headerlink" title="4.2 初始区域建议"></a>4.2 初始区域建议</h3><p>选择：</p><ul><li>华人居住相对集中地区；</li><li>房租与生活圈更适合初期服务；</li><li>区域之间距离可控；</li><li>可以进行30-60分钟内的应急服务。</li></ul><h3 id="4-3-第一阶段核心策略"><a href="#4-3-第一阶段核心策略" class="headerlink" title="4.3 第一阶段核心策略"></a>4.3 第一阶段核心策略</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">先做小区域、高信任、强运营、人工调度。</span><br><span class="line">不要一开始追求全国化、全品类、全自动化。</span><br></pre></td></tr></table></figure><hr><h2 id="5-服务范围设计"><a href="#5-服务范围设计" class="headerlink" title="5. 服务范围设计"></a>5. 服务范围设计</h2><h3 id="5-1-第一阶段开放服务"><a href="#5-1-第一阶段开放服务" class="headerlink" title="5.1 第一阶段开放服务"></a>5.1 第一阶段开放服务</h3><h4 id="A-生活应急代办"><a href="#A-生活应急代办" class="headerlink" title="A. 生活应急代办"></a>A. 生活应急代办</h4><table><thead><tr><th>服务</th><th>示例</th><th align="right">风险等级</th><th>是否开放</th></tr></thead><tbody><tr><td>买饭送饭</td><td>买粥、买便当、送到指定地点</td><td align="right">低</td><td>开放</td></tr><tr><td>代购物</td><td>便利店、超市、生活用品</td><td align="right">低</td><td>开放</td></tr><tr><td>代取快递</td><td>宅配BOX、指定柜台、便利店取件</td><td align="right">中</td><td>开放，但需身份确认</td></tr><tr><td>送文件&#x2F;送物品</td><td>公司文件、钥匙、小件物品</td><td align="right">中</td><td>开放，但需照片确认</td></tr><tr><td>买药</td><td>一般也只能药妆店的要</td><td align="right">低</td><td>开放</td></tr></tbody></table><h4 id="B-宠物基础照顾"><a href="#B-宠物基础照顾" class="headerlink" title="B. 宠物基础照顾"></a>B. 宠物基础照顾</h4><table><thead><tr><th>服务</th><th>示例</th><th align="right">风险等级</th><th>是否开放</th></tr></thead><tbody><tr><td>遛狗</td><td>小型犬、短时间散步</td><td align="right">中</td><td>谨慎开放</td></tr><tr><td>喂猫</td><td>按用户说明投喂</td><td align="right">中</td><td>开放</td></tr><tr><td>铲屎&#x2F;清洁</td><td>猫砂盆、宠物用品简单清洁</td><td align="right">中</td><td>开放</td></tr><tr><td>宠物寄养</td><td>将宠物带回服务人员住处</td><td align="right">高</td><td>第一阶段禁止</td></tr></tbody></table><h4 id="C-临时家务"><a href="#C-临时家务" class="headerlink" title="C. 临时家务"></a>C. 临时家务</h4><table><thead><tr><th>服务</th><th>示例</th><th align="right">风险等级</th><th>是否开放</th></tr></thead><tbody><tr><td>简单打扫</td><td>地面、桌面、厨房表面</td><td align="right">中</td><td>开放</td></tr><tr><td>垃圾整理</td><td>分类、打包、搬到指定地点</td><td align="right">中</td><td>开放</td></tr><tr><td>收纳整理</td><td>衣物、杂物、房间整理</td><td align="right">中</td><td>开放</td></tr><tr><td>深度清洁</td><td>空调、油烟机、浴室专业清洗</td><td align="right">高</td><td>暂缓</td></tr><tr><td>高处作业</td><td>窗外、梯子、高空</td><td align="right">高</td><td>禁止</td></tr></tbody></table><hr><h3 id="5-2-第一阶段禁止服务"><a href="#5-2-第一阶段禁止服务" class="headerlink" title="5.2 第一阶段禁止服务"></a>5.2 第一阶段禁止服务</h3><p>以下服务第一阶段不开放：</p><table><thead><tr><th>服务</th><th>禁止原因</th></tr></thead><tbody><tr><td>有偿接送乘客</td><td>可能涉及白タク&#x2F;道路运输法风险</td></tr><tr><td>医疗护理</td><td>涉及医疗、护理资格与责任</td></tr><tr><td>老人介护</td><td>涉及介护保险、专业资格、安全责任</td></tr><tr><td>儿童看护</td><td>涉及儿童安全、事故责任、许可边界</td></tr><tr><td>宠物寄养</td><td>涉及动物取扱業登记、事故风险</td></tr><tr><td>按摩&#x2F;美容</td><td>可能涉及资格、卫生、安全监管</td></tr><tr><td>开锁&#x2F;入室代办</td><td>盗窃、财产、安全风险极高</td></tr><tr><td>大额现金&#x2F;贵重物品代取</td><td>纠纷与犯罪风险高</td></tr></tbody></table><hr><h2 id="6-商业模式设计"><a href="#6-商业模式设计" class="headerlink" title="6. 商业模式设计"></a>6. 商业模式设计</h2><h3 id="6-1-收入来源"><a href="#6-1-收入来源" class="headerlink" title="6.1 收入来源"></a>6.1 收入来源</h3><h4 id="6-1-1-订单抽佣"><a href="#6-1-1-订单抽佣" class="headerlink" title="6.1.1 订单抽佣"></a>6.1.1 订单抽佣</h4><p>平台从每笔订单抽取服务费：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">建议初期抽佣比例：10% - 20%</span><br></pre></td></tr></table></figure><p>示例：</p><table><thead><tr><th align="right">订单金额</th><th align="right">抽佣比例</th><th align="right">平台收入</th><th align="right">服务人员收入</th></tr></thead><tbody><tr><td align="right">3,000日元</td><td align="right">15%</td><td align="right">450日元</td><td align="right">2,550日元</td></tr><tr><td align="right">5,000日元</td><td align="right">15%</td><td align="right">750日元</td><td align="right">4,250日元</td></tr><tr><td align="right">10,000日元</td><td align="right">15%</td><td align="right">1,500日元</td><td align="right">8,500日元</td></tr></tbody></table><h4 id="6-1-2-紧急服务费"><a href="#6-1-2-紧急服务费" class="headerlink" title="6.1.2 紧急服务费"></a>6.1.2 紧急服务费</h4><p>适用于：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">30分钟内到达、夜间、雨天、节假日、远距离。</span><br></pre></td></tr></table></figure><h4 id="6-1-3-会员服务"><a href="#6-1-3-会员服务" class="headerlink" title="6.1.3 会员服务"></a>6.1.3 会员服务</h4><p>用户会员：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">月费：980日元 - 1,980日元</span><br><span class="line">权益：优先派单、服务折扣、专属客服、免部分手续费。</span><br></pre></td></tr></table></figure><p>服务人员会员&#x2F;认证费：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">初期不建议收取高额费用，避免供给端增长困难。</span><br><span class="line">可以收取背景审查成本或装备押金。</span><br></pre></td></tr></table></figure><h4 id="6-1-4-企业合作"><a href="#6-1-4-企业合作" class="headerlink" title="6.1.4 企业合作"></a>6.1.4 企业合作</h4><p>可面向：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">IT派遣公司、留学中介、房产中介、物业公司、宠物店、语言学校。</span><br></pre></td></tr></table></figure><p>合作形式：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">员工福利、客户增值服务、搬家合作、宠物服务合作、生活支援套餐。</span><br></pre></td></tr></table></figure><hr><h2 id="7-MVP产品功能清单"><a href="#7-MVP产品功能清单" class="headerlink" title="7. MVP产品功能清单"></a>7. MVP产品功能清单</h2><h3 id="7-1-MVP开发目标"><a href="#7-1-MVP开发目标" class="headerlink" title="7.1 MVP开发目标"></a>7.1 MVP开发目标</h3><p>MVP不是做完整平台，而是验证最关键的闭环：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户发布需求 -&gt; 服务人员接单 -&gt; 平台确认 -&gt; 服务完成 -&gt; 支付/结算 -&gt; 评价/投诉。</span><br></pre></td></tr></table></figure><h3 id="7-2-用户端功能"><a href="#7-2-用户端功能" class="headerlink" title="7.2 用户端功能"></a>7.2 用户端功能</h3><table><thead><tr><th>模块</th><th>功能</th><th>MVP优先级</th></tr></thead><tbody><tr><td>注册登录</td><td>手机号&#x2F;邮箱&#x2F;Google&#x2F;LINE登录</td><td>P0</td></tr><tr><td>用户资料</td><td>姓名、联系方式、默认地址</td><td>P0</td></tr><tr><td>服务分类</td><td>应急代办、宠物照顾、临时家务</td><td>P0</td></tr><tr><td>发布订单</td><td>类型、说明、地址、时间、预算、照片</td><td>P0</td></tr><tr><td>订单状态</td><td>待接单、已接单、进行中、已完成、已取消</td><td>P0</td></tr><tr><td>聊天沟通</td><td>用户与服务人员文字沟通</td><td>P1</td></tr><tr><td>支付</td><td>初期可人工确认，后续接Stripe&#x2F;PayPay</td><td>P1</td></tr><tr><td>评价</td><td>星级、标签、文字、图片</td><td>P0</td></tr><tr><td>投诉</td><td>投诉原因、证据上传、客服介入</td><td>P0</td></tr></tbody></table><h3 id="7-3-服务人员端功能"><a href="#7-3-服务人员端功能" class="headerlink" title="7.3 服务人员端功能"></a>7.3 服务人员端功能</h3><table><thead><tr><th>模块</th><th>功能</th><th>MVP优先级</th></tr></thead><tbody><tr><td>服务人员申请</td><td>基本资料、在留卡&#x2F;身份证、服务范围</td><td>P0</td></tr><tr><td>审核状态</td><td>待审核、通过、拒绝、冻结</td><td>P0</td></tr><tr><td>接单大厅</td><td>查看附近可接订单</td><td>P0</td></tr><tr><td>接单确认</td><td>接单、拒单、取消原因</td><td>P0</td></tr><tr><td>任务管理</td><td>待开始、进行中、已完成</td><td>P0</td></tr><tr><td>服务打卡</td><td>到达、开始、完成、离开</td><td>P0</td></tr><tr><td>收入记录</td><td>订单收入、平台佣金、结算状态</td><td>P1</td></tr><tr><td>评价查看</td><td>平均分、用户反馈</td><td>P1</td></tr></tbody></table><h3 id="7-4-管理后台功能"><a href="#7-4-管理后台功能" class="headerlink" title="7.4 管理后台功能"></a>7.4 管理后台功能</h3><table><thead><tr><th>模块</th><th>功能</th><th>MVP优先级</th></tr></thead><tbody><tr><td>用户管理</td><td>查询、冻结、解封</td><td>P0</td></tr><tr><td>服务人员审核</td><td>资料审核、认证记录、黑名单</td><td>P0</td></tr><tr><td>订单管理</td><td>查看、指派、取消、退款处理</td><td>P0</td></tr><tr><td>投诉管理</td><td>投诉受理、证据查看、处理结果</td><td>P0</td></tr><tr><td>服务分类管理</td><td>服务类型、价格规则、开关控制</td><td>P1</td></tr><tr><td>财务管理</td><td>平台收入、服务人员结算、退款</td><td>P1</td></tr><tr><td>风控管理</td><td>异常订单、低评分、频繁取消</td><td>P1</td></tr><tr><td>内容管理</td><td>帮助中心、服务规则、用户协议</td><td>P2</td></tr></tbody></table><hr><h2 id="8-MVP页面结构"><a href="#8-MVP页面结构" class="headerlink" title="8. MVP页面结构"></a>8. MVP页面结构</h2><h3 id="8-1-用户端页面"><a href="#8-1-用户端页面" class="headerlink" title="8.1 用户端页面"></a>8.1 用户端页面</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/                  首页</span><br><span class="line">/login             登录</span><br><span class="line">/register          注册</span><br><span class="line">/services          服务分类</span><br><span class="line">/orders/new        发布需求</span><br><span class="line">/orders            我的订单</span><br><span class="line">/orders/&#123;id&#125;       订单详情</span><br><span class="line">/messages          消息</span><br><span class="line">/profile           个人中心</span><br><span class="line">/support           客服/投诉</span><br></pre></td></tr></table></figure><h3 id="8-2-服务人员端页面"><a href="#8-2-服务人员端页面" class="headerlink" title="8.2 服务人员端页面"></a>8.2 服务人员端页面</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">/worker/apply       服务人员申请</span><br><span class="line">/worker/dashboard   服务人员首页</span><br><span class="line">/worker/orders      可接订单</span><br><span class="line">/worker/tasks       我的任务</span><br><span class="line">/worker/tasks/&#123;id&#125;  任务详情</span><br><span class="line">/worker/earnings    收入统计</span><br><span class="line">/worker/profile     个人资料</span><br></pre></td></tr></table></figure><h3 id="8-3-管理后台页面"><a href="#8-3-管理后台页面" class="headerlink" title="8.3 管理后台页面"></a>8.3 管理后台页面</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/admin                  管理后台首页</span><br><span class="line">/admin/users            用户管理</span><br><span class="line">/admin/workers          服务人员管理</span><br><span class="line">/admin/orders           订单管理</span><br><span class="line">/admin/complaints       投诉管理</span><br><span class="line">/admin/finance          财务管理</span><br><span class="line">/admin/service-types    服务类型管理</span><br><span class="line">/admin/risk             风控管理</span><br><span class="line">/admin/settings         系统设置</span><br></pre></td></tr></table></figure><hr><h2 id="9-核心业务流程"><a href="#9-核心业务流程" class="headerlink" title="9. 核心业务流程"></a>9. 核心业务流程</h2><h3 id="9-1-用户下单流程"><a href="#9-1-用户下单流程" class="headerlink" title="9.1 用户下单流程"></a>9.1 用户下单流程</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">用户选择服务类型</span><br><span class="line">      ↓</span><br><span class="line">填写服务说明、地址、时间、预算</span><br><span class="line">      ↓</span><br><span class="line">上传照片或补充说明</span><br><span class="line">      ↓</span><br><span class="line">提交订单</span><br><span class="line">      ↓</span><br><span class="line">系统/管理员匹配服务人员</span><br><span class="line">      ↓</span><br><span class="line">服务人员接单</span><br><span class="line">      ↓</span><br><span class="line">用户确认</span><br><span class="line">      ↓</span><br><span class="line">服务开始</span><br><span class="line">      ↓</span><br><span class="line">服务完成</span><br><span class="line">      ↓</span><br><span class="line">用户评价</span><br><span class="line">      ↓</span><br><span class="line">平台结算</span><br></pre></td></tr></table></figure><h3 id="9-2-服务人员接单流程"><a href="#9-2-服务人员接单流程" class="headerlink" title="9.2 服务人员接单流程"></a>9.2 服务人员接单流程</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">服务人员通过认证</span><br><span class="line">      ↓</span><br><span class="line">进入接单大厅</span><br><span class="line">      ↓</span><br><span class="line">查看附近订单</span><br><span class="line">      ↓</span><br><span class="line">确认订单内容和风险</span><br><span class="line">      ↓</span><br><span class="line">接单</span><br><span class="line">      ↓</span><br><span class="line">到达地点打卡</span><br><span class="line">      ↓</span><br><span class="line">开始服务</span><br><span class="line">      ↓</span><br><span class="line">完成服务并上传照片</span><br><span class="line">      ↓</span><br><span class="line">用户确认</span><br><span class="line">      ↓</span><br><span class="line">等待结算</span><br></pre></td></tr></table></figure><h3 id="9-3-投诉处理流程"><a href="#9-3-投诉处理流程" class="headerlink" title="9.3 投诉处理流程"></a>9.3 投诉处理流程</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">用户/服务人员提交投诉</span><br><span class="line">      ↓</span><br><span class="line">平台冻结订单结算</span><br><span class="line">      ↓</span><br><span class="line">收集聊天记录、照片、定位、录像授权资料</span><br><span class="line">      ↓</span><br><span class="line">客服初步判断责任</span><br><span class="line">      ↓</span><br><span class="line">必要时联系双方补充说明</span><br><span class="line">      ↓</span><br><span class="line">给出处理结果：退款/补偿/扣分/封禁/报警</span><br><span class="line">      ↓</span><br><span class="line">记录进入风控档案</span><br></pre></td></tr></table></figure><hr><h2 id="10-质量管理体系"><a href="#10-质量管理体系" class="headerlink" title="10. 质量管理体系"></a>10. 质量管理体系</h2><h3 id="10-1-服务人员准入"><a href="#10-1-服务人员准入" class="headerlink" title="10.1 服务人员准入"></a>10.1 服务人员准入</h3><p>服务人员必须提交：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">真实姓名；</span><br><span class="line">联系电话；</span><br><span class="line">住址或活动区域；</span><br><span class="line">在留卡/身份证明；</span><br><span class="line">银行卡或收款账户；</span><br><span class="line">紧急联系人；</span><br><span class="line">可服务类型；</span><br><span class="line">服务时间段；</span><br><span class="line">头像照片；</span><br><span class="line">简单面谈或视频面试记录。</span><br></pre></td></tr></table></figure><h3 id="10-2-分级认证"><a href="#10-2-分级认证" class="headerlink" title="10.2 分级认证"></a>10.2 分级认证</h3><table><thead><tr><th>等级</th><th>可接服务</th><th>要求</th></tr></thead><tbody><tr><td>L1基础认证</td><td>跑腿、代购、送物</td><td>身份认证 + 电话确认</td></tr><tr><td>L2上门认证</td><td>家务、入室服务</td><td>身份认证 + 面试 + 培训</td></tr><tr><td>L3专项认证</td><td>专车接送、搬运等</td><td>追加经验审查&#x2F;保险&#x2F;技能确认</td></tr><tr><td>L4直营员工</td><td>高信任服务</td><td>公司雇佣&#x2F;制服&#x2F;设备&#x2F;培训</td></tr></tbody></table><h3 id="10-3-服务过程记录"><a href="#10-3-服务过程记录" class="headerlink" title="10.3 服务过程记录"></a>10.3 服务过程记录</h3><p>建议每个订单保留：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">订单内容；</span><br><span class="line">服务人员信息；</span><br><span class="line">用户确认记录；</span><br><span class="line">服务开始/结束时间；</span><br><span class="line">定位打卡；</span><br><span class="line">聊天记录；</span><br><span class="line">服务前后照片；</span><br><span class="line">费用明细；</span><br><span class="line">评价与投诉记录。</span><br></pre></td></tr></table></figure><h3 id="10-4-摄像与录像机制"><a href="#10-4-摄像与录像机制" class="headerlink" title="10.4 摄像与录像机制"></a>10.4 摄像与录像机制</h3><p>录像不能默认强制，应采用“用户授权 + 明确告知 + 限定目的 + 限定保存期限”的方式。</p><p>建议规则：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">用户下单时选择是否开启录像服务；</span><br><span class="line">服务人员入室前再次确认；</span><br><span class="line">录像只用于安全保障、纠纷处理、质量审核；</span><br><span class="line">不得用于宣传、训练AI、第三方销售，除非另行取得明确同意；</span><br><span class="line">录像保存期限建议30-90天；</span><br><span class="line">到期自动删除；</span><br><span class="line">用户可申请查看与删除，法律或纠纷处理需要保留的除外。</span><br></pre></td></tr></table></figure><h3 id="10-5-信用分制度"><a href="#10-5-信用分制度" class="headerlink" title="10.5 信用分制度"></a>10.5 信用分制度</h3><p>初始信用分：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">100分</span><br></pre></td></tr></table></figure><p>扣分规则示例：</p><table><thead><tr><th>行为</th><th align="right">扣分</th></tr></thead><tbody><tr><td>无故迟到</td><td align="right">-5</td></tr><tr><td>临时取消</td><td align="right">-10</td></tr><tr><td>服务态度投诉成立</td><td align="right">-10</td></tr><tr><td>未按要求完成服务</td><td align="right">-15</td></tr><tr><td>私下交易</td><td align="right">-20</td></tr><tr><td>重大纠纷</td><td align="right">-30</td></tr><tr><td>偷盗、骚扰、暴力</td><td align="right">永久封禁并报警</td></tr></tbody></table><hr><h2 id="11-日本运营合规方案"><a href="#11-日本运营合规方案" class="headerlink" title="11. 日本运营合规方案"></a>11. 日本运营合规方案</h2><blockquote></blockquote><h3 id="11-1-公司形态建议"><a href="#11-1-公司形态建议" class="headerlink" title="11.1 公司形态建议"></a>11.1 公司形态建议</h3><h4 id="阶段一：项目验证"><a href="#阶段一：项目验证" class="headerlink" title="阶段一：项目验证"></a>阶段一：项目验证</h4><p>适合：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">订单量小、人工派单、尚未正式大规模收费。</span><br></pre></td></tr></table></figure><p>建议：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">进行小规模验证；</span><br><span class="line">记录所有收入与支出；</span><br><span class="line">明确平台规则和免责条款；</span><br><span class="line">避免触碰高许可业务。</span><br></pre></td></tr></table></figure><h4 id="阶段二："><a href="#阶段二：" class="headerlink" title="阶段二："></a>阶段二：</h4><p>适合：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">融资、品牌扩张、投资人进入、全国化运营。</span><br></pre></td></tr></table></figure><hr><h3 id="11-2-特定商取引法-通信販売"><a href="#11-2-特定商取引法-通信販売" class="headerlink" title="11.2 特定商取引法 &#x2F; 通信販売"></a>11.2 特定商取引法 &#x2F; 通信販売</h3><p>APP内提供收费服务时，需要注意：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">服务提供者信息；</span><br><span class="line">价格与追加费用；</span><br><span class="line">支付方式；</span><br><span class="line">取消规则；</span><br><span class="line">退款规则；</span><br><span class="line">服务开始时间；</span><br><span class="line">投诉联系方式；</span><br><span class="line">利用规约与隐私政策。</span><br></pre></td></tr></table></figure><p>平台必须清楚告诉用户：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">谁提供服务；</span><br><span class="line">平台责任范围；</span><br><span class="line">服务人员责任范围；</span><br><span class="line">订单取消条件；</span><br><span class="line">纠纷处理方式。</span><br></pre></td></tr></table></figure><h3 id="11-3-白タク与接送服务风险"><a href="#11-3-白タク与接送服务风险" class="headerlink" title="11.3 白タク与接送服务风险"></a>11.3 白タク与接送服务风险</h3><p>第一阶段禁止提供：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">有偿接送乘客；</span><br><span class="line">机场接送；</span><br><span class="line">医院接送；</span><br><span class="line">深夜送人回家；</span><br><span class="line">以“陪同”为名实际进行车辆载客收费。</span><br></pre></td></tr></table></figure><p>原因：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">未取得许可或登记而使用自家用车有偿运送旅客，可能被认定为白タク等违法行为。</span><br></pre></td></tr></table></figure><p>可做替代方案：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">帮助用户叫正规出租车；</span><br><span class="line">陪同用户乘坐公共交通；</span><br><span class="line">代用户搬运行李但不载人；</span><br><span class="line">与正规出租车/ハイヤー公司合作。</span><br></pre></td></tr></table></figure><h3 id="11-4-宠物服务合规风险"><a href="#11-4-宠物服务合规风险" class="headerlink" title="11.4 宠物服务合规风险"></a>11.4 宠物服务合规风险</h3><p>宠物服务需要特别谨慎。</p><p>相对低风险：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">用户家中短时间喂食；</span><br><span class="line">猫砂清理；</span><br><span class="line">短时间遛狗；</span><br><span class="line">按用户书面指示完成照顾。</span><br></pre></td></tr></table></figure><p>高风险或可能需要登记：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">宠物寄养；</span><br><span class="line">长期保管；</span><br><span class="line">宠物训练；</span><br><span class="line">以营业形式持续提供宠物シッター；</span><br><span class="line">把宠物带回服务人员家中；</span><br><span class="line">多人、多宠物、固定营业点运营。</span><br></pre></td></tr></table></figure><p>建议：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">正式开放宠物服务前，向所在都道府县或政令市的动物爱护/动物取扱業窗口确认；</span><br><span class="line">必要时办理第一種動物取扱業相关登记；</span><br><span class="line">服务人员进行宠物安全培训；</span><br><span class="line">购买宠物事故相关保险；</span><br><span class="line">禁止服务人员私自更改喂食、用药、遛狗路线。</span><br></pre></td></tr></table></figure><h3 id="11-5-家政与劳动关系边界"><a href="#11-5-家政与劳动关系边界" class="headerlink" title="11.5 家政与劳动关系边界"></a>11.5 家政与劳动关系边界</h3><p>家务服务可能涉及三种模式：</p><table><thead><tr><th>模式</th><th>关系</th><th>风险</th></tr></thead><tbody><tr><td>直营雇佣</td><td>公司雇佣员工提供服务</td><td>成本高，但可控</td></tr><tr><td>业务委托</td><td>平台委托自由职业者接单</td><td>需注意フリーランス法和伪装雇佣</td></tr><tr><td>派遣&#x2F;供给</td><td>把人员派到客户处受客户指挥</td><td>高风险，可能需要派遣许可</td></tr></tbody></table><p>推荐第一阶段采用：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">平台统一定义服务内容；</span><br><span class="line">服务人员按平台标准完成结果；</span><br><span class="line">客户不得直接指挥服务人员从事合同外工作；</span><br><span class="line">所有追加服务必须通过平台确认；</span><br><span class="line">平台保留客服与质量管理权。</span><br></pre></td></tr></table></figure><p>避免出现：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">客户直接命令服务人员长期工作；</span><br><span class="line">按小时把人派给客户随意使用；</span><br><span class="line">平台只收介绍费但不管理服务质量；</span><br><span class="line">形式是外包，实际像派遣。</span><br></pre></td></tr></table></figure><h3 id="11-6-フリーランス委托合规"><a href="#11-6-フリーランス委托合规" class="headerlink" title="11.6 フリーランス委托合规"></a>11.6 フリーランス委托合规</h3><p>如果服务人员是业务委托&#x2F;自由职业者，平台需要：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">用书面或电子方式明确交易条件；</span><br><span class="line">明确服务内容、报酬、支付时间、支付方式；</span><br><span class="line">不得无故减少报酬；</span><br><span class="line">不得不合理拒绝结算；</span><br><span class="line">不得利用优势地位强制接受不合理条件；</span><br><span class="line">保留订单与结算记录。</span><br></pre></td></tr></table></figure><p>建议每单自动生成：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">订单委托条件通知书</span><br></pre></td></tr></table></figure><p>内容包括：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">服务内容；</span><br><span class="line">服务地点；</span><br><span class="line">服务时间；</span><br><span class="line">报酬金额；</span><br><span class="line">平台佣金；</span><br><span class="line">支付予定日；</span><br><span class="line">取消规则；</span><br><span class="line">禁止事项；</span><br><span class="line">投诉处理方式。</span><br></pre></td></tr></table></figure><h3 id="11-7-个人信息与录像数据合规"><a href="#11-7-个人信息与录像数据合规" class="headerlink" title="11.7 个人信息与录像数据合规"></a>11.7 个人信息与录像数据合规</h3><p>平台将处理：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">姓名、电话、地址、在留卡、身份证件、银行卡、定位、聊天记录、照片、录像。</span><br></pre></td></tr></table></figure><p>因此必须准备：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">隐私政策；</span><br><span class="line">个人信息利用目的；</span><br><span class="line">数据保存期限；</span><br><span class="line">第三方提供规则；</span><br><span class="line">用户删除请求流程；</span><br><span class="line">安全管理措施；</span><br><span class="line">内部访问权限管理；</span><br><span class="line">泄露事故应对流程。</span><br></pre></td></tr></table></figure><p>录像特别注意：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">能识别个人的影像通常属于个人信息；</span><br><span class="line">不得无目的长期保存；</span><br><span class="line">不得未经同意用于AI训练或宣传；</span><br><span class="line">不得让无关人员随意查看；</span><br><span class="line">要设置访问日志。</span><br></pre></td></tr></table></figure><h3 id="11-8-保险建议"><a href="#11-8-保险建议" class="headerlink" title="11.8 保险建议"></a>11.8 保险建议</h3><p>建议购买或研究：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">业务责任保险；</span><br><span class="line">个人赔偿责任保险；</span><br><span class="line">财产损害保险；</span><br><span class="line">宠物事故相关保险；</span><br><span class="line">服务人员意外保险；</span><br><span class="line">网络安全/个人信息泄露保险。</span><br></pre></td></tr></table></figure><hr><h2 id="12-技术架构设计"><a href="#12-技术架构设计" class="headerlink" title="12. 技术架构设计"></a>12. 技术架构设计</h2><h3 id="12-1-推荐技术栈"><a href="#12-1-推荐技术栈" class="headerlink" title="12.1 推荐技术栈"></a>12.1 推荐技术栈</h3><p>结合创始人Java&#x2F;Spring Boot经验，推荐：</p><table><thead><tr><th>层级</th><th>技术</th></tr></thead><tbody><tr><td>前端Web</td><td>Next.js + TypeScript</td></tr><tr><td>移动端初期</td><td>PWA &#x2F; Responsive Web</td></tr><tr><td>后端</td><td>Spring Boot</td></tr><tr><td>数据库</td><td>PostgreSQL</td></tr><tr><td>缓存</td><td>Redis（后期）</td></tr><tr><td>对象存储</td><td>AWS S3</td></tr><tr><td>地图</td><td>Google Maps Platform</td></tr><tr><td>消息通知</td><td>LINE Messaging API &#x2F; Email &#x2F; Push</td></tr><tr><td>支付</td><td>Stripe &#x2F; PayPay（后期）</td></tr><tr><td>部署</td><td>AWS ECS &#x2F; Lightsail &#x2F; Vercel + AWS API</td></tr></tbody></table><h3 id="12-2-初期架构"><a href="#12-2-初期架构" class="headerlink" title="12.2 初期架构"></a>12.2 初期架构</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">用户/服务人员/管理员</span><br><span class="line">        ↓</span><br><span class="line">Next.js Web / PWA</span><br><span class="line">        ↓</span><br><span class="line">Spring Boot API</span><br><span class="line">        ↓</span><br><span class="line">PostgreSQL</span><br><span class="line">        ↓</span><br><span class="line">S3 文件存储</span><br><span class="line">        ↓</span><br><span class="line">LINE / Email 通知</span><br></pre></td></tr></table></figure><h3 id="12-3-为什么不一开始做原生APP"><a href="#12-3-为什么不一开始做原生APP" class="headerlink" title="12.3 为什么不一开始做原生APP"></a>12.3 为什么不一开始做原生APP</h3><p>理由：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">开发成本高；</span><br><span class="line">上架审核慢；</span><br><span class="line">迭代速度慢；</span><br><span class="line">MVP阶段更需要验证业务，而不是追求完整APP体验。</span><br></pre></td></tr></table></figure><p>第一阶段建议：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Responsive Web + PWA</span><br></pre></td></tr></table></figure><p>等订单量稳定后再开发：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">React Native / Flutter 原生APP</span><br></pre></td></tr></table></figure><hr><h2 id="13-数据库核心表设计"><a href="#13-数据库核心表设计" class="headerlink" title="13. 数据库核心表设计"></a>13. 数据库核心表设计</h2><h3 id="13-1-用户表-users"><a href="#13-1-用户表-users" class="headerlink" title="13.1 用户表 users"></a>13.1 用户表 users</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> users (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  user_type <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">NOT NULL</span>,</span><br><span class="line">  display_name <span class="type">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">  email <span class="type">VARCHAR</span>(<span class="number">255</span>),</span><br><span class="line">  phone <span class="type">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">  avatar_url TEXT,</span><br><span class="line">  <span class="keyword">language</span> <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;zh-CN&#x27;</span>,</span><br><span class="line">  status <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;ACTIVE&#x27;</span>,</span><br><span class="line">  identity_verified <span class="type">BOOLEAN</span> <span class="keyword">DEFAULT</span> <span class="literal">FALSE</span>,</span><br><span class="line">  credit_score <span class="type">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">100</span>,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">  updated_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><h3 id="13-2-服务人员表-workers"><a href="#13-2-服务人员表-workers" class="headerlink" title="13.2 服务人员表 workers"></a>13.2 服务人员表 workers</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> workers (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  user_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> users(id),</span><br><span class="line">  real_name <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT NULL</span>,</span><br><span class="line">  service_area TEXT,</span><br><span class="line">  available_time TEXT,</span><br><span class="line">  verification_status <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;PENDING&#x27;</span>,</span><br><span class="line">  worker_level <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;L1&#x27;</span>,</span><br><span class="line">  rating <span class="type">NUMERIC</span>(<span class="number">3</span>,<span class="number">2</span>) <span class="keyword">DEFAULT</span> <span class="number">0</span>,</span><br><span class="line">  completed_orders <span class="type">INTEGER</span> <span class="keyword">DEFAULT</span> <span class="number">0</span>,</span><br><span class="line">  suspended <span class="type">BOOLEAN</span> <span class="keyword">DEFAULT</span> <span class="literal">FALSE</span>,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">  updated_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><h3 id="13-3-服务类型表-service-types"><a href="#13-3-服务类型表-service-types" class="headerlink" title="13.3 服务类型表 service_types"></a>13.3 服务类型表 service_types</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> service_types (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  name <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT NULL</span>,</span><br><span class="line">  category <span class="type">VARCHAR</span>(<span class="number">50</span>) <span class="keyword">NOT NULL</span>,</span><br><span class="line">  description TEXT,</span><br><span class="line">  risk_level <span class="type">VARCHAR</span>(<span class="number">20</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;LOW&#x27;</span>,</span><br><span class="line">  enabled <span class="type">BOOLEAN</span> <span class="keyword">DEFAULT</span> <span class="literal">TRUE</span>,</span><br><span class="line">  base_price <span class="type">INTEGER</span>,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><h3 id="13-4-订单表-orders"><a href="#13-4-订单表-orders" class="headerlink" title="13.4 订单表 orders"></a>13.4 订单表 orders</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> orders (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  user_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> users(id),</span><br><span class="line">  worker_id <span class="type">BIGINT</span> <span class="keyword">REFERENCES</span> workers(id),</span><br><span class="line">  service_type_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> service_types(id),</span><br><span class="line">  title <span class="type">VARCHAR</span>(<span class="number">200</span>) <span class="keyword">NOT NULL</span>,</span><br><span class="line">  description TEXT,</span><br><span class="line">  address TEXT <span class="keyword">NOT NULL</span>,</span><br><span class="line">  latitude <span class="type">NUMERIC</span>(<span class="number">10</span>,<span class="number">7</span>),</span><br><span class="line">  longitude <span class="type">NUMERIC</span>(<span class="number">10</span>,<span class="number">7</span>),</span><br><span class="line">  scheduled_at <span class="type">TIMESTAMP</span>,</span><br><span class="line">  started_at <span class="type">TIMESTAMP</span>,</span><br><span class="line">  completed_at <span class="type">TIMESTAMP</span>,</span><br><span class="line">  budget_amount <span class="type">INTEGER</span>,</span><br><span class="line">  final_amount <span class="type">INTEGER</span>,</span><br><span class="line">  platform_fee <span class="type">INTEGER</span>,</span><br><span class="line">  status <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;PENDING&#x27;</span>,</span><br><span class="line">  recording_required <span class="type">BOOLEAN</span> <span class="keyword">DEFAULT</span> <span class="literal">FALSE</span>,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">  updated_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><h3 id="13-5-评价表-reviews"><a href="#13-5-评价表-reviews" class="headerlink" title="13.5 评价表 reviews"></a>13.5 评价表 reviews</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> reviews (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  order_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> orders(id),</span><br><span class="line">  reviewer_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> users(id),</span><br><span class="line">  reviewee_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> users(id),</span><br><span class="line">  rating <span class="type">INTEGER</span> <span class="keyword">NOT NULL</span>,</span><br><span class="line">  tags TEXT,</span><br><span class="line">  comment TEXT,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><h3 id="13-6-投诉表-complaints"><a href="#13-6-投诉表-complaints" class="headerlink" title="13.6 投诉表 complaints"></a>13.6 投诉表 complaints</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> complaints (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  order_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> orders(id),</span><br><span class="line">  complainant_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> users(id),</span><br><span class="line">  complaint_type <span class="type">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">  description TEXT,</span><br><span class="line">  evidence_urls TEXT,</span><br><span class="line">  status <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">DEFAULT</span> <span class="string">&#x27;OPEN&#x27;</span>,</span><br><span class="line">  resolution TEXT,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span>,</span><br><span class="line">  updated_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><h3 id="13-7-录像-文件表-service-files"><a href="#13-7-录像-文件表-service-files" class="headerlink" title="13.7 录像&#x2F;文件表 service_files"></a>13.7 录像&#x2F;文件表 service_files</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE TABLE</span> service_files (</span><br><span class="line">  id BIGSERIAL <span class="keyword">PRIMARY KEY</span>,</span><br><span class="line">  order_id <span class="type">BIGINT</span> <span class="keyword">NOT NULL</span> <span class="keyword">REFERENCES</span> orders(id),</span><br><span class="line">  file_type <span class="type">VARCHAR</span>(<span class="number">30</span>) <span class="keyword">NOT NULL</span>,</span><br><span class="line">  file_url TEXT <span class="keyword">NOT NULL</span>,</span><br><span class="line">  purpose <span class="type">VARCHAR</span>(<span class="number">100</span>),</span><br><span class="line">  consent_obtained <span class="type">BOOLEAN</span> <span class="keyword">DEFAULT</span> <span class="literal">FALSE</span>,</span><br><span class="line">  retention_until <span class="type">TIMESTAMP</span>,</span><br><span class="line">  created_at <span class="type">TIMESTAMP</span> <span class="keyword">DEFAULT</span> <span class="built_in">CURRENT_TIMESTAMP</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure><hr><h2 id="14-API设计初稿"><a href="#14-API设计初稿" class="headerlink" title="14. API设计初稿"></a>14. API设计初稿</h2><h3 id="14-1-用户端API"><a href="#14-1-用户端API" class="headerlink" title="14.1 用户端API"></a>14.1 用户端API</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">POST   /api/auth/register</span><br><span class="line">POST   /api/auth/login</span><br><span class="line">GET    /api/service-types</span><br><span class="line">POST   /api/orders</span><br><span class="line">GET    /api/orders</span><br><span class="line">GET    /api/orders/&#123;id&#125;</span><br><span class="line">POST   /api/orders/&#123;id&#125;/cancel</span><br><span class="line">POST   /api/orders/&#123;id&#125;/review</span><br><span class="line">POST   /api/orders/&#123;id&#125;/complaints</span><br></pre></td></tr></table></figure><h3 id="14-2-服务人员端API"><a href="#14-2-服务人员端API" class="headerlink" title="14.2 服务人员端API"></a>14.2 服务人员端API</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">POST   /api/workers/apply</span><br><span class="line">GET    /api/worker/orders/available</span><br><span class="line">POST   /api/worker/orders/&#123;id&#125;/accept</span><br><span class="line">POST   /api/worker/orders/&#123;id&#125;/arrive</span><br><span class="line">POST   /api/worker/orders/&#123;id&#125;/start</span><br><span class="line">POST   /api/worker/orders/&#123;id&#125;/complete</span><br><span class="line">GET    /api/worker/earnings</span><br></pre></td></tr></table></figure><h3 id="14-3-管理后台API"><a href="#14-3-管理后台API" class="headerlink" title="14.3 管理后台API"></a>14.3 管理后台API</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">GET    /api/admin/users</span><br><span class="line">PATCH  /api/admin/users/&#123;id&#125;/status</span><br><span class="line">GET    /api/admin/workers</span><br><span class="line">PATCH  /api/admin/workers/&#123;id&#125;/verify</span><br><span class="line">GET    /api/admin/orders</span><br><span class="line">PATCH  /api/admin/orders/&#123;id&#125;/assign</span><br><span class="line">GET    /api/admin/complaints</span><br><span class="line">PATCH  /api/admin/complaints/&#123;id&#125;/resolve</span><br><span class="line">GET    /api/admin/finance/summary</span><br></pre></td></tr></table></figure><hr><h2 id="15-财务模型初稿"><a href="#15-财务模型初稿" class="headerlink" title="15. 财务模型初稿"></a>15. 财务模型初稿</h2><h3 id="15-1-MVP阶段成本"><a href="#15-1-MVP阶段成本" class="headerlink" title="15.1 MVP阶段成本"></a>15.1 MVP阶段成本</h3><table><thead><tr><th>项目</th><th align="right">月成本估算</th></tr></thead><tbody><tr><td>服务器&#x2F;数据库&#x2F;存储</td><td align="right">5,000 - 20,000日元</td></tr><tr><td>域名&#x2F;工具</td><td align="right">1,000 - 5,000日元</td></tr><tr><td>广告&#x2F;小红书&#x2F;社群推广</td><td align="right">30,000 - 100,000日元</td></tr><tr><td>保险&#x2F;法律咨询预备金</td><td align="right">20,000 - 100,000日元</td></tr><tr><td>兼职客服&#x2F;运营</td><td align="right">0 - 100,000日元</td></tr><tr><td>合计</td><td align="right">56,000 - 325,000日元&#x2F;月</td></tr></tbody></table><h3 id="15-2-收入测算"><a href="#15-2-收入测算" class="headerlink" title="15.2 收入测算"></a>15.2 收入测算</h3><p>假设：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">平均订单金额：5,000日元</span><br><span class="line">平台抽佣：15%</span><br><span class="line">单均平台收入：750日元</span><br></pre></td></tr></table></figure><table><thead><tr><th align="right">月订单数</th><th align="right">月交易额</th><th align="right">平台收入</th></tr></thead><tbody><tr><td align="right">100单</td><td align="right">500,000日元</td><td align="right">75,000日元</td></tr><tr><td align="right">300单</td><td align="right">1,500,000日元</td><td align="right">225,000日元</td></tr><tr><td align="right">1,000单</td><td align="right">5,000,000日元</td><td align="right">750,000日元</td></tr><tr><td align="right">3,000单</td><td align="right">15,000,000日元</td><td align="right">2,250,000日元</td></tr></tbody></table><h3 id="15-3-盈亏判断"><a href="#15-3-盈亏判断" class="headerlink" title="15.3 盈亏判断"></a>15.3 盈亏判断</h3><p>早期目标：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">月订单300单：证明有需求；</span><br><span class="line">月订单1,000单：证明可商业化；</span><br><span class="line">月订单3,000单：具备公司化和扩张价值。</span><br></pre></td></tr></table></figure><hr><h2 id="16-12个月路线图"><a href="#16-12个月路线图" class="headerlink" title="16. 12个月路线图"></a>16. 12个月路线图</h2><h3 id="第1阶段：0-1个月-需求验证"><a href="#第1阶段：0-1个月-需求验证" class="headerlink" title="第1阶段：0-1个月 - 需求验证"></a>第1阶段：0-1个月 - 需求验证</h3><p>目标：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">不开发完整APP，先验证需求。</span><br></pre></td></tr></table></figure><p>任务：</p><ul><li>建立项目名称与简单介绍页；</li><li>做Google Form&#x2F;Notion表单收集需求；</li><li>建立微信群&#x2F;LINE群；</li><li>发布小红书内容；</li><li>找到第一批10-20名服务人员候选；</li><li>手动完成前20单。</li></ul><p>验收指标：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">20个真实咨询；</span><br><span class="line">10个服务人员候选；</span><br><span class="line">完成10-20单；</span><br><span class="line">至少5个用户愿意复购。</span><br></pre></td></tr></table></figure><h3 id="第2阶段：1-3个月-人工派单MVP"><a href="#第2阶段：1-3个月-人工派单MVP" class="headerlink" title="第2阶段：1-3个月 - 人工派单MVP"></a>第2阶段：1-3个月 - 人工派单MVP</h3><p>任务：</p><ul><li>做一个简单Web下单页面；</li><li>后台人工管理订单；</li><li>统一服务协议和价格规则；</li><li>建立服务人员审核流程；</li><li>完成服务评价和投诉记录。</li></ul><p>验收指标：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">累计100单；</span><br><span class="line">复购率20%以上；</span><br><span class="line">严重投诉为0；</span><br><span class="line">服务人员稳定10人以上。</span><br></pre></td></tr></table></figure><h3 id="第3阶段：3-6个月-系统MVP开发"><a href="#第3阶段：3-6个月-系统MVP开发" class="headerlink" title="第3阶段：3-6个月 - 系统MVP开发"></a>第3阶段：3-6个月 - 系统MVP开发</h3><p>任务：</p><ul><li>用户端订单系统；</li><li>服务人员接单系统；</li><li>管理后台；</li><li>订单状态流转；</li><li>评价&#x2F;投诉系统；</li><li>财务结算初稿；</li><li>隐私政策&#x2F;利用规约上线。</li></ul><p>验收指标：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">注册用户1,000人；</span><br><span class="line">认证服务人员50人；</span><br><span class="line">月订单300单；</span><br><span class="line">订单完成率90%以上。</span><br></pre></td></tr></table></figure><h3 id="第4阶段：6-12个月-公司化运营"><a href="#第4阶段：6-12个月-公司化运营" class="headerlink" title="第4阶段：6-12个月 - 公司化运营"></a>第4阶段：6-12个月 - 公司化运营</h3><p>任务：</p><ul><li>成立合同会社；</li><li>建立正式客服流程；</li><li>购买保险；</li><li>签订业务委托合同；</li><li>研究宠物&#x2F;家务&#x2F;配送相关许可边界；</li><li>接入在线支付；</li><li>开展企业合作。</li></ul><p>验收指标：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">月订单1,000单；</span><br><span class="line">月平台收入75万日元级别；</span><br><span class="line">投诉率低于2%；</span><br><span class="line">复购率30%以上；</span><br><span class="line">企业合作3家以上。</span><br></pre></td></tr></table></figure><hr><h2 id="17-风险清单与应对策略"><a href="#17-风险清单与应对策略" class="headerlink" title="17. 风险清单与应对策略"></a>17. 风险清单与应对策略</h2><table><thead><tr><th>风险</th><th align="right">等级</th><th>应对策略</th></tr></thead><tbody><tr><td>上门安全风险</td><td align="right">高</td><td>实名认证、录像授权、保险、黑名单、客服介入</td></tr><tr><td>服务质量不稳定</td><td align="right">高</td><td>培训、标准流程、评价、分级认证</td></tr><tr><td>法律许可边界不清</td><td align="right">高</td><td>先做低风险服务，正式扩张前咨询专家</td></tr><tr><td>白タク风险</td><td align="right">高</td><td>禁止有偿载客，只做物品代办或正规交通协助</td></tr><tr><td>宠物事故</td><td align="right">高</td><td>限定服务范围、保险、宠物信息表、禁止私自操作</td></tr><tr><td>个人信息泄露</td><td align="right">高</td><td>权限控制、加密存储、保存期限、访问日志</td></tr><tr><td>私下交易</td><td align="right">中</td><td>平台担保、违约处罚、用户保障权益</td></tr><tr><td>服务人员供给不足</td><td align="right">中</td><td>提高报酬、社群招募、服务等级制度</td></tr><tr><td>获客成本过高</td><td align="right">中</td><td>华人社群、内容运营、转介绍</td></tr><tr><td>现金流不足</td><td align="right">中</td><td>先人工验证，减少早期开发和固定成本</td></tr></tbody></table><hr><h2 id="18-关键KPI"><a href="#18-关键KPI" class="headerlink" title="18. 关键KPI"></a>18. 关键KPI</h2><h3 id="18-1-用户侧KPI"><a href="#18-1-用户侧KPI" class="headerlink" title="18.1 用户侧KPI"></a>18.1 用户侧KPI</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">注册用户数</span><br><span class="line">下单用户数</span><br><span class="line">首单转化率</span><br><span class="line">复购率</span><br><span class="line">平均订单金额</span><br><span class="line">取消率</span><br><span class="line">投诉率</span><br><span class="line">NPS推荐意愿</span><br></pre></td></tr></table></figure><h3 id="18-2-服务人员侧KPI"><a href="#18-2-服务人员侧KPI" class="headerlink" title="18.2 服务人员侧KPI"></a>18.2 服务人员侧KPI</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">申请人数</span><br><span class="line">审核通过率</span><br><span class="line">活跃服务人员数</span><br><span class="line">接单率</span><br><span class="line">准时率</span><br><span class="line">完成率</span><br><span class="line">平均评分</span><br><span class="line">投诉成立率</span><br></pre></td></tr></table></figure><h3 id="18-3-平台侧KPI"><a href="#18-3-平台侧KPI" class="headerlink" title="18.3 平台侧KPI"></a>18.3 平台侧KPI</h3><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">GMV</span><br><span class="line">平台抽佣收入</span><br><span class="line">客服处理时间</span><br><span class="line">纠纷处理完成率</span><br><span class="line">订单完成率</span><br><span class="line">月活用户数</span><br><span class="line">获客成本</span><br><span class="line">单均利润</span><br></pre></td></tr></table></figure><hr><h2 id="19-AI与数据长期价值"><a href="#19-AI与数据长期价值" class="headerlink" title="19. AI与数据长期价值"></a>19. AI与数据长期价值</h2><p>你提到的“国外公司为了训练家务机器人，免费提供上门家务服务并录像收集数据”的方向非常重要。</p><p>LifeHero长期不只是一个服务平台，也可能成为：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">家庭生活服务数据平台</span><br></pre></td></tr></table></figure><p>未来可沉淀的数据包括：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">家务动作流程；</span><br><span class="line">服务前后状态；</span><br><span class="line">用户需求分类；</span><br><span class="line">任务分解方式；</span><br><span class="line">服务人员路径；</span><br><span class="line">质量评价标签；</span><br><span class="line">纠纷风险模式。</span><br></pre></td></tr></table></figure><p>但必须注意：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">任何录像、家庭影像、用户行为数据，用于AI训练、算法优化、第三方合作前，都必须取得明确同意，并进行匿名化、最小化、权限控制和保存期限管理。</span><br></pre></td></tr></table></figure><p>长期发展路径：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">人工上门服务</span><br><span class="line">      ↓</span><br><span class="line">标准化服务流程</span><br><span class="line">      ↓</span><br><span class="line">AI辅助派单与客服</span><br><span class="line">      ↓</span><br><span class="line">AI生成服务SOP</span><br><span class="line">      ↓</span><br><span class="line">远程AI管家</span><br><span class="line">      ↓</span><br><span class="line">家庭机器人训练数据</span><br><span class="line">      ↓</span><br><span class="line">机器人生活服务生态</span><br></pre></td></tr></table></figure><hr><h2 id="20-立即行动清单"><a href="#20-立即行动清单" class="headerlink" title="20. 立即行动清单"></a>20. 立即行动清单</h2><h3 id="20-1-本周可以做"><a href="#20-1-本周可以做" class="headerlink" title="20.1 本周可以做"></a>20.1 本周可以做</h3><ul><li>确定项目名和一句话介绍；</li><li>整理10个典型服务场景；</li><li>建立Google Form下单表；</li><li>建立服务人员申请表；</li><li>写一篇小红书测试文案；</li><li>找10个朋友做需求访谈；</li><li>找5个潜在服务人员访谈。</li></ul><h3 id="20-2-一个月内完成"><a href="#20-2-一个月内完成" class="headerlink" title="20.2 一个月内完成"></a>20.2 一个月内完成</h3><ul><li>完成20单人工派单；</li><li>建立价格表；</li><li>建立基础服务协议；</li><li>建立评价表；</li><li>建立投诉处理表；</li><li>明确第一阶段禁止服务；</li><li>做一个简单Landing Page。</li></ul><h3 id="20-3-三个月内完成"><a href="#20-3-三个月内完成" class="headerlink" title="20.3 三个月内完成"></a>20.3 三个月内完成</h3><ul><li>完成100单；</li><li>完成MVP系统第一版；</li><li>建立服务人员认证流程；</li><li>建立管理后台；</li><li>完成隐私政策与利用规约初稿；</li><li>形成一份真实运营数据报告。</li></ul><hr><h2 id="21-推荐AI开发指令"><a href="#21-推荐AI开发指令" class="headerlink" title="21. 推荐AI开发指令"></a>21. 推荐AI开发指令</h2><p>以下内容可直接作为后续让Codex、Trae、Cursor等AI开发工具生成项目的基础指令。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">你是一名资深全栈工程师、产品经理和系统架构师。</span><br><span class="line"></span><br><span class="line">请根据《日本上门服务平台商业计划书 + MVP功能清单 + 日本运营合规方案》为我生成一个MVP项目。</span><br><span class="line"></span><br><span class="line">项目目标：</span><br><span class="line">开发一个面向日本东京生活场景的上门服务平台MVP，第一阶段支持用户发布生活应急代办、宠物基础照顾、临时家务订单，服务人员接单，管理员审核服务人员并管理订单和投诉。</span><br><span class="line"></span><br><span class="line">技术栈：</span><br><span class="line">- 前端：Next.js + TypeScript</span><br><span class="line">- 后端：Spring Boot</span><br><span class="line">- 数据库：PostgreSQL</span><br><span class="line">- 文件存储：本地模拟，后续可替换为AWS S3</span><br><span class="line">- 登录：邮箱/手机号模拟登录</span><br><span class="line">- 部署：本地开发优先</span><br><span class="line"></span><br><span class="line">必须实现：</span><br><span class="line">1. 用户注册登录</span><br><span class="line">2. 用户发布订单</span><br><span class="line">3. 用户查看订单状态</span><br><span class="line">4. 服务人员申请认证</span><br><span class="line">5. 服务人员查看可接订单</span><br><span class="line">6. 服务人员接单并更新服务状态</span><br><span class="line">7. 管理员审核服务人员</span><br><span class="line">8. 管理员查看和处理订单</span><br><span class="line">9. 投诉提交与处理</span><br><span class="line">10. 评价功能</span><br><span class="line"></span><br><span class="line">页面结构：</span><br><span class="line">- 用户端：首页、服务分类、发布订单、我的订单、订单详情、个人中心</span><br><span class="line">- 服务人员端：申请页、接单大厅、我的任务、收入记录</span><br><span class="line">- 管理后台：用户管理、服务人员管理、订单管理、投诉管理、服务类型管理</span><br><span class="line"></span><br><span class="line">设计原则：</span><br><span class="line">- 页面结构与业务模块一一对应；</span><br><span class="line">- 后端按页面/业务模块划分package；</span><br><span class="line">- 代码清晰，方便后续扩展；</span><br><span class="line">- 第一阶段不实现复杂支付，只记录订单金额和结算状态；</span><br><span class="line">- 第一阶段不实现真实地图，只保留地址、经纬度字段；</span><br><span class="line">- 第一阶段不实现真实录像，只保留录像授权和文件上传字段。</span><br><span class="line"></span><br><span class="line">请输出：</span><br><span class="line">1. 项目目录结构</span><br><span class="line">2. 数据库DDL</span><br><span class="line">3. 后端API设计</span><br><span class="line">4. 前端页面设计</span><br><span class="line">5. 核心业务流程</span><br><span class="line">6. 可运行的初始代码</span><br><span class="line">7. 后续扩展建议</span><br></pre></td></tr></table></figure><hr><h2 id="22-参考资料与合规确认方向"><a href="#22-参考资料与合规确认方向" class="headerlink" title="22. 参考资料与合规确认方向"></a>22. 参考资料与合规确认方向</h2><blockquote><p>以下为正式创业前建议重点确认的日本官方信息方向。由于法律、自治体解释和平台业务模式会发生变化，正式运营前必须以最新官方资料和专业人士意见为准。</p></blockquote><ol><li><p>日本国土交通省：白タク・違法ハイヤー相关说明<br><a href="https://www.mlit.go.jp/jidosha/jidosha_fr3_000069.html">https://www.mlit.go.jp/jidosha/jidosha_fr3_000069.html</a></p></li><li><p>日本国土交通省：道路運送法における許可又は登録を要しない運送に関するガイドライン<br><a href="https://www.mlit.go.jp/jidosha/jidosha_tk3_000044.html">https://www.mlit.go.jp/jidosha/jidosha_tk3_000044.html</a></p></li><li><p>日本环境省：第一種動物取扱業者の規制<br><a href="https://www.env.go.jp/nature/dobutsu/aigo/1_law/trader.html">https://www.env.go.jp/nature/dobutsu/aigo/1_law/trader.html</a></p></li><li><p>日本个人信息保护委员会：摄像头影像与个人信息相关Q&amp;A<br><a href="https://www.ppc.go.jp/all_faq_index/faq1-q1-13">https://www.ppc.go.jp/all_faq_index/faq1-q1-13</a>_</p></li><li><p>日本个人信息保护委员会：个人信息保护法指南<br><a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/">https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/</a></p></li><li><p>日本厚生劳动省：劳动者派遣事业说明<br><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/roudoushahakennjigyou.html">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/roudoushahakennjigyou.html</a></p></li><li><p>日本公正取引委员会：フリーランス法特设网站<br><a href="https://www.jftc.go.jp/freelancelaw_2024/">https://www.jftc.go.jp/freelancelaw_2024/</a></p></li><li><p>日本厚生劳动省：医药品销售制度<br><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000082514.html">https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000082514.html</a></p></li></ol><hr><h2 id="23-结论"><a href="#23-结论" class="headerlink" title="23. 结论"></a>23. 结论</h2><p>LifeHero 的核心机会不在于“做一个APP”，而在于解决日本生活服务中最难的三个问题：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">信任</span><br><span class="line">调度</span><br><span class="line">标准化</span><br></pre></td></tr></table></figure><p>第一阶段应该避免重资产和高许可风险，从东京华人市场、低风险服务、人工派单、小区域运营开始。</p><p>当完成100单、300单、1000单三个验证节点后，再逐步进入系统化、公司化、合规化、规模化。</p><p>最终，这个项目可以从一个“上门服务APP”成长为：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">日本华人生活服务平台</span><br><span class="line">      ↓</span><br><span class="line">日本本地即时生活服务平台</span><br><span class="line">      ↓</span><br><span class="line">AI生活服务调度平台</span><br><span class="line">      ↓</span><br><span class="line">家庭机器人服务生态入口</span><br></pre></td></tr></table></figure><p>真正值得投入的不是一开始做多大，而是从第一单开始，把服务质量、用户信任和运营流程做扎实。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> メモ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日本上门服务平台方案 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>项目架构模式</title>
       <link href="/2026/06/18/1781857620749/"/>
       <url>/2026/06/18/1781857620749/</url>
@@ -1342,11 +1367,11 @@
       
         <tags>
             
-            <tag> IF項目 </tag>
-            
             <tag> JSON </tag>
             
             <tag> VBA </tag>
+            
+            <tag> IF項目 </tag>
             
         </tags>
       
@@ -1597,11 +1622,11 @@
       
         <tags>
             
+            <tag> JUnit </tag>
+            
             <tag> 单体测试 </tag>
             
             <tag> 配置模板 </tag>
-            
-            <tag> JUnit </tag>
             
         </tags>
       
@@ -1626,9 +1651,9 @@
       
         <tags>
             
-            <tag> 单体测试 </tag>
-            
             <tag> JUnit </tag>
+            
+            <tag> 单体测试 </tag>
             
             <tag> 执行模板 </tag>
             
@@ -1713,9 +1738,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 经验总结 </tag>
+            
+            <tag> Java </tag>
             
             <tag> API </tag>
             
@@ -1883,9 +1908,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -1910,9 +1935,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -1937,9 +1962,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2016,9 +2041,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2043,9 +2068,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2070,9 +2095,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2097,9 +2122,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2124,9 +2149,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2151,9 +2176,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2178,9 +2203,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2205,9 +2230,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2232,9 +2257,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2259,9 +2284,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -2286,9 +2311,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -2313,9 +2338,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -2340,9 +2365,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2367,9 +2392,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -2394,9 +2419,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2446,9 +2471,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2473,9 +2498,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2500,9 +2525,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2527,9 +2552,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2554,9 +2579,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2581,9 +2606,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2608,9 +2633,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2635,9 +2660,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2662,9 +2687,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2689,9 +2714,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2716,9 +2741,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2743,9 +2768,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2770,9 +2795,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2797,9 +2822,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2824,9 +2849,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2851,9 +2876,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -2878,9 +2903,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -2905,9 +2930,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2932,9 +2957,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2959,9 +2984,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -2986,9 +3011,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3013,9 +3038,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3040,9 +3065,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3067,9 +3092,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3094,9 +3119,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3121,9 +3146,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3148,9 +3173,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3175,9 +3200,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3202,9 +3227,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3229,9 +3254,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3256,9 +3281,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3283,9 +3308,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3310,9 +3335,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3337,9 +3362,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3364,9 +3389,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3391,9 +3416,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3418,9 +3443,9 @@
       
         <tags>
             
-            <tag> 学习笔记 </tag>
-            
             <tag> 日语单词 </tag>
+            
+            <tag> 学习笔记 </tag>
             
         </tags>
       
@@ -3445,9 +3470,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3472,9 +3497,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3499,9 +3524,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3613,9 +3638,9 @@
       
         <tags>
             
-            <tag> 日语语法 </tag>
-            
             <tag> 学习笔记 </tag>
+            
+            <tag> 日语语法 </tag>
             
         </tags>
       
@@ -3698,9 +3723,9 @@
       
         <tags>
             
-            <tag> JUnit </tag>
-            
             <tag> 经验总结 </tag>
+            
+            <tag> JUnit </tag>
             
             <tag> log </tag>
             
