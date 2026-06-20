@@ -1110,9 +1110,15 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">经验相关</span>
-                <span class="sidebar-count">5</span>
+                <span class="sidebar-count">6</span>
               </summary>
               <ul class="category-post-list">
+                
+                  <li>
+                    <a href="/2026/06/20/1781960265743/" class="category-post-link" title="对GitHub访问路径的修改流程">
+                      对GitHub访问路径的修改流程
+                    </a>
+                  </li>
                 
                   <li>
                     <a href="/2026/03/09/1773132483027/" class="category-post-link" title="日本大型IT开发项目全流程解析">
@@ -1444,6 +1450,13 @@
             <a href="/tags/Excel/">
               <span class="sidebar-name">Excel</span>
               <span class="sidebar-count">2</span>
+            </a>
+          </li>
+        
+          <li>
+            <a href="/tags/GitHub/">
+              <span class="sidebar-name">GitHub</span>
+              <span class="sidebar-count">1</span>
             </a>
           </li>
         
@@ -2260,6 +2273,78 @@
 
   <!-- 博文列表容器 -->
   <div class="post-list">
+    
+    <!-- 遍历当前页面的所有文章对象（post） -->
+
+      <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/06/20/1781960265743/">对GitHub访问路径的修改流程</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-06-20
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E7%BB%8F%E9%AA%8C%E7%9B%B8%E5%85%B3/">经验相关</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/GitHub/">GitHub</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    GitHub 用户名修改后，GitHub Pages 访问路径修改流程1. 修改 GitHub 用户名先在 GitHub 账号设置中修改用户名。
+例如：
+12旧用户名：Sun1105新用户名：SUN1...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/06/20/1781960265743/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1781960265743.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
+      <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
+
     
     <!-- 遍历当前页面的所有文章对象（post） -->
 
@@ -7200,17 +7285,17 @@ import java....
      |
       标签：
       
+        <a href="/tags/JUnit/">JUnit</a>
+        ,
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
         <a href="/tags/%E5%8D%95%E4%BD%93%E6%B5%8B%E8%AF%95/">单体测试</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
       
         <a href="/tags/%E9%85%8D%E7%BD%AE%E6%A8%A1%E6%9D%BF/">配置模板</a>
-        ,
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
-        <a href="/tags/JUnit/">JUnit</a>
         
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
@@ -7289,12 +7374,12 @@ import java....
      |
       标签：
       
-        <a href="/tags/%E5%8D%95%E4%BD%93%E6%B5%8B%E8%AF%95/">单体测试</a>
+        <a href="/tags/JUnit/">JUnit</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
       
-        <a href="/tags/JUnit/">JUnit</a>
+        <a href="/tags/%E5%8D%95%E4%BD%93%E6%B5%8B%E8%AF%95/">单体测试</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
@@ -7557,12 +7642,12 @@ import java....
      |
       标签：
       
-        <a href="/tags/Java/">Java</a>
+        <a href="/tags/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">经验总结</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
       
-        <a href="/tags/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">经验总结</a>
+        <a href="/tags/Java/">Java</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
@@ -13381,12 +13466,12 @@ Vて + からで...
      |
       标签：
       
-        <a href="/tags/JUnit/">JUnit</a>
+        <a href="/tags/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">经验总结</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->
       
-        <a href="/tags/%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93/">经验总结</a>
+        <a href="/tags/JUnit/">JUnit</a>
         ,
         <!-- 遍历文章标签 -->
         <!-- 多个标签用逗号分隔 -->

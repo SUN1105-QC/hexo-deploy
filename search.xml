@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>对GitHub访问路径的修改流程</title>
+      <link href="/2026/06/20/1781960265743/"/>
+      <url>/2026/06/20/1781960265743/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GitHub-用户名修改后，GitHub-Pages-访问路径修改流程"><a href="#GitHub-用户名修改后，GitHub-Pages-访问路径修改流程" class="headerlink" title="GitHub 用户名修改后，GitHub Pages 访问路径修改流程"></a>GitHub 用户名修改后，GitHub Pages 访问路径修改流程</h1><h2 id="1-修改-GitHub-用户名"><a href="#1-修改-GitHub-用户名" class="headerlink" title="1. 修改 GitHub 用户名"></a>1. 修改 GitHub 用户名</h2><p>先在 GitHub 账号设置中修改用户名。</p><p>例如：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">旧用户名：Sun1105</span><br><span class="line">新用户名：SUN1105-QC</span><br></pre></td></tr></table></figure><p>修改后，GitHub Pages 的主站访问地址也会随之变化。</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">旧地址：https://sun1105.github.io</span><br><span class="line">新地址：https://sun1105-qc.github.io</span><br></pre></td></tr></table></figure><hr><h2 id="2-修改-XXX-github-io-仓库名"><a href="#2-修改-XXX-github-io-仓库名" class="headerlink" title="2. 修改 XXX.github.io 仓库名"></a>2. 修改 <code>XXX.github.io</code> 仓库名</h2><p>GitHub Pages 主站仓库名必须和用户名保持一致。</p><p>格式：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">用户名.github.io</span><br></pre></td></tr></table></figure><p>例如：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SUN1105-QC.github.io</span><br></pre></td></tr></table></figure><p>对应访问地址：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://sun1105-qc.github.io</span><br></pre></td></tr></table></figure><p>注意：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">XXX 必须与 GitHub 用户名相同</span><br></pre></td></tr></table></figure><p>否则 GitHub 会把它识别为项目页面，访问路径会变成：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://用户名.github.io/仓库名/</span><br></pre></td></tr></table></figure><hr><h2 id="3-修改项目目录下的-config-yml"><a href="#3-修改项目目录下的-config-yml" class="headerlink" title="3. 修改项目目录下的 _config.yml"></a>3. 修改项目目录下的 <code>_config.yml</code></h2><p>修改 Hexo 项目的部署仓库地址。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="comment"># ① GitHub Pages 仓库：主站</span></span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:SUN1105-QC/SUN1105-QC.github.io.git,master</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># ② Vercel 部署仓库：用于 Vercel 自动构建</span></span><br><span class="line">    <span class="attr">vercel:</span> <span class="string">git@github.com:SUN1105-QC/hexo-deploy.git,main</span></span><br></pre></td></tr></table></figure><p>如果是 GitHub Pages 主站，通常还需要确认：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://sun1105-qc.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br></pre></td></tr></table></figure><hr><h2 id="4-修改项目目录下的-deploy-yml"><a href="#4-修改项目目录下的-deploy-yml" class="headerlink" title="4. 修改项目目录下的 deploy.yml"></a>4. 修改项目目录下的 <code>deploy.yml</code></h2><p>同步修改 GitHub Actions 中的部署目标仓库。</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">build:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">strategy:</span></span><br><span class="line">      <span class="attr">matrix:</span></span><br><span class="line">        <span class="attr">repo:</span></span><br><span class="line">          <span class="bullet">-</span> &#123; <span class="attr">name:</span> <span class="string">&quot;SUN1105-QC/SUN1105-QC.github.io&quot;</span>, <span class="attr">branch:</span> <span class="string">&quot;master&quot;</span> &#125;  <span class="comment"># GitHub Pages 仓库</span></span><br><span class="line">          <span class="bullet">-</span> &#123; <span class="attr">name:</span> <span class="string">&quot;SUN1105-QC/hexo-deploy&quot;</span>, <span class="attr">branch:</span> <span class="string">&quot;main&quot;</span> &#125;             <span class="comment"># 备份 / CI 仓库</span></span><br></pre></td></tr></table></figure><hr><h2 id="5-重新生成并部署"><a href="#5-重新生成并部署" class="headerlink" title="5. 重新生成并部署"></a>5. 重新生成并部署</h2><p>修改完成后，在项目根目录执行：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure><p>简写：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><hr><h2 id="6-最后检查-GitHub-Pages-设置"><a href="#6-最后检查-GitHub-Pages-设置" class="headerlink" title="6. 最后检查 GitHub Pages 设置"></a>6. 最后检查 GitHub Pages 设置</h2><p>进入 GitHub Pages 仓库：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Settings</span><br><span class="line">↓</span><br><span class="line">Pages</span><br></pre></td></tr></table></figure><p>确认：</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Branch：master 或 gh-pages</span><br><span class="line">Folder：/ root</span><br></pre></td></tr></table></figure><p>这里的分支必须和 <code>_config.yml</code>、<code>deploy.yml</code> 中设置的分支一致。</p><hr><h2 id="核心注意点"><a href="#核心注意点" class="headerlink" title="核心注意点"></a>核心注意点</h2><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GitHub 用户名</span><br><span class="line">=</span><br><span class="line">XXX.github.io 仓库名中的 XXX</span><br><span class="line">=</span><br><span class="line">_config.yml 中的远程仓库路径</span><br><span class="line">=</span><br><span class="line">deploy.yml 中的部署仓库路径</span><br></pre></td></tr></table></figure><p>只要这几处保持一致，GitHub Pages 访问地址就可以正常恢复。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 经验相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>日华人用户与生活应急服务</title>
       <link href="/2026/06/19/1781885628069/"/>
       <url>/2026/06/19/1781885628069/</url>
@@ -1647,11 +1672,11 @@
       
         <tags>
             
+            <tag> JUnit </tag>
+            
             <tag> 单体测试 </tag>
             
             <tag> 配置模板 </tag>
-            
-            <tag> JUnit </tag>
             
         </tags>
       
@@ -1676,9 +1701,9 @@
       
         <tags>
             
-            <tag> 单体测试 </tag>
-            
             <tag> JUnit </tag>
+            
+            <tag> 单体测试 </tag>
             
             <tag> 执行模板 </tag>
             
@@ -1763,9 +1788,9 @@
       
         <tags>
             
-            <tag> Java </tag>
-            
             <tag> 经验总结 </tag>
+            
+            <tag> Java </tag>
             
             <tag> API </tag>
             
@@ -3748,9 +3773,9 @@
       
         <tags>
             
-            <tag> JUnit </tag>
-            
             <tag> 经验总结 </tag>
+            
+            <tag> JUnit </tag>
             
             <tag> log </tag>
             
