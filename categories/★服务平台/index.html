@@ -435,9 +435,15 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">★服务平台</span>
-                <span class="sidebar-count">1</span>
+                <span class="sidebar-count">2</span>
               </summary>
               <ul class="category-post-list">
+                
+                  <li>
+                    <a href="/2026/06/19/1781885628069/" class="category-post-link" title="日华人用户与生活应急服务">
+                      日华人用户与生活应急服务
+                    </a>
+                  </li>
                 
                   <li>
                     <a href="/2026/06/19/1781930170026/" class="category-post-link" title="日本上门服务平台方案概要">
@@ -456,15 +462,9 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">メモ</span>
-                <span class="sidebar-count">7</span>
+                <span class="sidebar-count">6</span>
               </summary>
               <ul class="category-post-list">
-                
-                  <li>
-                    <a href="/2026/06/19/1781885628069/" class="category-post-link" title="日本上门服务平台方案">
-                      日本上门服务平台方案
-                    </a>
-                  </li>
                 
                   <li>
                     <a href="/2026/06/18/1781857620749/" class="category-post-link" title="项目架构模式">
@@ -1912,14 +1912,7 @@
           <li>
             <a href="/tags/%E6%97%A5%E6%9C%AC%E4%B8%8A%E9%97%A8%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0/">
               <span class="sidebar-name">日本上门服务平台</span>
-              <span class="sidebar-count">1</span>
-            </a>
-          </li>
-        
-          <li>
-            <a href="/tags/%E6%97%A5%E6%9C%AC%E4%B8%8A%E9%97%A8%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0%E6%96%B9%E6%A1%88/">
-              <span class="sidebar-name">日本上门服务平台方案</span>
-              <span class="sidebar-count">1</span>
+              <span class="sidebar-count">2</span>
             </a>
           </li>
         
@@ -2279,6 +2272,83 @@
     <!-- 判断当前分类下是否有文章 -->
     <!-- page.posts → 当前页面文章数组 -->
     <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
+
+      
+      <!-- 遍历当前分类下每篇文章 post -->
+      <!-- post 对象包含文章标题、路径、日期、分类、标签、摘要等信息 -->
+
+        <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/06/19/1781885628069/">日华人用户与生活应急服务</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-06-20
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E2%98%85%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0/">★服务平台</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/%E6%97%A5%E6%9C%AC%E4%B8%8A%E9%97%A8%E6%9C%8D%E5%8A%A1%E5%B9%B3%E5%8F%B0/">日本上门服务平台</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    
+目标市场：日本东京首都圈，第一阶段聚焦在日华人用户与生活应急服务  
+
+
+0. 一句话总结一个面向日本本地生活场景的即时上门服务平台，帮助用户在生病、加班、出差、宠物照顾、临时家务、代办跑腿等场景下...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/06/19/1781885628069/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1781885628069.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
+        <!-- 调用局部模板 _partial/post-card.ejs 渲染文章卡片 -->
+        <!-- 将当前文章对象 post 传入模板 -->
+        <!--  输出 HTML，不转义，保证标签正常显示 -->
 
       
       <!-- 遍历当前分类下每篇文章 post -->
