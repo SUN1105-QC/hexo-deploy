@@ -468,9 +468,15 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">メモ</span>
-                <span class="sidebar-count">8</span>
+                <span class="sidebar-count">9</span>
               </summary>
               <ul class="category-post-list">
+                
+                  <li>
+                    <a href="/2026/06/25/1782460978606/" class="category-post-link" title="メモ">
+                      メモ
+                    </a>
+                  </li>
                 
                   <li>
                     <a href="/2026/06/24/1782376850053/" class="category-post-link" title="待做清单">
@@ -1642,7 +1648,7 @@
           <li>
             <a href="/tags/%E3%83%A1%E3%83%A2/">
               <span class="sidebar-name">メモ</span>
-              <span class="sidebar-count">1</span>
+              <span class="sidebar-count">2</span>
             </a>
           </li>
         
@@ -2323,6 +2329,75 @@
     <!-- 判断当前标签下是否有文章 -->
     <!-- page.posts → 当前页面文章数组 -->
     <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
+
+      
+      <!-- 遍历每篇文章 post -->
+      
+        <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/06/25/1782460978606/">メモ</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-06-26
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E3%83%A1%E3%83%A2/">メモ</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/%E3%83%A1%E3%83%A2/">メモ</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    追加功能：1，让个人用户拥有个人首页，专门用来浏览自己的笔记，和任务。因为我认为现在的个人空间页面，更像个人空间管理页面，将笔记的浏览功能页面和管理功能页面混在一起，显得杂乱无章，并不美观也不适合操作...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/06/25/1782460978606/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1782460978606.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
 
       
       <!-- 遍历每篇文章 post -->
