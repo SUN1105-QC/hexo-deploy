@@ -11,7 +11,7 @@
   <!-- 如果当前页面有标题，则显示 "页面标题 | 网站标题" -->
   <!-- 否则只显示网站标题 config.title -->
   <title>
-    Sun Blog
+    メモ | Sun Blog
   </title>
 
   <!-- 页面描述，用于 SEO -->
@@ -2419,112 +2419,121 @@
   <!-- ===== 主体内容区 ===== -->
   <main id="main-content">
     <!--
-  tag.ejs
-  标签页面模板
+  post.ejs
+  文章详情页模板
   功能：
-    - 显示当前标签名称
-    - 遍历该标签下的所有文章
-    - 渲染为文章卡片列表
+    - 显示文章标题
+    - 显示文章发布日期和标签
+    - 渲染文章正文内容
 -->
 
-<section class="main-section">
-  <!-- 页面主容器，用于布局和样式控制 -->
 
-  <!-- 标签标题 -->
-  <h2 class="section-title">🏷️ メモ 标签</h2>
-  <!-- emoji 🏷️ 用于视觉增强 -->
-  <!-- メモ 动态输出当前页面所属标签名称 -->
-  <!-- 最终显示效果示例：🏷️ Java 标签 -->
 
-  <div class="post-list">
-    <!-- 文章列表容器，用于存放该标签下的所有文章卡片 -->
-
-    
-    <!-- 判断当前标签下是否有文章 -->
-    <!-- page.posts → 当前页面文章数组 -->
-    <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
-
-      
-      <!-- 遍历每篇文章 post -->
-      
-        <!--
-  _partial/post-card.ejs
-  功能：
-    - 渲染单篇文章的卡片
-    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
-    - 可在分类页、标签页、归档页复用
--->
-
-<article class="post-card">
-  <!-- 单篇文章卡片容器，用于布局和样式 -->
-
+<article class="post">
   <!-- 文章标题 -->
-  <h3 class="post-title">
-    <a href="/2026/06/22/1782202082977/">メモ</a>
-    <!-- 链接到文章详情页 -->
-    <!-- url_for(post.path) → 生成文章路径 -->
-    <!-- post.title → 当前文章标题 -->
-  </h3>
+  <h1 class="post-title">メモ</h1>
 
-  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
-  <p class="post-meta">
-    发布于 2026-06-23
-    <!-- 显示文章发布日期 -->
-
-     |
-      分类：
+  <!-- 文章元信息 -->
+  <div class="post-meta">
+    <div class="meta-info">
+      <span>发表于 2026-07-11</span>
       
-        <a href="/categories/%E3%83%A1%E3%83%A2/">メモ</a>
-        
-        <!-- 遍历文章分类 -->
-        <!-- 多个分类用逗号分隔 -->
+        <span> | 标签：
+          
+            <a href="/tags/%E5%BE%85%E5%81%9A%E6%B8%85%E5%8D%95/">待做清单</a>
+          
+        </span>
       
-    
-
-     |
-      标签：
-      
-        <a href="/tags/%E3%83%A1%E3%83%A2/">メモ</a>
-        
-        <!-- 遍历文章标签 -->
-        <!-- 多个标签用逗号分隔 -->
-      
-    
-  </p>
-  <!-- 文章元信息结束 -->
-
-  <!-- 文章摘要 -->
-  <p class="post-excerpt">
-    
-    知识平台：◆使用情况1：使用客户群体目标：初-中级程序员使用目的：快速了解，信息交流等等。通过这个平台可以快速了解到现场的真实情况，各种情况的应对，工作经验的学习，问题解决对策等等◆使用情况2：
-投资...
-  </p>
-
-  <!-- 操作按钮容器 -->
-  <div class="post-actions">
-    <!-- 阅读全文按钮 -->
-    <a href="/2026/06/22/1782202082977/" class="read-more">阅读全文 →</a>
-    <!-- 编辑按钮 -->
-    <button onclick="openEditor('_posts/1782202082977.md')" class="read-more">✏️ 编辑</button>
+    </div>
+    <!-- 阅览按钮 -->
+    <button type="button" class="preview-trigger-btn">👁️ 阅览</button>
   </div>
-  <!-- 链接到文章详情页 -->
-  <!-- CSS class "read-more" 用于样式化按钮 -->
 
+  <!-- 文章正文内容 -->
+  <div class="post-content">
+    
+      <!-- 普通文本或纯 Markdown -->
+      <div class="pure-text-content">
+        <p>Documentation System（文档系统）</p>
+<p>├── 00_文档系统制作手册   ⭐⭐⭐（最先完成）<br>│<br>├── 01_个人开发者第一次项目上线完全指南<br>│<br>├── 02_AWS部署指南<br>│<br>├── 03_Docker指南<br>│<br>├── 04_Linux指南<br>│<br>├── 05_Nginx指南<br>│<br>├── 06_Git自动部署指南<br>│<br>└── …</p>
+<p>这是我设计的初版结构</p>
+<p>1，部署前：部署准备 ➡ 后面内容是我自己举例，实际内容需要你帮我设计完成：<br>比如<br>手顺1：项目检查<br>	①<br>	②<br>	③<br>手顺2：账号准备<br>	①<br>	②<br>	③<br>手顺3：域名购买<br>	①<br>	②<br>	③<br>手顺4：服务器购买<br>	①<br>	②<br>	③</p>
+<p>2，部署中：部署步骤 ➡ 后面内容是我自己举例，实际内容需要你帮我设计完成：<br>比如<br>手顺1：项目打包<br>	①<br>	②<br>	③<br>手顺2：本地连接远程购买的服务器<br>	①<br>	②<br>	③</p>
+<p>3，部署后：部署完成 ➡ 后面内容是我自己举例，实际内容需要你帮我设计完成：<br>比如<br>手顺1：访问验证<br>	①<br>	②<br>	③<br>手顺2：访问验证<br>	①<br>	②<br>	③</p>
+
+      </div>
+    
+  </div>
 </article>
-<!-- 单篇文章卡片结束 -->
 
+<!-- 阅览弹窗 HTML 结构 (已废弃，改为新窗口打开) -->
+<div id="custom-preview-overlay" style="display: none;"></div>
 
-      
-      <!-- 遍历文章结束 -->
+<!-- 脚本逻辑 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const triggerBtn = document.querySelector('.preview-trigger-btn');
+  
+  if (!triggerBtn) return;
+
+  // 点击阅览按钮，在新窗口中打开纯净内容
+  triggerBtn.onclick = function() {
+    const previewWindow = window.open('', '_blank');
+    if (!previewWindow) {
+      alert("新窗口被浏览器拦截，请允许弹出窗口。");
+      return;
+    }
+
+    const title = "メモ";
+    const isFullHtml = false;
+    let content = "";
 
     
-    <!-- 条件判断结束 -->
+      // 对于普通 Markdown，包裹在基本的 HTML 结构中
+      content = `
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>${title} - 预览</title>
+          <style>
+            body { 
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+              line-height: 1.8;
+              color: #333;
+              max-width: 900px;
+              margin: 40px auto;
+              padding: 0 20px;
+              background: #fff;
+            }
+            h1 { color: #1976d2; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+            img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            pre { background: #f8f9fa; padding: 15px; border-radius: 6px; overflow-x: auto; border-left: 4px solid #1976d2; }
+            code { font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; }
+            blockquote { border-left: 4px solid #dfe2e5; color: #6a737d; margin: 0; padding-left: 16px; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #dfe2e5; padding: 8px 12px; }
+            th { background: #f6f8fa; }
+          </style>
+        </head>
+        <body>
+          <h1>${title}</h1>
+          <div class="content">
+            ${decodeURIComponent("%3Cp%3EDocumentation%20System%EF%BC%88%E6%96%87%E6%A1%A3%E7%B3%BB%E7%BB%9F%EF%BC%89%3C%2Fp%3E%0A%3Cp%3E%E2%94%9C%E2%94%80%E2%94%80%2000_%E6%96%87%E6%A1%A3%E7%B3%BB%E7%BB%9F%E5%88%B6%E4%BD%9C%E6%89%8B%E5%86%8C%20%20%20%E2%AD%90%E2%AD%90%E2%AD%90%EF%BC%88%E6%9C%80%E5%85%88%E5%AE%8C%E6%88%90%EF%BC%89%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%9C%E2%94%80%E2%94%80%2001_%E4%B8%AA%E4%BA%BA%E5%BC%80%E5%8F%91%E8%80%85%E7%AC%AC%E4%B8%80%E6%AC%A1%E9%A1%B9%E7%9B%AE%E4%B8%8A%E7%BA%BF%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%9C%E2%94%80%E2%94%80%2002_AWS%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%9C%E2%94%80%E2%94%80%2003_Docker%E6%8C%87%E5%8D%97%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%9C%E2%94%80%E2%94%80%2004_Linux%E6%8C%87%E5%8D%97%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%9C%E2%94%80%E2%94%80%2005_Nginx%E6%8C%87%E5%8D%97%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%9C%E2%94%80%E2%94%80%2006_Git%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97%3Cbr%3E%E2%94%82%3Cbr%3E%E2%94%94%E2%94%80%E2%94%80%20%E2%80%A6%3C%2Fp%3E%0A%3Cp%3E%E8%BF%99%E6%98%AF%E6%88%91%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%88%9D%E7%89%88%E7%BB%93%E6%9E%84%3C%2Fp%3E%0A%3Cp%3E1%EF%BC%8C%E9%83%A8%E7%BD%B2%E5%89%8D%EF%BC%9A%E9%83%A8%E7%BD%B2%E5%87%86%E5%A4%87%20%E2%9E%A1%20%E5%90%8E%E9%9D%A2%E5%86%85%E5%AE%B9%E6%98%AF%E6%88%91%E8%87%AA%E5%B7%B1%E4%B8%BE%E4%BE%8B%EF%BC%8C%E5%AE%9E%E9%99%85%E5%86%85%E5%AE%B9%E9%9C%80%E8%A6%81%E4%BD%A0%E5%B8%AE%E6%88%91%E8%AE%BE%E8%AE%A1%E5%AE%8C%E6%88%90%EF%BC%9A%3Cbr%3E%E6%AF%94%E5%A6%82%3Cbr%3E%E6%89%8B%E9%A1%BA1%EF%BC%9A%E9%A1%B9%E7%9B%AE%E6%A3%80%E6%9F%A5%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3Cbr%3E%E6%89%8B%E9%A1%BA2%EF%BC%9A%E8%B4%A6%E5%8F%B7%E5%87%86%E5%A4%87%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3Cbr%3E%E6%89%8B%E9%A1%BA3%EF%BC%9A%E5%9F%9F%E5%90%8D%E8%B4%AD%E4%B9%B0%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3Cbr%3E%E6%89%8B%E9%A1%BA4%EF%BC%9A%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%B4%AD%E4%B9%B0%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3C%2Fp%3E%0A%3Cp%3E2%EF%BC%8C%E9%83%A8%E7%BD%B2%E4%B8%AD%EF%BC%9A%E9%83%A8%E7%BD%B2%E6%AD%A5%E9%AA%A4%20%E2%9E%A1%20%E5%90%8E%E9%9D%A2%E5%86%85%E5%AE%B9%E6%98%AF%E6%88%91%E8%87%AA%E5%B7%B1%E4%B8%BE%E4%BE%8B%EF%BC%8C%E5%AE%9E%E9%99%85%E5%86%85%E5%AE%B9%E9%9C%80%E8%A6%81%E4%BD%A0%E5%B8%AE%E6%88%91%E8%AE%BE%E8%AE%A1%E5%AE%8C%E6%88%90%EF%BC%9A%3Cbr%3E%E6%AF%94%E5%A6%82%3Cbr%3E%E6%89%8B%E9%A1%BA1%EF%BC%9A%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3Cbr%3E%E6%89%8B%E9%A1%BA2%EF%BC%9A%E6%9C%AC%E5%9C%B0%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E8%B4%AD%E4%B9%B0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%99%A8%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3C%2Fp%3E%0A%3Cp%3E3%EF%BC%8C%E9%83%A8%E7%BD%B2%E5%90%8E%EF%BC%9A%E9%83%A8%E7%BD%B2%E5%AE%8C%E6%88%90%20%E2%9E%A1%20%E5%90%8E%E9%9D%A2%E5%86%85%E5%AE%B9%E6%98%AF%E6%88%91%E8%87%AA%E5%B7%B1%E4%B8%BE%E4%BE%8B%EF%BC%8C%E5%AE%9E%E9%99%85%E5%86%85%E5%AE%B9%E9%9C%80%E8%A6%81%E4%BD%A0%E5%B8%AE%E6%88%91%E8%AE%BE%E8%AE%A1%E5%AE%8C%E6%88%90%EF%BC%9A%3Cbr%3E%E6%AF%94%E5%A6%82%3Cbr%3E%E6%89%8B%E9%A1%BA1%EF%BC%9A%E8%AE%BF%E9%97%AE%E9%AA%8C%E8%AF%81%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3Cbr%3E%E6%89%8B%E9%A1%BA2%EF%BC%9A%E8%AE%BF%E9%97%AE%E9%AA%8C%E8%AF%81%3Cbr%3E%09%E2%91%A0%3Cbr%3E%09%E2%91%A1%3Cbr%3E%09%E2%91%A2%3C%2Fp%3E%0A")}
+          </div>
+        </body>
+        </html>
+      `;
+    
 
-  </div>
-  <!-- 文章列表容器结束 -->
-
-</section>
-<!-- 页面主容器结束 -->
+    const doc = previewWindow.document;
+    doc.open();
+    doc.write(content);
+    doc.close();
+  };
+});
+</script>
 
     <!-- 渲染当前页面内容 -->
     <!--  保证 HTML 正常渲染，不转义 -->

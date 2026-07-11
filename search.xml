@@ -5,6 +5,31 @@
     
     <entry>
       <title>メモ</title>
+      <link href="/2026/07/10/1783758772407/"/>
+      <url>/2026/07/10/1783758772407/</url>
+      
+        <content type="html"><![CDATA[<p>Documentation System（文档系统）</p><p>├── 00_文档系统制作手册   ⭐⭐⭐（最先完成）<br>│<br>├── 01_个人开发者第一次项目上线完全指南<br>│<br>├── 02_AWS部署指南<br>│<br>├── 03_Docker指南<br>│<br>├── 04_Linux指南<br>│<br>├── 05_Nginx指南<br>│<br>├── 06_Git自动部署指南<br>│<br>└── …</p><p>这是我设计的初版结构</p><p>1，部署前：部署准备 ➡ 后面内容是我自己举例，实际内容需要你帮我设计完成：<br>比如<br>手顺1：项目检查<br>①<br>②<br>③<br>手顺2：账号准备<br>①<br>②<br>③<br>手顺3：域名购买<br>①<br>②<br>③<br>手顺4：服务器购买<br>①<br>②<br>③</p><p>2，部署中：部署步骤 ➡ 后面内容是我自己举例，实际内容需要你帮我设计完成：<br>比如<br>手顺1：项目打包<br>①<br>②<br>③<br>手顺2：本地连接远程购买的服务器<br>①<br>②<br>③</p><p>3，部署后：部署完成 ➡ 后面内容是我自己举例，实际内容需要你帮我设计完成：<br>比如<br>手顺1：访问验证<br>①<br>②<br>③<br>手顺2：访问验证<br>①<br>②<br>③</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> メモ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 待做清单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>メモ</title>
       <link href="/2026/07/10/1783678406690/"/>
       <url>/2026/07/10/1783678406690/</url>
       
@@ -1692,11 +1717,11 @@
       
         <tags>
             
+            <tag> IF項目 </tag>
+            
             <tag> JSON </tag>
             
             <tag> VBA </tag>
-            
-            <tag> IF項目 </tag>
             
         </tags>
       
