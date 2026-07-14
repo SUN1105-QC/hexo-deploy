@@ -488,9 +488,15 @@
             <details class="category-details">
               <summary class="category-summary">
                 <span class="sidebar-name">メモ</span>
-                <span class="sidebar-count">11</span>
+                <span class="sidebar-count">12</span>
               </summary>
               <ul class="category-post-list">
+                
+                  <li>
+                    <a href="/2026/07/14/1784021470343/" class="category-post-link" title="月影禁地">
+                      月影禁地
+                    </a>
+                  </li>
                 
                   <li>
                     <a href="/2026/07/13/1783991067326/" class="category-post-link" title="项目部署手册">
@@ -1971,7 +1977,7 @@
           <li>
             <a href="/tags/%E5%BE%85%E5%81%9A%E6%B8%85%E5%8D%95/">
               <span class="sidebar-name">待做清单</span>
-              <span class="sidebar-count">4</span>
+              <span class="sidebar-count">5</span>
             </a>
           </li>
         
@@ -2449,6 +2455,75 @@
     <!-- 判断当前标签下是否有文章 -->
     <!-- page.posts → 当前页面文章数组 -->
     <!-- page.posts.length → 文章数量，大于 0 则进入循环 -->
+
+      
+      <!-- 遍历每篇文章 post -->
+      
+        <!--
+  _partial/post-card.ejs
+  功能：
+    - 渲染单篇文章的卡片
+    - 包含标题、发布日期、分类、标签、摘要、阅读全文按钮
+    - 可在分类页、标签页、归档页复用
+-->
+
+<article class="post-card">
+  <!-- 单篇文章卡片容器，用于布局和样式 -->
+
+  <!-- 文章标题 -->
+  <h3 class="post-title">
+    <a href="/2026/07/14/1784021470343/">月影禁地</a>
+    <!-- 链接到文章详情页 -->
+    <!-- url_for(post.path) → 生成文章路径 -->
+    <!-- post.title → 当前文章标题 -->
+  </h3>
+
+  <!-- 文章元信息：发布日期 + 分类 + 标签 -->
+  <p class="post-meta">
+    发布于 2026-07-14
+    <!-- 显示文章发布日期 -->
+
+     |
+      分类：
+      
+        <a href="/categories/%E3%83%A1%E3%83%A2/">メモ</a>
+        
+        <!-- 遍历文章分类 -->
+        <!-- 多个分类用逗号分隔 -->
+      
+    
+
+     |
+      标签：
+      
+        <a href="/tags/%E5%BE%85%E5%81%9A%E6%B8%85%E5%8D%95/">待做清单</a>
+        
+        <!-- 遍历文章标签 -->
+        <!-- 多个标签用逗号分隔 -->
+      
+    
+  </p>
+  <!-- 文章元信息结束 -->
+
+  <!-- 文章摘要 -->
+  <p class="post-excerpt">
+    
+    狼人族族长第三个儿子和吸血鬼公爵的儿子，都爱上了一个精灵族公主，但这是三族都不允许发生的事情。狼人族男孩一直以来都是默默的在背后守护着他心爱的精灵族女孩，但是与之相反的是吸血鬼族男孩却以一种及其骄傲且...
+  </p>
+
+  <!-- 操作按钮容器 -->
+  <div class="post-actions">
+    <!-- 阅读全文按钮 -->
+    <a href="/2026/07/14/1784021470343/" class="read-more">阅读全文 →</a>
+    <!-- 编辑按钮 -->
+    <button onclick="openEditor('_posts/1784021470343.md')" class="read-more">✏️ 编辑</button>
+  </div>
+  <!-- 链接到文章详情页 -->
+  <!-- CSS class "read-more" 用于样式化按钮 -->
+
+</article>
+<!-- 单篇文章卡片结束 -->
+
 
       
       <!-- 遍历每篇文章 post -->
