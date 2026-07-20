@@ -11,7 +11,7 @@
   <!-- 如果当前页面有标题，则显示 "页面标题 | 网站标题" -->
   <!-- 否则只显示网站标题 config.title -->
   <title>
-    📒 在线笔记 | Sun Blog
+    极速记录功能 | Sun Blog
   </title>
 
   <!-- 页面描述，用于 SEO -->
@@ -2454,162 +2454,349 @@
 
   <!-- ===== 主体内容区 ===== -->
   <main id="main-content">
-    <section class="main-section">   
-  <!-- ============================
-       在线笔记系统模块
-       功能：
-         - 列出已有文章
-         - 新建文章
-         - 编辑文章（标题、分类、标签、内容）
-         - 实时 Markdown 预览
-         - 保存到 GitHub 仓库，触发 Vercel 自动部署
-  ============================ -->
-  <h1 style="text-align:center;">📒 在线笔记系统</h1>
+    <!--
+  post.ejs
+  文章详情页模板
+  功能：
+    - 显示文章标题
+    - 显示文章发布日期和标签
+    - 渲染文章正文内容
+-->
 
-  <div style="max-width:1000px; margin:20px auto;">
-    <!-- 新建文章按钮 -->
-    <button id="newNoteBtn" style="padding:10px 15px; background:#0078d7; color:#fff; border:none; border-radius:5px; cursor:pointer;">📝 新建文章</button>
 
-    <!-- 文章列表容器 -->
-    <div id="noteList" style="margin-top:20px;"></div>
+
+<article class="post">
+  <!-- 文章标题 -->
+  <h1 class="post-title">极速记录功能</h1>
+
+  <!-- 文章元信息 -->
+  <div class="post-meta">
+    <div class="meta-info">
+      <span>发表于 2026-07-20</span>
+      
+        <span> | 标签：
+          
+            <a href="/tags/%E5%BE%85%E5%81%9A%E6%B8%85%E5%8D%95/">待做清单</a>
+          
+        </span>
+      
+    </div>
+    <!-- 阅览按钮 -->
+    <button type="button" class="preview-trigger-btn">👁️ 阅览</button>
   </div>
 
-  <script>
-  const owner = "Sun1105";              // 替换成你的 GitHub 用户名
-  const repo = "hexo-source";           // 替换成你的仓库名
-  const postsDir = "source/_posts";     // Hexo 文章目录
-  const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  <!-- 文章正文内容 -->
+  <div class="post-content">
+    
+      <!-- 普通文本或纯 Markdown -->
+      <div class="pure-text-content">
+        <p>◆功能追加原则：三部分组成<br>1，个人想法记录：<br>	首先我自己将想要的功能描述出来，单独记录在一个文本文件当中。<br>2，AI想法整理：<br>	将我的个人想法文本内容，发送给AI进行进一步分析和整理，使其从个人想法文件变为功能描述文件。<br>3，AI指令作成：<br>	根据功能描述文件，作成AI指令文件。让AI工具台，可以根据这份AI指令文件，执行编码任务。</p>
+<p>◆◆第一部分：个人想法记录<br>我建议增加一个核心功能：“记录一次，多平台发布”。<br>用户只需要通过文字、图片、语音等方式快速记录生活内容，系统自动利用AI进行整理、优化、分类，并生成适合微信朋友圈、小红书、公众号、微博等不同平台的发布内容。<br>这样用户无需重复编辑同一份内容，只需在平台完成一次记录，就能获得多个平台可直接使用的文案，实现：<br>快速记录 → AI整理 → 一键导出 → 多平台发布<br>让网站从简单的生活记录工具升级为一个能够帮助用户沉淀内容资产、提升分享效率的 AI内容创作与分发平台。</p>
+<p>◆◆第二部分：AI想法整理<br>极速记录功能</p>
+<p>【一、核心定位】</p>
+<p>极速记录（Quick Capture）不是传统笔记功能，而是一套“记录→整理→沉淀→创作→传播”的内容生产系统。</p>
+<p>核心理念：<br>用户负责记录，系统负责整理。</p>
+<p>产品目标：</p>
+<ul>
+<li>降低记录门槛</li>
+<li>提高记录频率</li>
+<li>自动完成知识沉淀</li>
+<li>帮助用户形成个人内容资产</li>
+<li>实现一次记录，多场景复用</li>
+</ul>
+<hr>
+<p>【二、核心价值主张】</p>
+<p>传统记录工具：<br>记录 → 保存 → 结束</p>
+<p>AI笔记工坊：<br>记录 → AI整理 → 知识沉淀 → 作品生成 → 多平台发布</p>
+<p>最终让用户获得：</p>
+<ul>
+<li>保存回忆</li>
+<li>沉淀经验</li>
+<li>管理知识</li>
+<li>创作内容</li>
+<li>分享价值</li>
+</ul>
+<hr>
+<p>【三、极速记录功能设计】</p>
+<ol>
+<li>极简记录流程</li>
+</ol>
+<p>仅保留三个入口：</p>
+<ul>
+<li>工作</li>
+<li>学习</li>
+<li>生活</li>
+</ul>
+<p>记录流程：<br>选择分类 → 输入内容 → 保存</p>
+<p>整个过程控制在3秒至30秒内完成。</p>
+<ol start="2">
+<li>自动处理能力</li>
+</ol>
+<p>记录保存后自动完成：</p>
+<ul>
+<li>标题生成</li>
+<li>标签生成</li>
+<li>时间提取</li>
+<li>地点提取</li>
+<li>人物提取</li>
+<li>事件识别</li>
+<li>摘要生成</li>
+<li>分类整理</li>
+</ul>
+<p>完整保留用户原始内容。</p>
+<hr>
+<p>【四、AI智能整理体系】</p>
+<p>工作场景<br>自动生成：</p>
+<ul>
+<li>时间</li>
+<li>地点</li>
+<li>参与人员</li>
+<li>项目名称</li>
+<li>讨论内容</li>
+<li>会议结论</li>
+<li>待办事项</li>
+</ul>
+<p>学习场景<br>自动生成：</p>
+<ul>
+<li>学习主题</li>
+<li>学习时间</li>
+<li>核心知识点</li>
+<li>学习总结</li>
+<li>个人心得</li>
+</ul>
+<p>生活场景<br>自动生成：</p>
+<ul>
+<li>日期</li>
+<li>地点</li>
+<li>人物</li>
+<li>心情标签</li>
+<li>生活摘要</li>
+</ul>
+<hr>
+<p>【五、四种整理输出模式】</p>
+<ol>
+<li>基本整理（TXT）</li>
+</ol>
+<ul>
+<li>自动分段</li>
+<li>格式修正</li>
+<li>重点提取</li>
+</ul>
+<ol start="2">
+<li>美化整理（Markdown）</li>
+</ol>
+<ul>
+<li>标题层级</li>
+<li>列表结构</li>
+<li>内容高亮</li>
+</ul>
+<ol start="3">
+<li>页面化整理（HTML）</li>
+</ol>
+<ul>
+<li>网页样式排版</li>
+<li>博客展示格式</li>
+</ul>
+<ol start="4">
+<li>流程图整理（Flowchart）</li>
+</ol>
+<ul>
+<li>自动识别步骤</li>
+<li>自动生成流程结构</li>
+</ul>
+<hr>
+<p>【六、提升用户使用兴趣的关键设计】</p>
+<ol>
+<li>三秒记录原则<br>支持：</li>
+</ol>
+<ul>
+<li>文字</li>
+<li>语音</li>
+<li>图片</li>
+<li>视频（后续）</li>
+</ul>
+<p>降低记录阻力。</p>
+<ol start="2">
+<li>AI即时反馈<br>记录后立即反馈：</li>
+</ol>
+<ul>
+<li>今日收获</li>
+<li>个人成长</li>
+<li>关键成果</li>
+</ul>
+<p>让用户感受到记录价值。</p>
+<ol start="3">
+<li>自动生成内容<br>自动生成：</li>
+</ol>
+<ul>
+<li>朋友圈文案</li>
+<li>小红书文案</li>
+<li>日记版内容</li>
+<li>成长总结</li>
+</ul>
+<p>实现一次记录，多份内容。</p>
+<ol start="4">
+<li>成长可视化<br>自动统计：</li>
+</ol>
+<ul>
+<li>记录天数</li>
+<li>学习时长</li>
+<li>阅读数量</li>
+<li>旅行次数</li>
+<li>项目完成量</li>
+</ul>
+<p>帮助用户看到成长。</p>
+<ol start="5">
+<li>打卡与徽章体系<br>连续记录：</li>
+</ol>
+<ul>
+<li>7天</li>
+<li>30天</li>
+<li>100天</li>
+</ul>
+<p>获得成长徽章与称号。</p>
+<ol start="6">
+<li>AI人生回顾<br>自动生成：</li>
+</ol>
+<ul>
+<li>周总结</li>
+<li>月总结</li>
+<li>年度总结</li>
+</ul>
+<p>形成个人成长档案。</p>
+<hr>
+<p>【七、多平台内容分发（推荐作为核心卖点）】</p>
+<p>记录完成后：<br>AI自动改写并适配不同平台。</p>
+<p>支持：</p>
+<ul>
+<li>微信朋友圈</li>
+<li>小红书</li>
+<li>微博</li>
+<li>公众号</li>
+<li>个人博客</li>
+</ul>
+<p>用户只需记录一次即可。</p>
+<p>核心价值：<br>一次记录，到处发布。</p>
+<hr>
+<p>【八、作品生成中心】</p>
+<p>基于用户长期积累内容自动生成：</p>
+<ol>
+<li>图书</li>
+</ol>
+<ul>
+<li>年度成长记录</li>
+<li>学习成果汇总</li>
+<li>工作经验沉淀</li>
+</ul>
+<ol start="2">
+<li>PPT</li>
+</ol>
+<ul>
+<li>工作汇报</li>
+<li>学习总结</li>
+<li>项目复盘</li>
+</ul>
+<ol start="3">
+<li>旅行海报</li>
+</ol>
+<ul>
+<li>景点介绍</li>
+<li>图片排版</li>
+<li>宣传文案</li>
+</ul>
+<ol start="4">
+<li>明信片</li>
+</ol>
+<ul>
+<li>回忆留存</li>
+<li>节日祝福</li>
+</ul>
+<hr>
+<p>【九、V1.0产品边界】</p>
+<p>纳入V1.0：<br>√ 普通记录<br>√ 极速记录<br>√ AI整理<br>√ 模板系统<br>√ 图片支持<br>√ 图书生成<br>√ 海报生成<br>√ 明信片生成<br>√ PPT生成<br>√ AI成长分析<br>√ 多平台内容生成</p>
+<p>暂不纳入V1.0：<br>× 社区<br>× 实时聊天<br>× 多人协作<br>× 视频编辑器<br>× AI智能体市场<br>× 企业权限体系</p>
+<hr>
+<p>【十、最终产品定位】</p>
+<p>AI笔记工坊不是一个单纯的笔记软件。</p>
+<p>它是一套围绕个人成长与内容资产管理打造的AI内容平台。</p>
+<p>核心闭环：<br>快速记录<br>↓<br>AI整理<br>↓<br>知识沉淀<br>↓<br>内容创作<br>↓<br>多平台发布<br>↓<br>成长分析</p>
+<p>产品Slogan：<br>记录当下，沉淀经验；一次记录，到处分享。</p>
+<p>◆◆第三部分：AI指令作成</p>
+<p>待做成</p>
 
-  const noteListDiv = document.getElementById('noteList');
+      </div>
+    
+  </div>
+</article>
 
-  // ========================
-  // 1️⃣ 列出文章列表
-  // ========================
-  async function loadNotes() {
-    noteListDiv.innerHTML = "加载中...";
-    try {
-      const fetchUrl = isLocal 
-        ? `/api/list-posts?path=${encodeURIComponent(postsDir)}`
-        : `https://api.github.com/repos/${owner}/${repo}/contents/${postsDir}`;
-        
-      const res = await fetch(fetchUrl);
-      const data = await res.json();
-      if(res.ok){
-        noteListDiv.innerHTML = "";
-        data.forEach(file => {
-        if(file.name.endsWith(".md")){
-          const div = document.createElement('div');
-          div.className = "note-item";
+<!-- 阅览弹窗 HTML 结构 (已废弃，改为新窗口打开) -->
+<div id="custom-preview-overlay" style="display: none;"></div>
 
-          // 左侧：图标 + 文件名
-          const left = document.createElement('div');
-          left.style.display = "flex";
-          left.style.alignItems = "center";
+<!-- 脚本逻辑 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const triggerBtn = document.querySelector('.preview-trigger-btn');
+  
+  if (!triggerBtn) return;
 
-          const icon = document.createElement('span');
-          icon.className = "note-icon";
-          icon.textContent = "📄";
-
-          const title = document.createElement('span');
-          title.className = "note-title";
-          title.textContent = file.name;
-
-          left.appendChild(icon);
-          left.appendChild(title);
-
-          // 右侧：附加信息（比如更新时间）
-          const meta = document.createElement('span');
-          meta.className = "note-meta";
-          meta.textContent = (file.size / 1024).toFixed(1) + " KB";
-
-          div.appendChild(left);
-          div.appendChild(meta);
-
-          // 使用全局 openEditor 函数
-          div.addEventListener('click', () => {
-             if (window.openEditor) {
-                window.openEditor(file);
-             } else {
-                alert('Editor component not loaded.');
-             }
-          });
-          noteListDiv.appendChild(div);
-        }
-        });
-      } else {
-        noteListDiv.innerHTML = "❌ 获取文章列表失败：" + JSON.stringify(data);
-      }
-    } catch(err){
-      noteListDiv.innerHTML = "❌ 网络错误：" + err.message;
+  // 点击阅览按钮，在新窗口中打开纯净内容
+  triggerBtn.onclick = function() {
+    const previewWindow = window.open('', '_blank');
+    if (!previewWindow) {
+      alert("新窗口被浏览器拦截，请允许弹出窗口。");
+      return;
     }
-  }
 
-  // ========================
-  // 2️⃣ 新建文章
-  // ========================
-  document.getElementById('newNoteBtn').addEventListener('click', () => {
-      if (window.openEditor) {
-          window.openEditor(null);
-      } else {
-          alert('Editor component not loaded.');
-      }
-  });
+    const title = "极速记录功能";
+    const isFullHtml = false;
+    let content = "";
 
-  // ========================
-  // 3️⃣ 初始化加载文章列表
-  // ========================
-  loadNotes();
-  // 暴露 loadNotes 给全局，以便保存后刷新
-  window.loadNotes = loadNotes;
-  </script>
-  <style>
-    /* 文件列表整体容器 */
-    #noteList {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+    
+      // 对于普通 Markdown，包裹在基本的 HTML 结构中
+      content = `
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>${title} - 预览</title>
+          <style>
+            body { 
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+              line-height: 1.8;
+              color: #333;
+              max-width: 900px;
+              margin: 40px auto;
+              padding: 0 20px;
+              background: #fff;
+            }
+            h1 { color: #1976d2; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+            img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            pre { background: #f8f9fa; padding: 15px; border-radius: 6px; overflow-x: auto; border-left: 4px solid #1976d2; }
+            code { font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; }
+            blockquote { border-left: 4px solid #dfe2e5; color: #6a737d; margin: 0; padding-left: 16px; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #dfe2e5; padding: 8px 12px; }
+            th { background: #f6f8fa; }
+          </style>
+        </head>
+        <body>
+          <h1>${title}</h1>
+          <div class="content">
+            ${decodeURIComponent("%3Cp%3E%E2%97%86%E5%8A%9F%E8%83%BD%E8%BF%BD%E5%8A%A0%E5%8E%9F%E5%88%99%EF%BC%9A%E4%B8%89%E9%83%A8%E5%88%86%E7%BB%84%E6%88%90%3Cbr%3E1%EF%BC%8C%E4%B8%AA%E4%BA%BA%E6%83%B3%E6%B3%95%E8%AE%B0%E5%BD%95%EF%BC%9A%3Cbr%3E%09%E9%A6%96%E5%85%88%E6%88%91%E8%87%AA%E5%B7%B1%E5%B0%86%E6%83%B3%E8%A6%81%E7%9A%84%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0%E5%87%BA%E6%9D%A5%EF%BC%8C%E5%8D%95%E7%8B%AC%E8%AE%B0%E5%BD%95%E5%9C%A8%E4%B8%80%E4%B8%AA%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E5%BD%93%E4%B8%AD%E3%80%82%3Cbr%3E2%EF%BC%8CAI%E6%83%B3%E6%B3%95%E6%95%B4%E7%90%86%EF%BC%9A%3Cbr%3E%09%E5%B0%86%E6%88%91%E7%9A%84%E4%B8%AA%E4%BA%BA%E6%83%B3%E6%B3%95%E6%96%87%E6%9C%AC%E5%86%85%E5%AE%B9%EF%BC%8C%E5%8F%91%E9%80%81%E7%BB%99AI%E8%BF%9B%E8%A1%8C%E8%BF%9B%E4%B8%80%E6%AD%A5%E5%88%86%E6%9E%90%E5%92%8C%E6%95%B4%E7%90%86%EF%BC%8C%E4%BD%BF%E5%85%B6%E4%BB%8E%E4%B8%AA%E4%BA%BA%E6%83%B3%E6%B3%95%E6%96%87%E4%BB%B6%E5%8F%98%E4%B8%BA%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%E3%80%82%3Cbr%3E3%EF%BC%8CAI%E6%8C%87%E4%BB%A4%E4%BD%9C%E6%88%90%EF%BC%9A%3Cbr%3E%09%E6%A0%B9%E6%8D%AE%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0%E6%96%87%E4%BB%B6%EF%BC%8C%E4%BD%9C%E6%88%90AI%E6%8C%87%E4%BB%A4%E6%96%87%E4%BB%B6%E3%80%82%E8%AE%A9AI%E5%B7%A5%E5%85%B7%E5%8F%B0%EF%BC%8C%E5%8F%AF%E4%BB%A5%E6%A0%B9%E6%8D%AE%E8%BF%99%E4%BB%BDAI%E6%8C%87%E4%BB%A4%E6%96%87%E4%BB%B6%EF%BC%8C%E6%89%A7%E8%A1%8C%E7%BC%96%E7%A0%81%E4%BB%BB%E5%8A%A1%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E2%97%86%E2%97%86%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86%EF%BC%9A%E4%B8%AA%E4%BA%BA%E6%83%B3%E6%B3%95%E8%AE%B0%E5%BD%95%3Cbr%3E%E6%88%91%E5%BB%BA%E8%AE%AE%E5%A2%9E%E5%8A%A0%E4%B8%80%E4%B8%AA%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD%EF%BC%9A%E2%80%9C%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%EF%BC%8C%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%8F%91%E5%B8%83%E2%80%9D%E3%80%82%3Cbr%3E%E7%94%A8%E6%88%B7%E5%8F%AA%E9%9C%80%E8%A6%81%E9%80%9A%E8%BF%87%E6%96%87%E5%AD%97%E3%80%81%E5%9B%BE%E7%89%87%E3%80%81%E8%AF%AD%E9%9F%B3%E7%AD%89%E6%96%B9%E5%BC%8F%E5%BF%AB%E9%80%9F%E8%AE%B0%E5%BD%95%E7%94%9F%E6%B4%BB%E5%86%85%E5%AE%B9%EF%BC%8C%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E5%88%A9%E7%94%A8AI%E8%BF%9B%E8%A1%8C%E6%95%B4%E7%90%86%E3%80%81%E4%BC%98%E5%8C%96%E3%80%81%E5%88%86%E7%B1%BB%EF%BC%8C%E5%B9%B6%E7%94%9F%E6%88%90%E9%80%82%E5%90%88%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%E3%80%81%E5%B0%8F%E7%BA%A2%E4%B9%A6%E3%80%81%E5%85%AC%E4%BC%97%E5%8F%B7%E3%80%81%E5%BE%AE%E5%8D%9A%E7%AD%89%E4%B8%8D%E5%90%8C%E5%B9%B3%E5%8F%B0%E7%9A%84%E5%8F%91%E5%B8%83%E5%86%85%E5%AE%B9%E3%80%82%3Cbr%3E%E8%BF%99%E6%A0%B7%E7%94%A8%E6%88%B7%E6%97%A0%E9%9C%80%E9%87%8D%E5%A4%8D%E7%BC%96%E8%BE%91%E5%90%8C%E4%B8%80%E4%BB%BD%E5%86%85%E5%AE%B9%EF%BC%8C%E5%8F%AA%E9%9C%80%E5%9C%A8%E5%B9%B3%E5%8F%B0%E5%AE%8C%E6%88%90%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%B0%B1%E8%83%BD%E8%8E%B7%E5%BE%97%E5%A4%9A%E4%B8%AA%E5%B9%B3%E5%8F%B0%E5%8F%AF%E7%9B%B4%E6%8E%A5%E4%BD%BF%E7%94%A8%E7%9A%84%E6%96%87%E6%A1%88%EF%BC%8C%E5%AE%9E%E7%8E%B0%EF%BC%9A%3Cbr%3E%E5%BF%AB%E9%80%9F%E8%AE%B0%E5%BD%95%20%E2%86%92%20AI%E6%95%B4%E7%90%86%20%E2%86%92%20%E4%B8%80%E9%94%AE%E5%AF%BC%E5%87%BA%20%E2%86%92%20%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%8F%91%E5%B8%83%3Cbr%3E%E8%AE%A9%E7%BD%91%E7%AB%99%E4%BB%8E%E7%AE%80%E5%8D%95%E7%9A%84%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95%E5%B7%A5%E5%85%B7%E5%8D%87%E7%BA%A7%E4%B8%BA%E4%B8%80%E4%B8%AA%E8%83%BD%E5%A4%9F%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E6%B2%89%E6%B7%80%E5%86%85%E5%AE%B9%E8%B5%84%E4%BA%A7%E3%80%81%E6%8F%90%E5%8D%87%E5%88%86%E4%BA%AB%E6%95%88%E7%8E%87%E7%9A%84%20AI%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C%E4%B8%8E%E5%88%86%E5%8F%91%E5%B9%B3%E5%8F%B0%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E2%97%86%E2%97%86%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86%EF%BC%9AAI%E6%83%B3%E6%B3%95%E6%95%B4%E7%90%86%3Cbr%3E%E6%9E%81%E9%80%9F%E8%AE%B0%E5%BD%95%E5%8A%9F%E8%83%BD%3C%2Fp%3E%0A%3Cp%3E%E3%80%90%E4%B8%80%E3%80%81%E6%A0%B8%E5%BF%83%E5%AE%9A%E4%BD%8D%E3%80%91%3C%2Fp%3E%0A%3Cp%3E%E6%9E%81%E9%80%9F%E8%AE%B0%E5%BD%95%EF%BC%88Quick%20Capture%EF%BC%89%E4%B8%8D%E6%98%AF%E4%BC%A0%E7%BB%9F%E7%AC%94%E8%AE%B0%E5%8A%9F%E8%83%BD%EF%BC%8C%E8%80%8C%E6%98%AF%E4%B8%80%E5%A5%97%E2%80%9C%E8%AE%B0%E5%BD%95%E2%86%92%E6%95%B4%E7%90%86%E2%86%92%E6%B2%89%E6%B7%80%E2%86%92%E5%88%9B%E4%BD%9C%E2%86%92%E4%BC%A0%E6%92%AD%E2%80%9D%E7%9A%84%E5%86%85%E5%AE%B9%E7%94%9F%E4%BA%A7%E7%B3%BB%E7%BB%9F%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E6%A0%B8%E5%BF%83%E7%90%86%E5%BF%B5%EF%BC%9A%3Cbr%3E%E7%94%A8%E6%88%B7%E8%B4%9F%E8%B4%A3%E8%AE%B0%E5%BD%95%EF%BC%8C%E7%B3%BB%E7%BB%9F%E8%B4%9F%E8%B4%A3%E6%95%B4%E7%90%86%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E4%BA%A7%E5%93%81%E7%9B%AE%E6%A0%87%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E9%99%8D%E4%BD%8E%E8%AE%B0%E5%BD%95%E9%97%A8%E6%A7%9B%3C%2Fli%3E%0A%3Cli%3E%E6%8F%90%E9%AB%98%E8%AE%B0%E5%BD%95%E9%A2%91%E7%8E%87%3C%2Fli%3E%0A%3Cli%3E%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90%E7%9F%A5%E8%AF%86%E6%B2%89%E6%B7%80%3C%2Fli%3E%0A%3Cli%3E%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E5%BD%A2%E6%88%90%E4%B8%AA%E4%BA%BA%E5%86%85%E5%AE%B9%E8%B5%84%E4%BA%A7%3C%2Fli%3E%0A%3Cli%3E%E5%AE%9E%E7%8E%B0%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%A4%9A%E5%9C%BA%E6%99%AF%E5%A4%8D%E7%94%A8%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E4%BA%8C%E3%80%81%E6%A0%B8%E5%BF%83%E4%BB%B7%E5%80%BC%E4%B8%BB%E5%BC%A0%E3%80%91%3C%2Fp%3E%0A%3Cp%3E%E4%BC%A0%E7%BB%9F%E8%AE%B0%E5%BD%95%E5%B7%A5%E5%85%B7%EF%BC%9A%3Cbr%3E%E8%AE%B0%E5%BD%95%20%E2%86%92%20%E4%BF%9D%E5%AD%98%20%E2%86%92%20%E7%BB%93%E6%9D%9F%3C%2Fp%3E%0A%3Cp%3EAI%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%9D%8A%EF%BC%9A%3Cbr%3E%E8%AE%B0%E5%BD%95%20%E2%86%92%20AI%E6%95%B4%E7%90%86%20%E2%86%92%20%E7%9F%A5%E8%AF%86%E6%B2%89%E6%B7%80%20%E2%86%92%20%E4%BD%9C%E5%93%81%E7%94%9F%E6%88%90%20%E2%86%92%20%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%8F%91%E5%B8%83%3C%2Fp%3E%0A%3Cp%3E%E6%9C%80%E7%BB%88%E8%AE%A9%E7%94%A8%E6%88%B7%E8%8E%B7%E5%BE%97%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E4%BF%9D%E5%AD%98%E5%9B%9E%E5%BF%86%3C%2Fli%3E%0A%3Cli%3E%E6%B2%89%E6%B7%80%E7%BB%8F%E9%AA%8C%3C%2Fli%3E%0A%3Cli%3E%E7%AE%A1%E7%90%86%E7%9F%A5%E8%AF%86%3C%2Fli%3E%0A%3Cli%3E%E5%88%9B%E4%BD%9C%E5%86%85%E5%AE%B9%3C%2Fli%3E%0A%3Cli%3E%E5%88%86%E4%BA%AB%E4%BB%B7%E5%80%BC%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E4%B8%89%E3%80%81%E6%9E%81%E9%80%9F%E8%AE%B0%E5%BD%95%E5%8A%9F%E8%83%BD%E8%AE%BE%E8%AE%A1%E3%80%91%3C%2Fp%3E%0A%3Col%3E%0A%3Cli%3E%E6%9E%81%E7%AE%80%E8%AE%B0%E5%BD%95%E6%B5%81%E7%A8%8B%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cp%3E%E4%BB%85%E4%BF%9D%E7%95%99%E4%B8%89%E4%B8%AA%E5%85%A5%E5%8F%A3%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E5%B7%A5%E4%BD%9C%3C%2Fli%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%3C%2Fli%3E%0A%3Cli%3E%E7%94%9F%E6%B4%BB%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E8%AE%B0%E5%BD%95%E6%B5%81%E7%A8%8B%EF%BC%9A%3Cbr%3E%E9%80%89%E6%8B%A9%E5%88%86%E7%B1%BB%20%E2%86%92%20%E8%BE%93%E5%85%A5%E5%86%85%E5%AE%B9%20%E2%86%92%20%E4%BF%9D%E5%AD%98%3C%2Fp%3E%0A%3Cp%3E%E6%95%B4%E4%B8%AA%E8%BF%87%E7%A8%8B%E6%8E%A7%E5%88%B6%E5%9C%A83%E7%A7%92%E8%87%B330%E7%A7%92%E5%86%85%E5%AE%8C%E6%88%90%E3%80%82%3C%2Fp%3E%0A%3Col%20start%3D%222%22%3E%0A%3Cli%3E%E8%87%AA%E5%8A%A8%E5%A4%84%E7%90%86%E8%83%BD%E5%8A%9B%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cp%3E%E8%AE%B0%E5%BD%95%E4%BF%9D%E5%AD%98%E5%90%8E%E8%87%AA%E5%8A%A8%E5%AE%8C%E6%88%90%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E6%A0%87%E9%A2%98%E7%94%9F%E6%88%90%3C%2Fli%3E%0A%3Cli%3E%E6%A0%87%E7%AD%BE%E7%94%9F%E6%88%90%3C%2Fli%3E%0A%3Cli%3E%E6%97%B6%E9%97%B4%E6%8F%90%E5%8F%96%3C%2Fli%3E%0A%3Cli%3E%E5%9C%B0%E7%82%B9%E6%8F%90%E5%8F%96%3C%2Fli%3E%0A%3Cli%3E%E4%BA%BA%E7%89%A9%E6%8F%90%E5%8F%96%3C%2Fli%3E%0A%3Cli%3E%E4%BA%8B%E4%BB%B6%E8%AF%86%E5%88%AB%3C%2Fli%3E%0A%3Cli%3E%E6%91%98%E8%A6%81%E7%94%9F%E6%88%90%3C%2Fli%3E%0A%3Cli%3E%E5%88%86%E7%B1%BB%E6%95%B4%E7%90%86%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E5%AE%8C%E6%95%B4%E4%BF%9D%E7%95%99%E7%94%A8%E6%88%B7%E5%8E%9F%E5%A7%8B%E5%86%85%E5%AE%B9%E3%80%82%3C%2Fp%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E5%9B%9B%E3%80%81AI%E6%99%BA%E8%83%BD%E6%95%B4%E7%90%86%E4%BD%93%E7%B3%BB%E3%80%91%3C%2Fp%3E%0A%3Cp%3E%E5%B7%A5%E4%BD%9C%E5%9C%BA%E6%99%AF%3Cbr%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E6%97%B6%E9%97%B4%3C%2Fli%3E%0A%3Cli%3E%E5%9C%B0%E7%82%B9%3C%2Fli%3E%0A%3Cli%3E%E5%8F%82%E4%B8%8E%E4%BA%BA%E5%91%98%3C%2Fli%3E%0A%3Cli%3E%E9%A1%B9%E7%9B%AE%E5%90%8D%E7%A7%B0%3C%2Fli%3E%0A%3Cli%3E%E8%AE%A8%E8%AE%BA%E5%86%85%E5%AE%B9%3C%2Fli%3E%0A%3Cli%3E%E4%BC%9A%E8%AE%AE%E7%BB%93%E8%AE%BA%3C%2Fli%3E%0A%3Cli%3E%E5%BE%85%E5%8A%9E%E4%BA%8B%E9%A1%B9%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E5%AD%A6%E4%B9%A0%E5%9C%BA%E6%99%AF%3Cbr%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%E4%B8%BB%E9%A2%98%3C%2Fli%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%E6%97%B6%E9%97%B4%3C%2Fli%3E%0A%3Cli%3E%E6%A0%B8%E5%BF%83%E7%9F%A5%E8%AF%86%E7%82%B9%3C%2Fli%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%3C%2Fli%3E%0A%3Cli%3E%E4%B8%AA%E4%BA%BA%E5%BF%83%E5%BE%97%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E7%94%9F%E6%B4%BB%E5%9C%BA%E6%99%AF%3Cbr%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E6%97%A5%E6%9C%9F%3C%2Fli%3E%0A%3Cli%3E%E5%9C%B0%E7%82%B9%3C%2Fli%3E%0A%3Cli%3E%E4%BA%BA%E7%89%A9%3C%2Fli%3E%0A%3Cli%3E%E5%BF%83%E6%83%85%E6%A0%87%E7%AD%BE%3C%2Fli%3E%0A%3Cli%3E%E7%94%9F%E6%B4%BB%E6%91%98%E8%A6%81%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E4%BA%94%E3%80%81%E5%9B%9B%E7%A7%8D%E6%95%B4%E7%90%86%E8%BE%93%E5%87%BA%E6%A8%A1%E5%BC%8F%E3%80%91%3C%2Fp%3E%0A%3Col%3E%0A%3Cli%3E%E5%9F%BA%E6%9C%AC%E6%95%B4%E7%90%86%EF%BC%88TXT%EF%BC%89%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E8%87%AA%E5%8A%A8%E5%88%86%E6%AE%B5%3C%2Fli%3E%0A%3Cli%3E%E6%A0%BC%E5%BC%8F%E4%BF%AE%E6%AD%A3%3C%2Fli%3E%0A%3Cli%3E%E9%87%8D%E7%82%B9%E6%8F%90%E5%8F%96%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Col%20start%3D%222%22%3E%0A%3Cli%3E%E7%BE%8E%E5%8C%96%E6%95%B4%E7%90%86%EF%BC%88Markdown%EF%BC%89%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E6%A0%87%E9%A2%98%E5%B1%82%E7%BA%A7%3C%2Fli%3E%0A%3Cli%3E%E5%88%97%E8%A1%A8%E7%BB%93%E6%9E%84%3C%2Fli%3E%0A%3Cli%3E%E5%86%85%E5%AE%B9%E9%AB%98%E4%BA%AE%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Col%20start%3D%223%22%3E%0A%3Cli%3E%E9%A1%B5%E9%9D%A2%E5%8C%96%E6%95%B4%E7%90%86%EF%BC%88HTML%EF%BC%89%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E7%BD%91%E9%A1%B5%E6%A0%B7%E5%BC%8F%E6%8E%92%E7%89%88%3C%2Fli%3E%0A%3Cli%3E%E5%8D%9A%E5%AE%A2%E5%B1%95%E7%A4%BA%E6%A0%BC%E5%BC%8F%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Col%20start%3D%224%22%3E%0A%3Cli%3E%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%95%B4%E7%90%86%EF%BC%88Flowchart%EF%BC%89%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E8%87%AA%E5%8A%A8%E8%AF%86%E5%88%AB%E6%AD%A5%E9%AA%A4%3C%2Fli%3E%0A%3Cli%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%B5%81%E7%A8%8B%E7%BB%93%E6%9E%84%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E5%85%AD%E3%80%81%E6%8F%90%E5%8D%87%E7%94%A8%E6%88%B7%E4%BD%BF%E7%94%A8%E5%85%B4%E8%B6%A3%E7%9A%84%E5%85%B3%E9%94%AE%E8%AE%BE%E8%AE%A1%E3%80%91%3C%2Fp%3E%0A%3Col%3E%0A%3Cli%3E%E4%B8%89%E7%A7%92%E8%AE%B0%E5%BD%95%E5%8E%9F%E5%88%99%3Cbr%3E%E6%94%AF%E6%8C%81%EF%BC%9A%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E6%96%87%E5%AD%97%3C%2Fli%3E%0A%3Cli%3E%E8%AF%AD%E9%9F%B3%3C%2Fli%3E%0A%3Cli%3E%E5%9B%BE%E7%89%87%3C%2Fli%3E%0A%3Cli%3E%E8%A7%86%E9%A2%91%EF%BC%88%E5%90%8E%E7%BB%AD%EF%BC%89%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E9%99%8D%E4%BD%8E%E8%AE%B0%E5%BD%95%E9%98%BB%E5%8A%9B%E3%80%82%3C%2Fp%3E%0A%3Col%20start%3D%222%22%3E%0A%3Cli%3EAI%E5%8D%B3%E6%97%B6%E5%8F%8D%E9%A6%88%3Cbr%3E%E8%AE%B0%E5%BD%95%E5%90%8E%E7%AB%8B%E5%8D%B3%E5%8F%8D%E9%A6%88%EF%BC%9A%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E4%BB%8A%E6%97%A5%E6%94%B6%E8%8E%B7%3C%2Fli%3E%0A%3Cli%3E%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%3C%2Fli%3E%0A%3Cli%3E%E5%85%B3%E9%94%AE%E6%88%90%E6%9E%9C%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E8%AE%A9%E7%94%A8%E6%88%B7%E6%84%9F%E5%8F%97%E5%88%B0%E8%AE%B0%E5%BD%95%E4%BB%B7%E5%80%BC%E3%80%82%3C%2Fp%3E%0A%3Col%20start%3D%223%22%3E%0A%3Cli%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E5%86%85%E5%AE%B9%3Cbr%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%9A%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E6%9C%8B%E5%8F%8B%E5%9C%88%E6%96%87%E6%A1%88%3C%2Fli%3E%0A%3Cli%3E%E5%B0%8F%E7%BA%A2%E4%B9%A6%E6%96%87%E6%A1%88%3C%2Fli%3E%0A%3Cli%3E%E6%97%A5%E8%AE%B0%E7%89%88%E5%86%85%E5%AE%B9%3C%2Fli%3E%0A%3Cli%3E%E6%88%90%E9%95%BF%E6%80%BB%E7%BB%93%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E5%AE%9E%E7%8E%B0%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%A4%9A%E4%BB%BD%E5%86%85%E5%AE%B9%E3%80%82%3C%2Fp%3E%0A%3Col%20start%3D%224%22%3E%0A%3Cli%3E%E6%88%90%E9%95%BF%E5%8F%AF%E8%A7%86%E5%8C%96%3Cbr%3E%E8%87%AA%E5%8A%A8%E7%BB%9F%E8%AE%A1%EF%BC%9A%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E8%AE%B0%E5%BD%95%E5%A4%A9%E6%95%B0%3C%2Fli%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%E6%97%B6%E9%95%BF%3C%2Fli%3E%0A%3Cli%3E%E9%98%85%E8%AF%BB%E6%95%B0%E9%87%8F%3C%2Fli%3E%0A%3Cli%3E%E6%97%85%E8%A1%8C%E6%AC%A1%E6%95%B0%3C%2Fli%3E%0A%3Cli%3E%E9%A1%B9%E7%9B%AE%E5%AE%8C%E6%88%90%E9%87%8F%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E5%B8%AE%E5%8A%A9%E7%94%A8%E6%88%B7%E7%9C%8B%E5%88%B0%E6%88%90%E9%95%BF%E3%80%82%3C%2Fp%3E%0A%3Col%20start%3D%225%22%3E%0A%3Cli%3E%E6%89%93%E5%8D%A1%E4%B8%8E%E5%BE%BD%E7%AB%A0%E4%BD%93%E7%B3%BB%3Cbr%3E%E8%BF%9E%E7%BB%AD%E8%AE%B0%E5%BD%95%EF%BC%9A%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E7%E5%A4%A9%3C%2Fli%3E%0A%3Cli%3E30%E5%A4%A9%3C%2Fli%3E%0A%3Cli%3E100%E5%A4%A9%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E8%8E%B7%E5%BE%97%E6%88%90%E9%95%BF%E5%BE%BD%E7%AB%A0%E4%B8%8E%E7%A7%B0%E5%8F%B7%E3%80%82%3C%2Fp%3E%0A%3Col%20start%3D%226%22%3E%0A%3Cli%3EAI%E4%BA%BA%E7%94%9F%E5%9B%9E%E9%A1%BE%3Cbr%3E%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%9A%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E5%91%A8%E6%80%BB%E7%BB%93%3C%2Fli%3E%0A%3Cli%3E%E6%9C%88%E6%80%BB%E7%BB%93%3C%2Fli%3E%0A%3Cli%3E%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E5%BD%A2%E6%88%90%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E6%A1%A3%E6%A1%88%E3%80%82%3C%2Fp%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E4%B8%83%E3%80%81%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%EF%BC%88%E6%8E%A8%E8%8D%90%E4%BD%9C%E4%B8%BA%E6%A0%B8%E5%BF%83%E5%8D%96%E7%82%B9%EF%BC%89%E3%80%91%3C%2Fp%3E%0A%3Cp%3E%E8%AE%B0%E5%BD%95%E5%AE%8C%E6%88%90%E5%90%8E%EF%BC%9A%3Cbr%3EAI%E8%87%AA%E5%8A%A8%E6%94%B9%E5%86%99%E5%B9%B6%E9%80%82%E9%85%8D%E4%B8%8D%E5%90%8C%E5%B9%B3%E5%8F%B0%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E6%94%AF%E6%8C%81%EF%BC%9A%3C%2Fp%3E%0A%3Cul%3E%0A%3Cli%3E%E5%BE%AE%E4%BF%A1%E6%9C%8B%E5%8F%8B%E5%9C%88%3C%2Fli%3E%0A%3Cli%3E%E5%B0%8F%E7%BA%A2%E4%B9%A6%3C%2Fli%3E%0A%3Cli%3E%E5%BE%AE%E5%8D%9A%3C%2Fli%3E%0A%3Cli%3E%E5%85%AC%E4%BC%97%E5%8F%B7%3C%2Fli%3E%0A%3Cli%3E%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Cp%3E%E7%94%A8%E6%88%B7%E5%8F%AA%E9%9C%80%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1%E5%8D%B3%E5%8F%AF%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E6%A0%B8%E5%BF%83%E4%BB%B7%E5%80%BC%EF%BC%9A%3Cbr%3E%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%88%B0%E5%A4%84%E5%8F%91%E5%B8%83%E3%80%82%3C%2Fp%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E5%85%AB%E3%80%81%E4%BD%9C%E5%93%81%E7%94%9F%E6%88%90%E4%B8%AD%E5%BF%83%E3%80%91%3C%2Fp%3E%0A%3Cp%3E%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7%E9%95%BF%E6%9C%9F%E7%A7%AF%E7%B4%AF%E5%86%85%E5%AE%B9%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%9A%3C%2Fp%3E%0A%3Col%3E%0A%3Cli%3E%E5%9B%BE%E4%B9%A6%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E5%B9%B4%E5%BA%A6%E6%88%90%E9%95%BF%E8%AE%B0%E5%BD%95%3C%2Fli%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C%E6%B1%87%E6%80%BB%3C%2Fli%3E%0A%3Cli%3E%E5%B7%A5%E4%BD%9C%E7%BB%8F%E9%AA%8C%E6%B2%89%E6%B7%80%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Col%20start%3D%222%22%3E%0A%3Cli%3EPPT%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E5%B7%A5%E4%BD%9C%E6%B1%87%E6%8A%A5%3C%2Fli%3E%0A%3Cli%3E%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93%3C%2Fli%3E%0A%3Cli%3E%E9%A1%B9%E7%9B%AE%E5%A4%8D%E7%9B%98%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Col%20start%3D%223%22%3E%0A%3Cli%3E%E6%97%85%E8%A1%8C%E6%B5%B7%E6%8A%A5%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E6%99%AF%E7%82%B9%E4%BB%8B%E7%BB%8D%3C%2Fli%3E%0A%3Cli%3E%E5%9B%BE%E7%89%87%E6%8E%92%E7%89%88%3C%2Fli%3E%0A%3Cli%3E%E5%AE%A3%E4%BC%A0%E6%96%87%E6%A1%88%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Col%20start%3D%224%22%3E%0A%3Cli%3E%E6%98%8E%E4%BF%A1%E7%89%87%3C%2Fli%3E%0A%3C%2Fol%3E%0A%3Cul%3E%0A%3Cli%3E%E5%9B%9E%E5%BF%86%E7%95%99%E5%AD%98%3C%2Fli%3E%0A%3Cli%3E%E8%8A%82%E6%97%A5%E7%A5%9D%E7%A6%8F%3C%2Fli%3E%0A%3C%2Ful%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E4%B9%9D%E3%80%81V1.0%E4%BA%A7%E5%93%81%E8%BE%B9%E7%95%8C%E3%80%91%3C%2Fp%3E%0A%3Cp%3E%E7%BA%B3%E5%85%A5V1.0%EF%BC%9A%3Cbr%3E%E2%88%9A%20%E6%99%AE%E9%80%9A%E8%AE%B0%E5%BD%95%3Cbr%3E%E2%88%9A%20%E6%9E%81%E9%80%9F%E8%AE%B0%E5%BD%95%3Cbr%3E%E2%88%9A%20AI%E6%95%B4%E7%90%86%3Cbr%3E%E2%88%9A%20%E6%A8%A1%E6%9D%BF%E7%B3%BB%E7%BB%9F%3Cbr%3E%E2%88%9A%20%E5%9B%BE%E7%89%87%E6%94%AF%E6%8C%81%3Cbr%3E%E2%88%9A%20%E5%9B%BE%E4%B9%A6%E7%94%9F%E6%88%90%3Cbr%3E%E2%88%9A%20%E6%B5%B7%E6%8A%A5%E7%94%9F%E6%88%90%3Cbr%3E%E2%88%9A%20%E6%98%8E%E4%BF%A1%E7%89%87%E7%94%9F%E6%88%90%3Cbr%3E%E2%88%9A%20PPT%E7%94%9F%E6%88%90%3Cbr%3E%E2%88%9A%20AI%E6%88%90%E9%95%BF%E5%88%86%E6%9E%90%3Cbr%3E%E2%88%9A%20%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%86%85%E5%AE%B9%E7%94%9F%E6%88%90%3C%2Fp%3E%0A%3Cp%3E%E6%9A%82%E4%B8%8D%E7%BA%B3%E5%85%A5V1.0%EF%BC%9A%3Cbr%3E%C3%97%20%E7%A4%BE%E5%8C%BA%3Cbr%3E%C3%97%20%E5%AE%9E%E6%97%B6%E8%81%8A%E5%A4%A9%3Cbr%3E%C3%97%20%E5%A4%9A%E4%BA%BA%E5%8D%8F%E4%BD%9C%3Cbr%3E%C3%97%20%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91%E5%99%A8%3Cbr%3E%C3%97%20AI%E6%99%BA%E8%83%BD%E4%BD%93%E5%B8%82%E5%9C%BA%3Cbr%3E%C3%97%20%E4%BC%81%E4%B8%9A%E6%9D%83%E9%99%90%E4%BD%93%E7%B3%BB%3C%2Fp%3E%0A%3Chr%3E%0A%3Cp%3E%E3%80%90%E5%8D%81%E3%80%81%E6%9C%80%E7%BB%88%E4%BA%A7%E5%93%81%E5%AE%9A%E4%BD%8D%E3%80%91%3C%2Fp%3E%0A%3Cp%3EAI%E7%AC%94%E8%AE%B0%E5%B7%A5%E5%9D%8A%E4%B8%8D%E6%98%AF%E4%B8%80%E4%B8%AA%E5%8D%95%E7%BA%AF%E7%9A%84%E7%AC%94%E8%AE%B0%E8%BD%AF%E4%BB%B6%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E5%AE%83%E6%98%AF%E4%B8%80%E5%A5%97%E5%9B%B4%E7%BB%95%E4%B8%AA%E4%BA%BA%E6%88%90%E9%95%BF%E4%B8%8E%E5%86%85%E5%AE%B9%E8%B5%84%E4%BA%A7%E7%AE%A1%E7%90%86%E6%89%93%E9%80%A0%E7%9A%84AI%E5%86%85%E5%AE%B9%E5%B9%B3%E5%8F%B0%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E6%A0%B8%E5%BF%83%E9%97%AD%E7%8E%AF%EF%BC%9A%3Cbr%3E%E5%BF%AB%E9%80%9F%E8%AE%B0%E5%BD%95%3Cbr%3E%E2%86%93%3Cbr%3EAI%E6%95%B4%E7%90%86%3Cbr%3E%E2%86%93%3Cbr%3E%E7%9F%A5%E8%AF%86%E6%B2%89%E6%B7%80%3Cbr%3E%E2%86%93%3Cbr%3E%E5%86%85%E5%AE%B9%E5%88%9B%E4%BD%9C%3Cbr%3E%E2%86%93%3Cbr%3E%E5%A4%9A%E5%B9%B3%E5%8F%B0%E5%8F%91%E5%B8%83%3Cbr%3E%E2%86%93%3Cbr%3E%E6%88%90%E9%95%BF%E5%88%86%E6%9E%90%3C%2Fp%3E%0A%3Cp%3E%E4%BA%A7%E5%93%81Slogan%EF%BC%9A%3Cbr%3E%E8%AE%B0%E5%BD%95%E5%BD%93%E4%B8%8B%EF%BC%8C%E6%B2%89%E6%B7%80%E7%BB%8F%E9%AA%8C%EF%BC%9B%E4%B8%80%E6%AC%A1%E8%AE%B0%E5%BD%95%EF%BC%8C%E5%88%B0%E5%A4%84%E5%88%86%E4%BA%AB%E3%80%82%3C%2Fp%3E%0A%3Cp%3E%E2%97%86%E2%97%86%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86%EF%BC%9AAI%E6%8C%87%E4%BB%A4%E4%BD%9C%E6%88%90%3C%2Fp%3E%0A%3Cp%3E%E5%BE%85%E5%81%9A%E6%88%90%3C%2Fp%3E%0A")}
+          </div>
+        </body>
+        </html>
+      `;
+    
 
-    /* 单个文章项 */
-    .note-item {
-      padding: 12px 16px;
-      border: 1px solid #e0e0e0;
-      border-radius: 6px;
-      background: #fafafa;
-      transition: all 0.2s ease;
-      font-family: "Segoe UI", sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    /* 鼠标悬停效果 */
-    .note-item:hover {
-      background: #f0f8ff;
-      border-color: #0078d7;
-      transform: translateY(-2px);
-      cursor: pointer;
-    }
-
-    /* 文件名 */
-    .note-title {
-      font-weight: 600;
-      color: #333;
-    }
-
-    /* 文件图标 */
-    .note-icon {
-      margin-right: 8px;
-      color: #0078d7;
-    }
-
-    /* 时间戳或附加信息 */
-    .note-meta {
-      font-size: 12px;
-      color: #666;
-    }
-  </style>
-</section>
+    const doc = previewWindow.document;
+    doc.open();
+    doc.write(content);
+    doc.close();
+  };
+});
+</script>
 
     <!-- 渲染当前页面内容 -->
     <!--  保证 HTML 正常渲染，不转义 -->
