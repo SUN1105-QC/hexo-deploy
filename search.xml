@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>针对以下内容进行修正</title>
+      <link href="/2026/07/21/1784700918159/"/>
+      <url>/2026/07/21/1784700918159/</url>
+      
+        <content type="html"><![CDATA[<p>针对以下内容进行修正：<br>1，作者信息相关的”关于”页面中，布局与样式存在不合理的地方，请帮我认真检查和修正<br>2，项目展示页面中，希望可以按照开发中，规划中，已完成三个部分进行模块区域区分。<br>3，用户登录之后，左侧分类栏的显示，将管理仪表盘放在最上方，其他排序希望你可以帮我合理设计和排序。<br>4，时间打卡器，虽然已经点击了悬浮框的结束，但是时间还是会继续上涨，只有点击了页面原本的结束按钮才会彻底结束时间的变动。<br>5，左侧分类栏目前无法上下滑动，当分类较多时，无法在页面中看到下方的分类导航。<br>6，笔记管理页面中，当电脑端页面发生缩小时，会发生页面布局错乱的问题。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> メモ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 待做清单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>合集</title>
       <link href="/2026/07/19/1784536482621/"/>
       <url>/2026/07/19/1784536482621/</url>
@@ -1942,11 +1967,11 @@
       
         <tags>
             
+            <tag> IF項目 </tag>
+            
             <tag> JSON </tag>
             
             <tag> VBA </tag>
-            
-            <tag> IF項目 </tag>
             
         </tags>
       
@@ -2029,11 +2054,11 @@
       
         <tags>
             
+            <tag> API </tag>
+            
             <tag> 轻量版 </tag>
             
             <tag> Web </tag>
-            
-            <tag> API </tag>
             
         </tags>
       
@@ -2297,6 +2322,35 @@
     
     
     <entry>
+      <title>APIのControllerクラス</title>
+      <link href="/2026/02/05/1764059427247/"/>
+      <url>/2026/02/05/1764059427247/</url>
+      
+        <content type="html"><![CDATA[<!DOCTYPE html><html lang="ja"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>詳細設計書 - TestController.java</title>    <style>        :root {            --primary-blue: #003366;            --bg-gray: #f8f9fa;            --border-color: #dee2e6;            --code-bg: #282c34;        }<pre><code>    body {        font-family: &quot;Meiryo&quot;, &quot;MS PGothic&quot;, sans-serif;        background-color: #f0f2f5;        color: #333;        line-height: 1.6;        padding: 40px 20px;    }    .doc-sheet {        max-width: 1100px;        margin: 0 auto;        background: #fff;        padding: 40px;        box-shadow: 0 4px 12px rgba(0,0,0,0.1);        border-radius: 4px;    }    .header {        border-bottom: 2px solid var(--primary-blue);        margin-bottom: 30px;        display: flex;        justify-content: space-between;        align-items: flex-end;    }    h1 {        color: var(--primary-blue);        font-size: 24px;        margin: 0 0 10px 0;    }    .section-title {        background: var(--primary-blue);        color: #fff;        padding: 8px 15px;        font-size: 18px;        margin: 30px 0 15px 0;        border-radius: 2px;    }    /* 代码块样式 */    pre {        background-color: var(--code-bg);        color: #abb2bf;        padding: 20px;        border-radius: 6px;        overflow-x: auto;        font-family: &#39;Consolas&#39;, &#39;Monaco&#39;, monospace;        font-size: 14px;        line-height: 1.5;        box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);    }    .keyword { color: #c678dd; }    .comment { color: #5c6370; font-style: italic; }    .string { color: #98c379; }    .function { color: #61afef; }    .annotation { color: #d19a66; }    /* 说明表格样式 */    table {        width: 100%;        border-collapse: collapse;        margin: 15px 0;    }    th, td {        border: 1px solid var(--border-color);        padding: 12px 15px;        font-size: 14px;    }    th {        background-color: #e9ecef;        width: 20%;        text-align: left;    }    .process-list {        background: #fffdf0;        border: 1px solid #ffe4b5;        padding: 20px;        border-radius: 4px;    }    .tag {        display: inline-block;        background: #e2e8f0;        padding: 2px 8px;        border-radius: 4px;        font-size: 12px;        font-weight: bold;        color: #475569;    }&lt;/style&gt;</code></pre></head><body><div class="doc-sheet">    <div class="header">        <h1>詳細設計書 (Program Specification)</h1>        <div style="font-size: 12px; color: #666;">作成日: 2026-02-05</div>    </div><pre><code>&lt;div class=&quot;section-title&quot;&gt;1. ソースコード (Source Code)&lt;/div&gt;&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;/**</code></pre><ul><li>APIのControllerクラス<br> *&#x2F;</span></li></ul><p><span class="annotation">@RestController</span><br><span class="annotation">@RequiredArgsConstructor</span><br><span class="annotation">@Slf4j</span><br><span class="keyword">public class</span> <span class="function">TestController</span> <span class="keyword">extends</span> <span class="function">BaseController</span> {</p><pre><code>&lt;span class=&quot;comment&quot;&gt;/** APIのサービスクラス */&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;private final&lt;/span&gt; TestService testService;&lt;span class=&quot;comment&quot;&gt;/** * APIのメインメソッド * * @param request  リクエスト情報 * @param response レスポンス情報 */&lt;/span&gt;&lt;span class=&quot;annotation&quot;&gt;@PostMapping&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;/TEST0001&quot;&lt;/span&gt;)&lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;execute&lt;/span&gt;(HttpServletRequest request, HttpServletResponse response) {    log.info(&lt;span class=&quot;string&quot;&gt;&quot;TestController#execute() Start&quot;&lt;/span&gt;);    &lt;span class=&quot;comment&quot;&gt;// リクエスト処理 → サービス呼び出し → レスポンス処理&lt;/span&gt;    responseProcess(        response,        testService.execute(requestProcess(request))    );    log.info(&lt;span class=&quot;string&quot;&gt;&quot;TestController#execute() End&quot;&lt;/span&gt;);}</code></pre><p>}</code></pre></p><pre><code>&lt;div class=&quot;section-title&quot;&gt;2. 機能説明 (Functional Description)&lt;/div&gt;&lt;table&gt;    &lt;tr&gt;        &lt;th&gt;物理名 / ID&lt;/th&gt;        &lt;td&gt;TestController / &lt;span class=&quot;tag&quot;&gt;TEST0001&lt;/span&gt;&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;th&gt;論理名&lt;/th&gt;        &lt;td&gt;テストデータ処理API&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;th&gt;処理概要&lt;/th&gt;        &lt;td&gt;クライアントからのリクエストを受け取り、業務ロジック（Service層）を呼び出した後、結果をレスポンスとして返却する。&lt;/td&gt;    &lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;section-title&quot;&gt;3. ロジック詳細 (Logic Details)&lt;/div&gt;&lt;div class=&quot;process-list&quot;&gt;    &lt;strong&gt;■ 実行フロー (Execution Flow)&lt;/strong&gt;        &lt;ol&gt;        &lt;li&gt;&lt;strong&gt;前処理ログ:&lt;/strong&gt; 処理開始時にクラス名とメソッド名をログ出力する。&lt;/li&gt;        &lt;li&gt;&lt;strong&gt;リクエスト解析 (requestProcess):&lt;/strong&gt;             &lt;ul&gt;                &lt;li&gt;&lt;code&gt;BaseController&lt;/code&gt;から継承した共通メソッドを呼び出す。&lt;/li&gt;                &lt;li&gt;HTTPリクエストをビジネスロジックで利用可能な形式に変換する。&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;&lt;strong&gt;業務サービス実行 (testService.execute):&lt;/strong&gt;            &lt;ul&gt;                &lt;li&gt;インジェクトされた &lt;code&gt;TestService&lt;/code&gt; を呼び出し、メインの業務処理を行う。&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;&lt;strong&gt;レスポンス処理 (responseProcess):&lt;/strong&gt;            &lt;ul&gt;                &lt;li&gt;Service層の実行結果をHTTPレスポンスに書き込む。&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;&lt;strong&gt;後処理ログ:&lt;/strong&gt; 正常終了を確認するためのエンドログを出力する。&lt;/li&gt;    &lt;/ol&gt;&lt;/div&gt;&lt;div class=&quot;section-title&quot;&gt;4. 備考 (Remarks)&lt;/div&gt;&lt;ul&gt;    &lt;li&gt;本クラスは &lt;code&gt;@RequiredArgsConstructor&lt;/code&gt; により、&lt;code&gt;TestService&lt;/code&gt; のコンストラクタ注入を自動化している。&lt;/li&gt;    &lt;li&gt;例外処理は &lt;code&gt;BaseController&lt;/code&gt; または &lt;code&gt;GlobalExceptionHandler&lt;/code&gt; で一括管理することを前提とする。&lt;/li&gt;&lt;/ul&gt;&lt;div style=&quot;margin-top: 40px; text-align: center; color: #999; font-size: 12px;&quot;&gt;    &amp;copy; 2026 IT Development Team | Confidential&lt;/div&gt;</code></pre></div></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术相关 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 经验总结 </tag>
+            
+            <tag> Java </tag>
+            
+            <tag> API </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>测试框架学习路线思维导图</title>
       <link href="/2026/02/05/1764751774256/"/>
       <url>/2026/02/05/1764751774256/</url>
@@ -2318,35 +2372,6 @@
             <tag> 学习路线 </tag>
             
             <tag> 思维导图 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>APIのControllerクラス</title>
-      <link href="/2026/02/05/1764059427247/"/>
-      <url>/2026/02/05/1764059427247/</url>
-      
-        <content type="html"><![CDATA[<!DOCTYPE html><html lang="ja"><head>    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>詳細設計書 - TestController.java</title>    <style>        :root {            --primary-blue: #003366;            --bg-gray: #f8f9fa;            --border-color: #dee2e6;            --code-bg: #282c34;        }<pre><code>    body {        font-family: &quot;Meiryo&quot;, &quot;MS PGothic&quot;, sans-serif;        background-color: #f0f2f5;        color: #333;        line-height: 1.6;        padding: 40px 20px;    }    .doc-sheet {        max-width: 1100px;        margin: 0 auto;        background: #fff;        padding: 40px;        box-shadow: 0 4px 12px rgba(0,0,0,0.1);        border-radius: 4px;    }    .header {        border-bottom: 2px solid var(--primary-blue);        margin-bottom: 30px;        display: flex;        justify-content: space-between;        align-items: flex-end;    }    h1 {        color: var(--primary-blue);        font-size: 24px;        margin: 0 0 10px 0;    }    .section-title {        background: var(--primary-blue);        color: #fff;        padding: 8px 15px;        font-size: 18px;        margin: 30px 0 15px 0;        border-radius: 2px;    }    /* 代码块样式 */    pre {        background-color: var(--code-bg);        color: #abb2bf;        padding: 20px;        border-radius: 6px;        overflow-x: auto;        font-family: &#39;Consolas&#39;, &#39;Monaco&#39;, monospace;        font-size: 14px;        line-height: 1.5;        box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);    }    .keyword { color: #c678dd; }    .comment { color: #5c6370; font-style: italic; }    .string { color: #98c379; }    .function { color: #61afef; }    .annotation { color: #d19a66; }    /* 说明表格样式 */    table {        width: 100%;        border-collapse: collapse;        margin: 15px 0;    }    th, td {        border: 1px solid var(--border-color);        padding: 12px 15px;        font-size: 14px;    }    th {        background-color: #e9ecef;        width: 20%;        text-align: left;    }    .process-list {        background: #fffdf0;        border: 1px solid #ffe4b5;        padding: 20px;        border-radius: 4px;    }    .tag {        display: inline-block;        background: #e2e8f0;        padding: 2px 8px;        border-radius: 4px;        font-size: 12px;        font-weight: bold;        color: #475569;    }&lt;/style&gt;</code></pre></head><body><div class="doc-sheet">    <div class="header">        <h1>詳細設計書 (Program Specification)</h1>        <div style="font-size: 12px; color: #666;">作成日: 2026-02-05</div>    </div><pre><code>&lt;div class=&quot;section-title&quot;&gt;1. ソースコード (Source Code)&lt;/div&gt;&lt;pre&gt;&lt;code&gt;&lt;span class=&quot;comment&quot;&gt;/**</code></pre><ul><li>APIのControllerクラス<br> *&#x2F;</span></li></ul><p><span class="annotation">@RestController</span><br><span class="annotation">@RequiredArgsConstructor</span><br><span class="annotation">@Slf4j</span><br><span class="keyword">public class</span> <span class="function">TestController</span> <span class="keyword">extends</span> <span class="function">BaseController</span> {</p><pre><code>&lt;span class=&quot;comment&quot;&gt;/** APIのサービスクラス */&lt;/span&gt;&lt;span class=&quot;keyword&quot;&gt;private final&lt;/span&gt; TestService testService;&lt;span class=&quot;comment&quot;&gt;/** * APIのメインメソッド * * @param request  リクエスト情報 * @param response レスポンス情報 */&lt;/span&gt;&lt;span class=&quot;annotation&quot;&gt;@PostMapping&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;/TEST0001&quot;&lt;/span&gt;)&lt;span class=&quot;keyword&quot;&gt;public void&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;execute&lt;/span&gt;(HttpServletRequest request, HttpServletResponse response) {    log.info(&lt;span class=&quot;string&quot;&gt;&quot;TestController#execute() Start&quot;&lt;/span&gt;);    &lt;span class=&quot;comment&quot;&gt;// リクエスト処理 → サービス呼び出し → レスポンス処理&lt;/span&gt;    responseProcess(        response,        testService.execute(requestProcess(request))    );    log.info(&lt;span class=&quot;string&quot;&gt;&quot;TestController#execute() End&quot;&lt;/span&gt;);}</code></pre><p>}</code></pre></p><pre><code>&lt;div class=&quot;section-title&quot;&gt;2. 機能説明 (Functional Description)&lt;/div&gt;&lt;table&gt;    &lt;tr&gt;        &lt;th&gt;物理名 / ID&lt;/th&gt;        &lt;td&gt;TestController / &lt;span class=&quot;tag&quot;&gt;TEST0001&lt;/span&gt;&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;th&gt;論理名&lt;/th&gt;        &lt;td&gt;テストデータ処理API&lt;/td&gt;    &lt;/tr&gt;    &lt;tr&gt;        &lt;th&gt;処理概要&lt;/th&gt;        &lt;td&gt;クライアントからのリクエストを受け取り、業務ロジック（Service層）を呼び出した後、結果をレスポンスとして返却する。&lt;/td&gt;    &lt;/tr&gt;&lt;/table&gt;&lt;div class=&quot;section-title&quot;&gt;3. ロジック詳細 (Logic Details)&lt;/div&gt;&lt;div class=&quot;process-list&quot;&gt;    &lt;strong&gt;■ 実行フロー (Execution Flow)&lt;/strong&gt;        &lt;ol&gt;        &lt;li&gt;&lt;strong&gt;前処理ログ:&lt;/strong&gt; 処理開始時にクラス名とメソッド名をログ出力する。&lt;/li&gt;        &lt;li&gt;&lt;strong&gt;リクエスト解析 (requestProcess):&lt;/strong&gt;             &lt;ul&gt;                &lt;li&gt;&lt;code&gt;BaseController&lt;/code&gt;から継承した共通メソッドを呼び出す。&lt;/li&gt;                &lt;li&gt;HTTPリクエストをビジネスロジックで利用可能な形式に変換する。&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;&lt;strong&gt;業務サービス実行 (testService.execute):&lt;/strong&gt;            &lt;ul&gt;                &lt;li&gt;インジェクトされた &lt;code&gt;TestService&lt;/code&gt; を呼び出し、メインの業務処理を行う。&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;&lt;strong&gt;レスポンス処理 (responseProcess):&lt;/strong&gt;            &lt;ul&gt;                &lt;li&gt;Service層の実行結果をHTTPレスポンスに書き込む。&lt;/li&gt;            &lt;/ul&gt;        &lt;/li&gt;        &lt;li&gt;&lt;strong&gt;後処理ログ:&lt;/strong&gt; 正常終了を確認するためのエンドログを出力する。&lt;/li&gt;    &lt;/ol&gt;&lt;/div&gt;&lt;div class=&quot;section-title&quot;&gt;4. 備考 (Remarks)&lt;/div&gt;&lt;ul&gt;    &lt;li&gt;本クラスは &lt;code&gt;@RequiredArgsConstructor&lt;/code&gt; により、&lt;code&gt;TestService&lt;/code&gt; のコンストラクタ注入を自動化している。&lt;/li&gt;    &lt;li&gt;例外処理は &lt;code&gt;BaseController&lt;/code&gt; または &lt;code&gt;GlobalExceptionHandler&lt;/code&gt; で一括管理することを前提とする。&lt;/li&gt;&lt;/ul&gt;&lt;div style=&quot;margin-top: 40px; text-align: center; color: #999; font-size: 12px;&quot;&gt;    &amp;copy; 2026 IT Development Team | Confidential&lt;/div&gt;</code></pre></div></body></html>]]></content>
-      
-      
-      <categories>
-          
-          <category> 技术相关 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 经验总结 </tag>
-            
-            <tag> API </tag>
-            
-            <tag> Java </tag>
             
         </tags>
       

@@ -11,7 +11,7 @@
   <!-- 如果当前页面有标题，则显示 "页面标题 | 网站标题" -->
   <!-- 否则只显示网站标题 config.title -->
   <title>
-    Sun Blog
+    针对以下内容进行修正 | Sun Blog
   </title>
 
   <!-- 页面描述，用于 SEO -->
@@ -2471,189 +2471,117 @@
 
   <!-- ===== 主体内容区 ===== -->
   <main id="main-content">
-    <section class="archive-timeline">
-  <!-- ============================
-       文章归档时间轴模块
-       功能：
-         - 按年份分组文章
-         - 按时间顺序渲染文章列表
-         - 每篇文章显示发布日期、标题、摘要
-  ============================ -->
+    <!--
+  post.ejs
+  文章详情页模板
+  功能：
+    - 显示文章标题
+    - 显示文章发布日期和标签
+    - 渲染文章正文内容
+-->
 
+
+
+<article class="post">
+  <!-- 文章标题 -->
+  <h1 class="post-title">针对以下内容进行修正</h1>
+
+  <!-- 文章元信息 -->
+  <div class="post-meta">
+    <div class="meta-info">
+      <span>发表于 2026-07-22</span>
+      
+        <span> | 标签：
+          
+            <a href="/tags/%E5%BE%85%E5%81%9A%E6%B8%85%E5%8D%95/">待做清单</a>
+          
+        </span>
+      
+    </div>
+    <!-- 阅览按钮 -->
+    <button type="button" class="preview-trigger-btn">👁️ 阅览</button>
+  </div>
+
+  <!-- 文章正文内容 -->
+  <div class="post-content">
+    
+      <!-- 普通文本或纯 Markdown -->
+      <div class="pure-text-content">
+        <p>针对以下内容进行修正：<br>1，作者信息相关的”关于”页面中，布局与样式存在不合理的地方，请帮我认真检查和修正<br>2，项目展示页面中，希望可以按照开发中，规划中，已完成三个部分进行模块区域区分。<br>3，用户登录之后，左侧分类栏的显示，将管理仪表盘放在最上方，其他排序希望你可以帮我合理设计和排序。<br>4，时间打卡器，虽然已经点击了悬浮框的结束，但是时间还是会继续上涨，只有点击了页面原本的结束按钮才会彻底结束时间的变动。<br>5，左侧分类栏目前无法上下滑动，当分类较多时，无法在页面中看到下方的分类导航。<br>6，笔记管理页面中，当电脑端页面发生缩小时，会发生页面布局错乱的问题。</p>
+
+      </div>
+    
+  </div>
+</article>
+
+<!-- 阅览弹窗 HTML 结构 (已废弃，改为新窗口打开) -->
+<div id="custom-preview-overlay" style="display: none;"></div>
+
+<!-- 脚本逻辑 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const triggerBtn = document.querySelector('.preview-trigger-btn');
   
+  if (!triggerBtn) return;
 
-        <div class="archive-year">
-          <!-- 单个年份组容器 -->
-          <h2>2025</h2>
-          <!-- 显示年份标题，例如 2025 -->
-          <div class="timeline">
-            <!-- 时间轴容器 -->
-      
+  // 点击阅览按钮，在新窗口中打开纯净内容
+  triggerBtn.onclick = function() {
+    const previewWindow = window.open('', '_blank');
+    if (!previewWindow) {
+      alert("新窗口被浏览器拦截，请允许弹出窗口。");
+      return;
+    }
 
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
+    const title = "针对以下内容进行修正";
+    const isFullHtml = false;
+    let content = "";
 
-        <div class="timeline-content">
-          <span class="timeline-date">11-28</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
+    
+      // 对于普通 Markdown，包裹在基本的 HTML 结构中
+      content = `
+        <!DOCTYPE html>
+        <html lang="zh-CN">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>${title} - 预览</title>
+          <style>
+            body { 
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+              line-height: 1.8;
+              color: #333;
+              max-width: 900px;
+              margin: 40px auto;
+              padding: 0 20px;
+              background: #fff;
+            }
+            h1 { color: #1976d2; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+            img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            pre { background: #f8f9fa; padding: 15px; border-radius: 6px; overflow-x: auto; border-left: 4px solid #1976d2; }
+            code { font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace; }
+            blockquote { border-left: 4px solid #dfe2e5; color: #6a737d; margin: 0; padding-left: 16px; }
+            table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+            th, td { border: 1px solid #dfe2e5; padding: 8px 12px; }
+            th { background: #f6f8fa; }
+          </style>
+        </head>
+        <body>
+          <h1>${title}</h1>
+          <div class="content">
+            ${decodeURIComponent("%3Cp%3E%E9%92%88%E5%AF%B9%E4%BB%A5%E4%B8%8B%E5%86%85%E5%AE%B9%E8%BF%9B%E8%A1%8C%E4%BF%AE%E6%AD%A3%EF%BC%9A%3Cbr%3E1%EF%BC%8C%E4%BD%9C%E8%80%85%E4%BF%A1%E6%81%AF%E7%9B%B8%E5%85%B3%E7%9A%84%E2%80%9D%E5%85%B3%E4%BA%8E%E2%80%9D%E9%A1%B5%E9%9D%A2%E4%B8%AD%EF%BC%8C%E5%B8%83%E5%B1%80%E4%B8%8E%E6%A0%B7%E5%BC%8F%E5%AD%98%E5%9C%A8%E4%B8%8D%E5%90%88%E7%90%86%E7%9A%84%E5%9C%B0%E6%96%B9%EF%BC%8C%E8%AF%B7%E5%B8%AE%E6%88%91%E8%AE%A4%E7%9C%9F%E6%A3%80%E6%9F%A5%E5%92%8C%E4%BF%AE%E6%AD%A3%3Cbr%3E2%EF%BC%8C%E9%A1%B9%E7%9B%AE%E5%B1%95%E7%A4%BA%E9%A1%B5%E9%9D%A2%E4%B8%AD%EF%BC%8C%E5%B8%8C%E6%9C%9B%E5%8F%AF%E4%BB%A5%E6%8C%89%E7%85%A7%E5%BC%80%E5%8F%91%E4%B8%AD%EF%BC%8C%E8%A7%84%E5%88%92%E4%B8%AD%EF%BC%8C%E5%B7%B2%E5%AE%8C%E6%88%90%E4%B8%89%E4%B8%AA%E9%83%A8%E5%88%86%E8%BF%9B%E8%A1%8C%E6%A8%A1%E5%9D%97%E5%8C%BA%E5%9F%9F%E5%8C%BA%E5%88%86%E3%80%82%3Cbr%3E3%EF%BC%8C%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95%E4%B9%8B%E5%90%8E%EF%BC%8C%E5%B7%A6%E4%BE%A7%E5%88%86%E7%B1%BB%E6%A0%8F%E7%9A%84%E6%98%BE%E7%A4%BA%EF%BC%8C%E5%B0%86%E7%AE%A1%E7%90%86%E4%BB%AA%E8%A1%A8%E7%9B%98%E6%94%BE%E5%9C%A8%E6%9C%80%E4%B8%8A%E6%96%B9%EF%BC%8C%E5%85%B6%E4%BB%96%E6%8E%92%E5%BA%8F%E5%B8%8C%E6%9C%9B%E4%BD%A0%E5%8F%AF%E4%BB%A5%E5%B8%AE%E6%88%91%E5%90%88%E7%90%86%E8%AE%BE%E8%AE%A1%E5%92%8C%E6%8E%92%E5%BA%8F%E3%80%82%3Cbr%3E4%EF%BC%8C%E6%97%B6%E9%97%B4%E6%89%93%E5%8D%A1%E5%99%A8%EF%BC%8C%E8%99%BD%E7%84%B6%E5%B7%B2%E7%BB%8F%E7%82%B9%E5%87%BB%E4%BA%86%E6%82%AC%E6%B5%AE%E6%A1%86%E7%9A%84%E7%BB%93%E6%9D%9F%EF%BC%8C%E4%BD%86%E6%98%AF%E6%97%B6%E9%97%B4%E8%BF%98%E6%98%AF%E4%BC%9A%E7%BB%A7%E7%BB%AD%E4%B8%8A%E6%B6%A8%EF%BC%8C%E5%8F%AA%E6%9C%89%E7%82%B9%E5%87%BB%E4%BA%86%E9%A1%B5%E9%9D%A2%E5%8E%9F%E6%9C%AC%E7%9A%84%E7%BB%93%E6%9D%9F%E6%8C%89%E9%92%AE%E6%89%8D%E4%BC%9A%E5%BD%BB%E5%BA%95%E7%BB%93%E6%9D%9F%E6%97%B6%E9%97%B4%E7%9A%84%E5%8F%98%E5%8A%A8%E3%80%82%3Cbr%3E5%EF%BC%8C%E5%B7%A6%E4%BE%A7%E5%88%86%E7%B1%BB%E6%A0%8F%E7%9B%AE%E5%89%8D%E6%97%A0%E6%B3%95%E4%B8%8A%E4%B8%8B%E6%BB%91%E5%8A%A8%EF%BC%8C%E5%BD%93%E5%88%86%E7%B1%BB%E8%BE%83%E5%A4%9A%E6%97%B6%EF%BC%8C%E6%97%A0%E6%B3%95%E5%9C%A8%E9%A1%B5%E9%9D%A2%E4%B8%AD%E7%9C%8B%E5%88%B0%E4%B8%8B%E6%96%B9%E7%9A%84%E5%88%86%E7%B1%BB%E5%AF%BC%E8%88%AA%E3%80%82%3Cbr%3E6%EF%BC%8C%E7%AC%94%E8%AE%B0%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2%E4%B8%AD%EF%BC%8C%E5%BD%93%E7%94%B5%E8%84%91%E7%AB%AF%E9%A1%B5%E9%9D%A2%E5%8F%91%E7%94%9F%E7%BC%A9%E5%B0%8F%E6%97%B6%EF%BC%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E9%A1%B5%E9%9D%A2%E5%B8%83%E5%B1%80%E9%94%99%E4%B9%B1%E7%9A%84%E9%97%AE%E9%A2%98%E3%80%82%3C%2Fp%3E%0A")}
+          </div>
+        </body>
+        </html>
+      `;
+    
 
-          <a href="/2025/11/28/1776306063149/" class="timeline-title">うちに</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-28</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/28/1762869633094/" class="timeline-title">一日详细学习计划单：任务确认用</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-28</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/28/1762867657236/" class="timeline-title">半年日语学习计划：每周</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-28</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/28/1762867028153/" class="timeline-title">日语学习计划：目标 接近母语水平</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-28</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/28/1765461967723/" class="timeline-title">ばかり</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-27</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/27/1764231541325/" class="timeline-title">キックオフ(Kick-off)説明</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-13</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/12/1763008824364/" class="timeline-title">STS4 分屏模糊问题解决</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-
-      <!-- 单篇文章时间轴项 -->
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <!-- 时间轴节点，用于标记文章位置 -->
-
-        <div class="timeline-content">
-          <span class="timeline-date">11-08</span>
-          <!-- 显示文章发布日期（只显示月-日） -->
-
-          <a href="/2025/11/08/1762512557776/" class="timeline-title">JUnit全局日志输出方法</a>
-          <!-- 文章标题，点击跳转到文章详情页 -->
-
-          
-          
-        </div>
-      </div>
-      <!-- 单篇文章时间轴项结束 -->
-
-      
-            </div> <!-- timeline 结束 -->
-          </div> <!-- archive-year 结束 -->
-        
-</section>
-<!-- 文章归档时间轴模块结束 -->
+    const doc = previewWindow.document;
+    doc.open();
+    doc.write(content);
+    doc.close();
+  };
+});
+</script>
 
     <!-- 渲染当前页面内容 -->
     <!--  保证 HTML 正常渲染，不转义 -->
